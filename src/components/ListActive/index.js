@@ -30,6 +30,7 @@ const ListActive = props => {
 					<Text style={styles.time}>19:20</Text>
 				</View>
 			</TouchableOpacity>
+			<View style={styles.border} />
 		</View>
 	);
 
@@ -49,12 +50,15 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		paddingHorizontal: width * 0.03,
+		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		flexDirection: 'row',
-		borderBottomWidth: 1,
-		borderColor: '#cccccc',
 		height: height * 0.11,
+	},
+	border : {
+		marginLeft: width * 0.2,
+		borderBottomWidth: 1,
+		borderColor: 'rgba(0, 0, 0, 0.1)',
 	},
 	left: {
 		alignItems: 'center',
