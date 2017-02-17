@@ -8,6 +8,7 @@ import {
 	Platform,
 } from 'react-native';
 import Dimensions from 'Dimensions';
+import * as colors from '../../colors';
 
 const { width, height } = Dimensions.get('window');
 
@@ -16,7 +17,7 @@ const ListActive = props => {
 		<View key={index} style={styles.list}>
 			<TouchableOpacity style={styles.button}>
 				<View style={styles.left}>
-					<View style={styles.circle} />
+					<View style={[styles.circle, {backgroundColor: colors.random()}]} />
 					<View style={styles.text}>
 						<Text style={styles.h1}>
 							Cloningan Telegram
@@ -70,7 +71,6 @@ const styles = StyleSheet.create({
 		width: width * 0.15,
 		height: width * 0.15,
 		borderRadius: width * 0.3,
-		backgroundColor: 'gray',
 	},
 	text: {
 		paddingLeft: width * 0.025,
