@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 		height: height * 0.08,
 	},
 	title: {
-		fontSize: width * 0.08,
+		fontSize: width * 0.06,
 		color: colors.BASIC,
 	},
 	icon: {
