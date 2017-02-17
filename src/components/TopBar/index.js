@@ -15,11 +15,15 @@ const { width, height } = Dimensions.get('window');
 const Topbar = props => {
 	return (
 		<View style={styles.container}>
-			<Image source={imgMenu} style={styles.icon} />
-			<Text style={styles.title}>
-				inTelegram
-			</Text>
-			<Image source={imgSearch} style={styles.icon} />
+			<View style={styles.left}>
+				<Image source={imgMenu} style={styles.icon} />
+				<Text style={styles.title}>
+					inTelegram
+				</Text>
+			</View>
+			<View style={styles.right}>
+				<Image source={imgSearch} style={styles.icon} />
+			</View>
 		</View>
 	);
 };
@@ -33,8 +37,12 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.PRIMARY,
 		height: height * 0.08,
 	},
+	left: {
+		flexDirection: 'row',
+	},
 	title: {
 		fontSize: width * 0.06,
+		paddingLeft: width * 0.09,
 		color: colors.BASIC,
 	},
 	icon: {
