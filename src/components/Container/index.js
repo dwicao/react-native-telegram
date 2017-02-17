@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as telegramActions from '../../actions/telegramActions';
-import { View } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
 
 class Container extends Component {
 	render() {
@@ -16,15 +16,24 @@ class Container extends Component {
 		const renderChildren = Array.isArray(children) ?
 			children.map((child, key) => React.cloneElement(child, { key, ...myState }))
 			:
-			React.cloneElement(children, {...myState});
+			React.cloneElement(children, { ...myState });
 
 		return (
-			<View style={{ flex: 1 }}>
+			<View style={styles.myContainer}>
 				{renderChildren}
 			</View>
 		);
 	}
 }
+
+const top = (Platform.OS === 'ios') ? 20 : 0;
+
+const styles = StyleSheet.create({
+	myContainer: {
+		flex: 1,
+		top,
+	},
+});
 
 Container.propTypes = {
 	telegram: PropTypes.array.isRequired,
