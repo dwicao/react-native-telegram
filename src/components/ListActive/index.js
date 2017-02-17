@@ -5,14 +5,15 @@ import {
 	TouchableOpacity,
 	View,
 	Text,
+	Platform,
 } from 'react-native';
 import Dimensions from 'Dimensions';
 
 const { width, height } = Dimensions.get('window');
 
 const ListActive = props => {
-	const renderList = () => (
-		<View style={styles.list}>
+	const renderList = index => (
+		<View key={index} style={styles.list}>
 			<TouchableOpacity style={styles.button}>
 				<View style={styles.left}>
 					<View style={styles.circle} />
@@ -34,14 +35,17 @@ const ListActive = props => {
 
 	return (
 		<ScrollView style={styles.scroll}>
-			{ renderList() }
+			{ [...Array(20)].map((_, index) => renderList(index)) }
 		</ScrollView>
 	);
 }
 
+const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.04 : 0;
+
 const styles = StyleSheet.create({
 	scroll: {
 		flex: 1,
+		marginBottom: BOTTOM_BLANK,
 	},
 	button: {
 		paddingHorizontal: width * 0.03,
