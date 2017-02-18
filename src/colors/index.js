@@ -6,3 +6,4 @@ export function random() {
 }
 export const PRIMARY = '#6084A5';
 export const BASIC = 'white';
+export const BORDER = 'rgba(0, 0, 0, 0.1)';

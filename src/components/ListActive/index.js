@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 	border : {
 		marginLeft: width * 0.2,
 		borderBottomWidth: 1,
-		borderColor: 'rgba(0, 0, 0, 0.1)',
+		borderColor: colors.BORDER,
 	},
 	left: {
 		flex: 1,
