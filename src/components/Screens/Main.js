@@ -20,6 +20,7 @@ const MainScreen = props => {
       content={<ControlPanel />}
       side='left'
       tapToClose={true}
+      negotiatePan={true}
       openDrawerOffset={0.15} // 20% gap on the right side of drawer
       panCloseMask={0.15}
       panOpenMask={0.1}
