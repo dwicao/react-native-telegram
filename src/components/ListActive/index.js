@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
 	shortText: {
 		color: colors.BASIC,
 		backgroundColor: 'transparent',
-		fontSize: width * 0.05,
+		fontSize: width * 0.07,
 		fontWeight: 'bold',
 	},
 	text: {

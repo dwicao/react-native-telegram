@@ -7,16 +7,22 @@ import {
 	StyleSheet
 } from 'react-native';
 import * as colors from '../../colors';
+import * as utils from '../../utils';
 
+const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
 
 const ControlPanel = props => {
 	return (
 		<View style={styles.container}>
 			<View style={styles.top}>
-				<View style={[styles.circle, {backgroundColor: colors.random()}]}/>
+				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
+					<Text style={styles.shortText}>
+						{utils.firstLetter(EXAMPLE_NAME)}
+					</Text>
+				</View>
 				<Text numberOfLines={1} style={styles.h1}>
-					Lutfi Dwica
+					{EXAMPLE_NAME}
 				</Text>
 				<Text numberOfLines={1} style={styles.h2}>
 					lutfi@example.com
@@ -42,6 +48,11 @@ const styles = StyleSheet.create({
 		height: height * 0.88,
 		borderColor: colors.BORDER,
 		borderRightWidth: 1,
+	},
+	shortText: {
+		color: colors.BASIC,
+		fontSize: width * 0.07,
+		fontWeight: 'bold',
 	},
 	h1: {
 		color: colors.BASIC,
