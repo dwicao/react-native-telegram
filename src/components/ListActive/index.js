@@ -9,7 +9,9 @@ import {
 } from 'react-native';
 import Dimensions from 'Dimensions';
 import * as colors from '../../colors';
+import * as utils from '../../utils';
 
+const EXAMPLE_TITLE = 'Telegram Clone Mantap Jaya WKWKWKWKWKWKKW';
 const { width, height } = Dimensions.get('window');
 
 const ListActive = props => {
@@ -17,18 +19,22 @@ const ListActive = props => {
 		<View key={index} style={styles.list}>
 			<TouchableOpacity style={styles.button}>
 				<View style={styles.left}>
-					<View style={[styles.circle, {backgroundColor: colors.random()}]} />
-					<View style={styles.text}>
-						<Text style={styles.h1}>
-							Cloningan Telegram
+					<View style={[styles.circle, {backgroundColor: colors.random()}]}>
+						<Text style={styles.shortText}>
+							{utils.firstLetter(EXAMPLE_TITLE)}
 						</Text>
-						<Text style={styles.h2}>
-							Mantap! mari kita belajar...
+					</View>
+					<View style={styles.text}>
+						<Text numberOfLines={1} style={styles.h1}>
+							{EXAMPLE_TITLE}
+						</Text>
+						<Text numberOfLines={1} style={styles.h2}>
+							Mari kita belajar React Native ykwkwkwkwkw mantap
 						</Text>
 					</View>
 				</View>
 				<View style={styles.right}>
-					<Text style={styles.time}>19:20</Text>
+					<Text style={styles.time}>19:45</Text>
 				</View>
 			</TouchableOpacity>
 			<View style={styles.border} />
@@ -62,18 +68,28 @@ const styles = StyleSheet.create({
 		borderColor: 'rgba(0, 0, 0, 0.1)',
 	},
 	left: {
+		flex: 1,
 		alignItems: 'center',
 		flexDirection: 'row',
 	},
 	right: {
 	},
 	circle: {
+		alignItems: 'center',
+		justifyContent: 'center',
 		width: width * 0.15,
 		height: width * 0.15,
 		borderRadius: width * 0.3,
 	},
+	shortText: {
+		color: colors.BASIC,
+		backgroundColor: 'transparent',
+		fontSize: width * 0.05,
+		fontWeight: 'bold',
+	},
 	text: {
-		paddingLeft: width * 0.025,
+		flex: 1,
+		paddingHorizontal: width * 0.025,
 	},
 	h1: {
 		fontSize: width * 0.045,
@@ -84,7 +100,6 @@ const styles = StyleSheet.create({
 		fontSize: width * 0.04,
 	},
 	time: {
-		color: 'blue',
 	},
 });
 
