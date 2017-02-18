@@ -15,7 +15,9 @@ const ControlPanel = props => {
 		<View style={styles.container}>
 			<View style={styles.top}>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}/>
-				<Text style={styles.text}>INI ControlPanel</Text>
+				<Text numberOfLines={1} style={styles.text}>
+					Lutfi Dwica
+				</Text>
 			</View>
 			<View style={styles.bottom}>
 				<Text>ini bottom</Text>
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
 	text: {
 		color: colors.BASIC,
 		fontSize: width * 0.05,
-		marginLeft: width * 0.05,
+		marginHorizontal: width * 0.05,
 		marginBottom: width * 0.05,
 	},
 	circle: {
