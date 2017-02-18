@@ -4,10 +4,12 @@ import {
 	View,
 	Image,
 	Text,
-	StyleSheet
+	StyleSheet,
+	TouchableOpacity,
 } from 'react-native';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
+import imgAddPerson from '../../images/person_add.png';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
@@ -29,7 +31,18 @@ const ControlPanel = props => {
 				</Text>
 			</View>
 			<View style={styles.bottom}>
-				<Text>ini bottom</Text>
+				<TouchableOpacity style={styles.button}>
+					<Image source={imgAddPerson} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Settings</Text>
+				</TouchableOpacity>
+				<TouchableOpacity style={styles.button}>
+					<Image source={imgAddPerson} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Settings</Text>
+				</TouchableOpacity>
+				<TouchableOpacity style={styles.button}>
+					<Image source={imgAddPerson} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Settings</Text>
+				</TouchableOpacity>
 			</View>
 		</View>
 	);
@@ -48,6 +61,7 @@ const styles = StyleSheet.create({
 		height: height * 0.88,
 		borderColor: colors.BORDER,
 		borderRightWidth: 1,
+		paddingVertical: height * 0.01,
 	},
 	shortText: {
 		color: colors.BASIC,
@@ -73,6 +87,23 @@ const styles = StyleSheet.create({
 		width: width * 0.15,
 		height: width * 0.15,
 		borderRadius: width * 0.3,
+	},
+	button: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'flex-start',
+		backgroundColor: 'yellow',
+		paddingHorizontal: width * 0.03,
+		paddingVertical: width * 0.02,
+	},
+	buttonImg: {
+		width: width * 0.07,
+		height: width * 0.07,
+	},
+	buttonText: {
+		color: 'blue',
+		fontSize: 14,
+		marginLeft: 20,
 	},
 });
 
