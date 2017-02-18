@@ -15,8 +15,11 @@ const ControlPanel = props => {
 		<View style={styles.container}>
 			<View style={styles.top}>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}/>
-				<Text numberOfLines={1} style={styles.text}>
+				<Text numberOfLines={1} style={styles.h1}>
 					Lutfi Dwica
+				</Text>
+				<Text numberOfLines={1} style={styles.h2}>
+					lutfi@example.com
 				</Text>
 			</View>
 			<View style={styles.bottom}>
@@ -32,17 +35,23 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.BASIC,
 	},
 	top: {
-		height: height * 0.2,
+		height: height * 0.22,
 		backgroundColor: 'gray',
 	},
 	bottom: {
-		height: height * 0.8,
+		height: height * 0.88,
 		borderColor: colors.BORDER,
 		borderRightWidth: 1,
 	},
-	text: {
+	h1: {
 		color: colors.BASIC,
-		fontSize: width * 0.05,
+		fontSize: width * 0.04,
+		fontWeight: 'bold',
+		marginHorizontal: width * 0.05,
+	},
+	h2: {
+		color: colors.BASIC,
+		fontSize: width * 0.04,
 		marginHorizontal: width * 0.05,
 		marginBottom: width * 0.05,
 	},

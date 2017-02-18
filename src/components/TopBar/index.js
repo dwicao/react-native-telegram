@@ -5,16 +5,21 @@ import {
 	StyleSheet,
 	Image,
 	TouchableOpacity,
+	Alert,
 } from 'react-native';
 import * as colors from '../../colors';
 import Dimensions from 'Dimensions';
 import imgMenu from '../../images/menu.png';
-import imgSearch from '../../images/search.png';
+import imgPersonAdd from '../../images/person_add.png';
 
 const { width, height } = Dimensions.get('window');
 
 const Topbar = props => {
 	const { onPress } = props;
+
+	const handleSearch = () => {
+		Alert.alert("pencet search");
+	}
 
 	return (
 		<View style={styles.container}>
@@ -27,7 +32,9 @@ const Topbar = props => {
 				</Text>
 			</View>
 			<View style={styles.right}>
-				<Image source={imgSearch} style={styles.icon} />
+				<TouchableOpacity onPress={handleSearch}>
+					<Image source={imgPersonAdd} style={styles.icon} />
+				</TouchableOpacity>
 			</View>
 		</View>
 	);
