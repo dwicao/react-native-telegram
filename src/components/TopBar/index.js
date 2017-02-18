@@ -4,6 +4,7 @@ import {
 	Text,
 	StyleSheet,
 	Image,
+	TouchableOpacity,
 } from 'react-native';
 import * as colors from '../../colors';
 import Dimensions from 'Dimensions';
@@ -13,10 +14,14 @@ import imgSearch from '../../images/search.png';
 const { width, height } = Dimensions.get('window');
 
 const Topbar = props => {
+	const { onPress } = props;
+
 	return (
 		<View style={styles.container}>
 			<View style={styles.left}>
-				<Image source={imgMenu} style={styles.icon} />
+				<TouchableOpacity onPress={onPress}>
+					<Image source={imgMenu} style={styles.icon} />
+				</TouchableOpacity>
 				<Text style={styles.title}>
 					inTelegram
 				</Text>
