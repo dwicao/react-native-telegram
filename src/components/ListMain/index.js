@@ -19,7 +19,7 @@ const ListActive = props => {
 	const onPress = () => Actions.messagesScreen();
 
 	const renderList = index => (
-		<View key={index} style={styles.list}>
+		<View key={index}>
 			<TouchableOpacity onPress={onPress} style={styles.button}>
 				<View style={styles.left}>
 					<View style={[styles.circle, {backgroundColor: colors.random()}]}>
@@ -51,7 +51,7 @@ const ListActive = props => {
 	);
 }
 
-const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.04 : 0;
+const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
 
 const styles = StyleSheet.create({
 	scroll: {
