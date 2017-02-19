@@ -1,10 +1,10 @@
 import React from 'react';
 import Dimensions from 'Dimensions';
+import { Actions, ActionConst } from 'react-native-router-flux';
 import {
 	View,
 	Text,
 	StyleSheet,
-	Alert,
 } from 'react-native';
 import TopBar from '../TopBar';
 import * as colors from '../../colors';
@@ -15,11 +15,15 @@ const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
 
 const ListMessages = props => {
+	const _onPressLeft = () => Actions.mainScreen({
+		type: ActionConst.RESET,
+	});
+
 	return (
 		<View style={styles.container}>
 			<TopBar 
 				imgLeft={imgArrowBack}
-				onPressLeft={() => Alert.alert('ini left')}
+				onPressLeft={_onPressLeft}
 			>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 					<Text style={styles.shortText}>
