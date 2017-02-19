@@ -1,18 +1,27 @@
 import React from 'react';
 import Drawer from 'react-native-drawer';
+import Dimensions from 'Dimensions';
 import {
 	View,
 	Text,
+  Alert,
+  StyleSheet,
 } from 'react-native';
 import Container from '../Container';
 import ControlPanel from '../ControlPanel';
 import TopBar from '../TopBar';
 import ListMain from '../ListMain';
+import * as colors from '../../colors';
+import imgMenu from '../../images/menu.png';
+import imgPersonAdd from '../../images/person_add.png';
+
+const { width, height } = Dimensions.get('window');
 
 const MainScreen = props => {
 	let _drawer;
 
-	const _onPress = () => _drawer.open();
+	const _onPressLeft = () => _drawer.open();
+  const _onPressRight = () => Alert.alert('pencet kanan');
 
 	return (
 		<Drawer
@@ -32,12 +41,30 @@ const MainScreen = props => {
       })}
     >
 			<Container>
-				<TopBar onPress={_onPress} />
+				<TopBar 
+          onPressLeft={_onPressLeft}
+          onPressRight={_onPressRight}
+          imgLeft={imgMenu}
+          imgRight={imgPersonAdd}
+          enableRightButton={true}
+        >
+          <Text style={styles.title}>
+            inTelegram
+          </Text>
+        </TopBar>
 				<ListMain />
 			</Container>
 		</Drawer>
 	);
 };
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: width * 0.06,
+    paddingLeft: width * 0.09,
+    color: colors.BASIC,
+  },
+});
 
 const drawerStyles = {
   drawer: {},

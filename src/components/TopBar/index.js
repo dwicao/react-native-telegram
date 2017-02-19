@@ -5,37 +5,36 @@ import {
 	StyleSheet,
 	Image,
 	TouchableOpacity,
-	Alert,
 } from 'react-native';
 import * as colors from '../../colors';
 import Dimensions from 'Dimensions';
-import imgMenu from '../../images/menu.png';
-import imgPersonAdd from '../../images/person_add.png';
 
 const { width, height } = Dimensions.get('window');
 
 const Topbar = props => {
-	const { onPress } = props;
-
-	const handleSearch = () => {
-		Alert.alert("pencet search");
-	}
+	const {
+		children,
+		onPressLeft,
+		onPressRight,
+		imgLeft,
+		imgRight,
+	} = props;
 
 	return (
 		<View style={styles.container}>
 			<View style={styles.left}>
-				<TouchableOpacity onPress={onPress}>
-					<Image source={imgMenu} style={styles.icon} />
+				<TouchableOpacity onPress={onPressLeft}>
+					<Image source={imgLeft} style={styles.icon} />
 				</TouchableOpacity>
-				<Text style={styles.title}>
-					inTelegram
-				</Text>
+				{children}
 			</View>
-			<View style={styles.right}>
-				<TouchableOpacity onPress={handleSearch}>
-					<Image source={imgPersonAdd} style={styles.icon} />
-				</TouchableOpacity>
-			</View>
+			{ props.enableRightButton &&
+				<View style={styles.right}>
+					<TouchableOpacity onPress={onPressRight}>
+						<Image source={imgRight} style={styles.icon} />
+					</TouchableOpacity>
+				</View>
+			}
 		</View>
 	);
 };
