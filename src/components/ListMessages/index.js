@@ -3,14 +3,22 @@ import {
 	View,
 	Text,
 	StyleSheet,
+	Alert,
 } from 'react-native';
+import TopBar from '../TopBar';
+import imgArrowBack from '../../images/arrow_back.png';
 
 const ListMessages = props => {
 	return (
 		<View style={styles.container}>
-			<Text>
-				This is ListMessages
-			</Text>
+			<TopBar 
+				imgLeft={imgArrowBack}
+				onPressLeft={() => Alert.alert('ini left')}
+			>
+				<Text>
+					mantap
+				</Text>
+			</TopBar>
 		</View>
 	)
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import {
 	View,
 	Text,
@@ -11,13 +11,14 @@ import Dimensions from 'Dimensions';
 
 const { width, height } = Dimensions.get('window');
 
-const Topbar = props => {
+const TopBar = props => {
 	const {
 		children,
 		onPressLeft,
-		onPressRight,
 		imgLeft,
+		onPressRight,
 		imgRight,
+		enableRightButton,
 	} = props;
 
 	return (
@@ -28,7 +29,7 @@ const Topbar = props => {
 				</TouchableOpacity>
 				{children}
 			</View>
-			{ props.enableRightButton &&
+			{ enableRightButton &&
 				<View style={styles.right}>
 					<TouchableOpacity onPress={onPressRight}>
 						<Image source={imgRight} style={styles.icon} />
@@ -37,6 +38,14 @@ const Topbar = props => {
 			}
 		</View>
 	);
+};
+
+TopBar.propTypes = {
+	onPressLeft: PropTypes.func.isRequired,
+	imgLeft: PropTypes.number.isRequired,
+	onPressRight: PropTypes.func,
+	imgRight: PropTypes.number,
+	enableRightButton: PropTypes.bool,
 };
 
 const styles = StyleSheet.create({
@@ -62,4 +71,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default Topbar;
+export default TopBar;

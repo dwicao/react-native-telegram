@@ -12,12 +12,12 @@ export default class App extends Component {
           	animation='fade'
           	component={MainScreen}
             panHandlers={null}
-          	hideNavBar={true} initial />
+          	hideNavBar={true} />
           <Scene key='messagesScreen'
             animation='fade'
             component={MessagesScreen}
             panHandlers={null}
-            hideNavBar={true} />
+            hideNavBar={true} initial />
         </Scene>
       </Router>
     );
