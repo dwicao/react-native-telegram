@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
-import imgAddPerson from '../../images/person_add.png';
+import imgLogout from '../../images/logout.png';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
@@ -32,16 +32,16 @@ const ControlPanel = props => {
 			</View>
 			<View style={styles.bottom}>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgAddPerson} style={styles.buttonImg} />
-					<Text style={styles.buttonText}>Settings</Text>
+					<Image source={imgLogout} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgAddPerson} style={styles.buttonImg} />
-					<Text style={styles.buttonText}>Settings</Text>
+					<Image source={imgLogout} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgAddPerson} style={styles.buttonImg} />
-					<Text style={styles.buttonText}>Settings</Text>
+					<Image source={imgLogout} style={styles.buttonImg} />
+					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 			</View>
 		</View>
@@ -92,7 +92,6 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		backgroundColor: 'yellow',
 		paddingHorizontal: width * 0.03,
 		paddingVertical: width * 0.02,
 	},
@@ -101,7 +100,6 @@ const styles = StyleSheet.create({
 		height: width * 0.07,
 	},
 	buttonText: {
-		color: 'blue',
 		fontSize: 14,
 		marginLeft: 20,
 	},
