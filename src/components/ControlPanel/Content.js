@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
 		height: width * 0.07,
 	},
 	buttonText: {
-		fontSize: 14,
-		marginLeft: 20,
+		fontSize: width * 0.045,
+		marginLeft: width * 0.03,
 	},
 });
 
