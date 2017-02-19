@@ -58,6 +58,8 @@ const styles = StyleSheet.create({
 		height: height * 0.08,
 	},
 	left: {
+		alignItems: 'center',
+		flexDirection: 'center',
 		flexDirection: 'row',
 	},
 	title: {
