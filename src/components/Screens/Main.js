@@ -7,7 +7,7 @@ import {
 import Container from '../Container';
 import ControlPanel from '../ControlPanel';
 import TopBar from '../TopBar';
-import ListActive from '../ListActive';
+import ListMain from '../ListMain';
 
 const MainScreen = props => {
 	let _drawer;
@@ -33,7 +33,7 @@ const MainScreen = props => {
     >
 			<Container>
 				<TopBar onPress={_onPress} />
-				<ListActive />
+				<ListMain />
 			</Container>
 		</Drawer>
 	);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Actions } from 'react-native-router-flux';
 import {
 	ScrollView,
 	StyleSheet,
@@ -15,9 +16,11 @@ const EXAMPLE_TITLE = 'Telegram Clone Mantap Jaya WKWKWKWKWKWKKW';
 const { width, height } = Dimensions.get('window');
 
 const ListActive = props => {
+	const onPress = () => Actions.messagesScreen();
+
 	const renderList = index => (
 		<View key={index} style={styles.list}>
-			<TouchableOpacity style={styles.button}>
+			<TouchableOpacity onPress={onPress} style={styles.button}>
 				<View style={styles.left}>
 					<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 						<Text style={styles.shortText}>
