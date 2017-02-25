@@ -2,8 +2,6 @@ import React from 'react';
 import {
 	ListView,
 	StyleSheet,
-	View,
-	Text,
 	Platform,
 } from 'react-native';
 import Dimensions from 'Dimensions';
