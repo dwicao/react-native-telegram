@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import Dimensions from 'Dimensions';
 import Row from './Row';
-import demoData from './demoData';
+import demoData from '../demoData';
 
 const { width, height } = Dimensions.get('window');
 

@@ -5,13 +5,15 @@ import {
 	View,
 	Text,
 	StyleSheet,
-	ScrollView,
+	ListView,
 	Platform,
 } from 'react-native';
 import TopBar from '../TopBar';
+import Row from './Row';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
 import imgArrowBack from '../../images/arrow_back.png';
+import demoData from '../demoData';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
@@ -21,15 +23,23 @@ const ListMessages = props => {
 		type: ActionConst.RESET,
 	});
 
-	const renderList = index => (
-		<View key={index}>
-			<View style={[styles.peopleCircle, {backgroundColor: colors.random()}]}>
-				<Text style={styles.shortText}>
-					{utils.firstLetter(EXAMPLE_NAME)}
-				</Text>
-			</View>
-		</View>
-	);
+	const formatData = (data) => {
+		let dataBlob = {};
+
+		data.map((person, index) => {
+			dataBlob[index] = person;
+		});
+
+		return dataBlob;
+	}
+
+	const ds = new ListView.DataSource({
+		rowHasChanged: (r1, r2) => r1 !== r2,
+	});
+
+	const dataBlob = formatData(demoData);
+
+	const dataSource = ds.cloneWithRows(dataBlob);
 
 	return (
 		<View style={styles.container}>
@@ -46,10 +56,11 @@ const ListMessages = props => {
 					{EXAMPLE_NAME}
 				</Text>
 			</TopBar>
-			<ScrollView style={styles.scroll}
-        showsVerticalScrollIndicator={false}>
-				{ [...Array(20)].map((_, index) => renderList(index)) }
-			</ScrollView>
+			<ListView
+			  style={styles.listview}
+			  dataSource={dataSource}
+			  renderRow={(data) => <Row {...data} />}
+			/>
 		</View>
 	)
 };
@@ -62,6 +73,9 @@ const styles = StyleSheet.create({
 		flex: 1,
 		marginBottom: BOTTOM_BLANK,
 	},
+	listview: {
+		flex: 1,
+	},
 	circle: {
 		alignItems: 'center',
 		justifyContent: 'center',
@@ -70,13 +84,6 @@ const styles = StyleSheet.create({
 		borderRadius: width * 0.3,
 		marginLeft: width * 0.06,
 		marginRight: width * 0.03,
-	},
-	peopleCircle: {
-		alignItems: 'center',
-		justifyContent: 'center',
-		width: width * 0.11,
-		height: width * 0.11,
-		borderRadius: width * 0.3,
 	},
 	shortText: {
 		color: colors.BASIC,
