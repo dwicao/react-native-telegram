@@ -19,6 +19,11 @@ const Row = props => {
 					{utils.firstLetter(props.name)}
 				</Text>
 			</View>
+			<View style={styles.chatBubble}>
+				<Text style={styles.chatText}>
+					Test ini adalah rwefdf dsfsdf sasdsad sadasd asd asdas sadasd 
+				</Text>
+			</View>
 		</View>
 	);
 }
@@ -28,8 +33,13 @@ const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		alignItems: 'center',
+		flexDirection: 'row',
+		marginVertical: width * 0.01,
+		marginHorizontal: width * 0.025,
 	},
 	peopleCircle: {
+		marginRight: width * 0.02,
 		alignItems: 'center',
 		justifyContent: 'center',
 		width: width * 0.11,
@@ -40,6 +50,15 @@ const styles = StyleSheet.create({
 		color: colors.BASIC,
 		fontWeight: 'bold',
 		fontSize: width * 0.05,
+	},
+	chatBubble: {
+		flex: 1,
+		padding: width * 0.02,
+		backgroundColor: 'white',
+		borderRadius: width * 0.02,
+	},
+	chatText: {
+		backgroundColor: 'transparent',
 	},
 });
 
