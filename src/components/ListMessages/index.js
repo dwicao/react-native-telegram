@@ -7,9 +7,11 @@ import {
 	StyleSheet,
 	ListView,
 	Platform,
+	KeyboardAvoidingView,
 } from 'react-native';
 import TopBar from '../TopBar';
 import Row from './Row';
+import Input from './Input';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
 import imgArrowBack from '../../images/arrow_back.png';
@@ -61,6 +63,9 @@ const ListMessages = props => {
 			  dataSource={dataSource}
 			  renderRow={(data) => <Row {...data} {...props} />}
 			/>
+			<KeyboardAvoidingView style={{flex: 0}} behavior='position'>
+				<Input />
+			</KeyboardAvoidingView>
 		</View>
 	)
 };
@@ -72,7 +77,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		marginBottom: BOTTOM_BLANK,
-		backgroundColor: '#CCCCCC',
+		backgroundColor: colors.THIRD,
 	},
 	listview: {
 		flex: 1,

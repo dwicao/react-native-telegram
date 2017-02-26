@@ -7,7 +7,6 @@ import {
 	StyleSheet,
 } from 'react-native';
 import * as colors from '../../colors';
-import * as utils from '../../utils';
 
 const { width, height } = Dimensions.get('window');
 
@@ -29,7 +28,7 @@ const Row = props => {
 		<View style={container}>
 			<View style={chat}>
 				<Text style={styles.chatText}>
-					Test ini adalah
+					Halo Dunia
 				</Text>
 			</View>
 		</View>
@@ -56,10 +55,10 @@ const styles = StyleSheet.create({
 		borderRadius: width * 0.02,
 	},
 	chatOtherPeople: {
-		backgroundColor: 'white',
+		backgroundColor: colors.BASIC,
 	},
 	chatCurrentUser: {
-		backgroundColor: '#efffde',
+		backgroundColor: colors.SECONDARY,
 	},
 	chatText: {
 		backgroundColor: 'transparent',

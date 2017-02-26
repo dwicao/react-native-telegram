@@ -71164,9 +71164,11 @@ exports['default']=thunk;
 }, 454, null, "redux-thunk/lib/index.js");
 __d(/* telegram/src/reducers/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _redux=require(415    ); // 415 = redux
 var _telegramReducer=require(456                );var _telegramReducer2=babelHelpers.interopRequireDefault(_telegramReducer); // 456 = ./telegramReducer
+var _userStatusReducer=require(558                  );var _userStatusReducer2=babelHelpers.interopRequireDefault(_userStatusReducer); // 558 = ./userStatusReducer
 
 var rootReducer=(0,_redux.combineReducers)({
-telegram:_telegramReducer2.default});exports.default=
+telegram:_telegramReducer2.default,
+userStatus:_userStatusReducer2.default});exports.default=
 
 
 rootReducer;
@@ -71190,7 +71192,28 @@ return state;}
 telegramReducer;
 }, 456, null, "telegram/src/reducers/telegramReducer.js");
 __d(/* telegram/src/actions/actionTypes.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var COBA=exports.COBA='COBA';
+var CHANGE_USER_STATUS=exports.CHANGE_USER_STATUS='CHANGE_USER_STATUS';
 }, 457, null, "telegram/src/actions/actionTypes.js");
+__d(/* telegram/src/reducers/userStatusReducer.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _actionTypes=require(457                     );var types=babelHelpers.interopRequireWildcard(_actionTypes); // 457 = ../actions/actionTypes
+
+var exampleState={
+name:'Lutfi Dwica',
+email:'lutfi@example.com'};
+
+
+var userStatusReducer=function userStatusReducer(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:exampleState;var action=arguments[1];
+switch(action.type){
+
+case types.CHANGE_USER_STATUS:
+return babelHelpers.extends({},state,action.payload);
+
+default:
+return state;}
+
+};exports.default=
+
+userStatusReducer;
+}, 558, null, "telegram/src/reducers/userStatusReducer.js");
 __d(/* telegram/src/components/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNativeRouterFlux=require(459                       ); // 459 = react-native-router-flux
 var _Main=require(506             );var _Main2=babelHelpers.interopRequireDefault(_Main); // 506 = ./Screens/Main
@@ -77736,7 +77759,8 @@ children=this.props.children;
 
 var myState={
 telegram:this.props.telegram,
-actions:this.props.actions};
+actions:this.props.actions,
+userStatus:this.props.userStatus};
 
 
 var renderChildren=Array.isArray(children)?
@@ -77763,12 +77787,14 @@ top:top}});
 
 Container.propTypes={
 telegram:_react.PropTypes.array.isRequired,
+userStatus:_react.PropTypes.object.isRequired,
 actions:_react.PropTypes.object.isRequired};
 
 
 function mapStateToProps(state){
 return{
-telegram:state.telegram};
+telegram:state.telegram,
+userStatus:state.userStatus};
 
 }
 
@@ -77780,14 +77806,16 @@ actions:(0,_redux.bindActionCreators)(telegramActions,dispatch)};
 
 (0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(Container);
 }, 510, null, "telegram/src/components/Container/index.js");
-__d(/* telegram/src/actions/telegramActions.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.
+__d(/* telegram/src/actions/telegramActions.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.changeUserStatus=exports.coba=undefined;var _actionTypes=require(457            );var types=babelHelpers.interopRequireWildcard(_actionTypes); // 457 = ./actionTypes
 
-coba=coba;var _actionTypes=require(457            );var types=babelHelpers.interopRequireWildcard(_actionTypes);function coba(payload){ // 457 = ./actionTypes
-return{
+var coba=exports.coba=function coba(payload){return{
 type:types.COBA,
-payload:payload};
+payload:payload};};
 
-}
+
+var changeUserStatus=exports.changeUserStatus=function changeUserStatus(payload){return{
+type:types.CHANGE_USER_STATUS,
+payload:payload};};
 }, 511, null, "telegram/src/actions/telegramActions.js");
 __d(/* telegram/src/components/ControlPanel/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Container=require(510           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 510 = ../Container
@@ -77919,6 +77947,8 @@ var color=Math.floor(Math.random()*colors.length);
 return colors[color];
 }
 var PRIMARY=exports.PRIMARY='#6084A5';
+var SECONDARY=exports.SECONDARY='#efffde';
+var THIRD=exports.THIRD='#CCCCCC';
 var BASIC=exports.BASIC='white';
 var BORDER=exports.BORDER='rgba(0, 0, 0, 0.1)';
 }, 514, null, "telegram/src/colors/index.js");
@@ -78157,71 +78187,78 @@ Row;
 __d(/* telegram/src/components/demoData.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.default=data=[
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
+
+{
+name:'Elisha',
+email:'elisha@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
+
+{
+name:'Test',
+email:'test@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
+
+{
+name:'mantap',
+email:'mantap@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
 name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
-
-{
-name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
-
-{
-name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
-
-{
-name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
-
-{
-name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'},
-
-{
-name:'Lutfi Dwica',
-previewMessage:'Syalalal mantap jaya'}];
+email:'lutfi@example.com',
+previewMessage:'Hari ini minggu kan? ntap banget haahahha'}];
 }, 520, null, "telegram/src/components/demoData.js");
 __d(/* telegram/src/images/menu.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"9cd2ca85f0a29c5666f642d3838aa159","name":"menu","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
 }, 521, null, "telegram/src/images/menu.png");
@@ -78251,14 +78288,16 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
+
 var _TopBar=require(517        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 517 = ../TopBar
 var _Row=require(525    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 525 = ./Row
+var _Input=require(559      );var _Input2=babelHelpers.interopRequireDefault(_Input); // 559 = ./Input
 var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
 var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils); // 515 = ../../utils
 var _arrow_back=require(526                          );var _arrow_back2=babelHelpers.interopRequireDefault(_arrow_back); // 526 = ../../images/arrow_back.png
 var _demoData=require(520          );var _demoData2=babelHelpers.interopRequireDefault(_demoData); // 520 = ../demoData
 
-var EXAMPLE_NAME='Lutfi Dwica';var _Dimensions$get=
+var EXAMPLE_NAME='React Native Indo Jaya';var _Dimensions$get=
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
 var ListMessages=function ListMessages(props){
@@ -78302,7 +78341,10 @@ EXAMPLE_NAME)),
 _react2.default.createElement(_reactNative.ListView,{
 style:styles.listview,
 dataSource:dataSource,
-renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,data);}})));
+renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}}),
+
+_react2.default.createElement(_reactNative.KeyboardAvoidingView,{style:{flex:0},behavior:'position'},
+_react2.default.createElement(_Input2.default,null))));
 
 
 
@@ -78315,7 +78357,7 @@ var styles=_reactNative.StyleSheet.create({
 container:{
 flex:1,
 marginBottom:BOTTOM_BLANK,
-backgroundColor:'#CCCCCC'},
+backgroundColor:colors.THIRD},
 
 listview:{
 flex:1},
@@ -78351,21 +78393,28 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils);var _Dimensions$get= // 515 = ../../utils
+var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
-var Row=function Row(props){
+var Row=function Row(props){var
+
+email=
+
+props.email,userStatus=props.userStatus;
+
+var container=email===userStatus.email?
+[styles.container,styles.containerCurrentUser]:
+[styles.container,styles.containerOtherPeople];
+
+var chat=email===userStatus.email?
+[styles.chat,styles.chatCurrentUser]:
+[styles.chat,styles.chatOtherPeople];
+
 return(
-_react2.default.createElement(_reactNative.View,{style:styles.container},
-_react2.default.createElement(_reactNative.View,{style:[styles.peopleCircle,{backgroundColor:colors.random()}]},
-_react2.default.createElement(_reactNative.Text,{style:styles.shortText},
-utils.firstLetter(props.name))),
-
-
-_react2.default.createElement(_reactNative.View,{style:styles.chatBubble},
-_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test ini adalah rwefdf dsfsdf sasdsad sadasd asd asdas sadasd'))));
+_react2.default.createElement(_reactNative.View,{style:container},
+_react2.default.createElement(_reactNative.View,{style:chat},
+_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Halo Dunia'))));
 
 
 
@@ -78378,29 +78427,25 @@ var BOTTOM_BLANK=_reactNative.Platform.OS==='ios'?height*0.035:0;
 var styles=_reactNative.StyleSheet.create({
 container:{
 flex:1,
-alignItems:'center',
 flexDirection:'row',
 marginVertical:width*0.01,
-marginHorizontal:width*0.025},
+marginHorizontal:width*0.02},
 
-peopleCircle:{
-marginRight:width*0.02,
-alignItems:'center',
-justifyContent:'center',
-width:width*0.11,
-height:width*0.11,
-borderRadius:width*0.3},
+containerCurrentUser:{
+justifyContent:'flex-end'},
 
-shortText:{
-color:colors.BASIC,
-fontWeight:'bold',
-fontSize:width*0.05},
+containerOtherPeople:{
+justifyContent:'flex-start'},
 
-chatBubble:{
-flex:1,
+chat:{
 padding:width*0.02,
-backgroundColor:'white',
 borderRadius:width*0.02},
+
+chatOtherPeople:{
+backgroundColor:colors.BASIC},
+
+chatCurrentUser:{
+backgroundColor:colors.SECONDARY},
 
 chatText:{
 backgroundColor:'transparent'}});exports.default=
@@ -78409,6 +78454,45 @@ backgroundColor:'transparent'}});exports.default=
 
 Row;
 }, 525, null, "telegram/src/components/ListMessages/Row.js");
+__d(/* telegram/src/components/ListMessages/Input.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
+var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
+var _reactNative=require(43            ); // 43 = react-native
+
+
+
+
+var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
+
+_Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
+
+var Input=function Input(props){
+
+return(
+_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.TextInput,{
+style:styles.textInput,
+placeholder:'Message',
+autoCapitalize:'none',
+autoCorrect:false})));
+
+
+
+};
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flex:0},
+
+
+textInput:{
+height:height*0.07,
+padding:width*0.02,
+backgroundColor:colors.BASIC}});exports.default=
+
+
+
+Input;
+}, 559, null, "telegram/src/components/ListMessages/Input.js");
 __d(/* telegram/src/images/arrow_back.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"bdb79a342d2be1a9bdd8e65eb16420e7","name":"arrow_back","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
 }, 526, null, "telegram/src/images/arrow_back.png");
 ;require(217);

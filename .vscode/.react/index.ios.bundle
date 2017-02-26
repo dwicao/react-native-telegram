@@ -78262,6 +78262,8 @@ var color=Math.floor(Math.random()*colors.length);
 return colors[color];
 }
 var PRIMARY=exports.PRIMARY='#6084A5';
+var SECONDARY=exports.SECONDARY='#efffde';
+var THIRD=exports.THIRD='#CCCCCC';
 var BASIC=exports.BASIC='white';
 var BORDER=exports.BORDER='rgba(0, 0, 0, 0.1)';
 }, 514, null, "telegram/src/colors/index.js");
@@ -78601,8 +78603,10 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
+
 var _TopBar=require(517        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 517 = ../TopBar
 var _Row=require(525    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 525 = ./Row
+var _Input=require(559      );var _Input2=babelHelpers.interopRequireDefault(_Input); // 559 = ./Input
 var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
 var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils); // 515 = ../../utils
 var _arrow_back=require(526                          );var _arrow_back2=babelHelpers.interopRequireDefault(_arrow_back); // 526 = ../../images/arrow_back.png
@@ -78652,7 +78656,10 @@ EXAMPLE_NAME)),
 _react2.default.createElement(_reactNative.ListView,{
 style:styles.listview,
 dataSource:dataSource,
-renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}})));
+renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}}),
+
+_react2.default.createElement(_reactNative.KeyboardAvoidingView,{style:{flex:0},behavior:'position'},
+_react2.default.createElement(_Input2.default,null))));
 
 
 
@@ -78665,7 +78672,7 @@ var styles=_reactNative.StyleSheet.create({
 container:{
 flex:1,
 marginBottom:BOTTOM_BLANK,
-backgroundColor:'#CCCCCC'},
+backgroundColor:colors.THIRD},
 
 listview:{
 flex:1},
@@ -78701,8 +78708,7 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils);var _Dimensions$get= // 515 = ../../utils
+var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78723,7 +78729,7 @@ var chat=email===userStatus.email?
 return(
 _react2.default.createElement(_reactNative.View,{style:container},
 _react2.default.createElement(_reactNative.View,{style:chat},
-_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test ini adalah'))));
+_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Halo Dunia'))));
 
 
 
@@ -78751,10 +78757,10 @@ padding:width*0.02,
 borderRadius:width*0.02},
 
 chatOtherPeople:{
-backgroundColor:'white'},
+backgroundColor:colors.BASIC},
 
 chatCurrentUser:{
-backgroundColor:'#efffde'},
+backgroundColor:colors.SECONDARY},
 
 chatText:{
 backgroundColor:'transparent'}});exports.default=
@@ -78763,6 +78769,45 @@ backgroundColor:'transparent'}});exports.default=
 
 Row;
 }, 525, null, "telegram/src/components/ListMessages/Row.js");
+__d(/* telegram/src/components/ListMessages/Input.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
+var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
+var _reactNative=require(43            ); // 43 = react-native
+
+
+
+
+var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
+
+_Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
+
+var Input=function Input(props){
+
+return(
+_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.TextInput,{
+style:styles.textInput,
+placeholder:'Message',
+autoCapitalize:'none',
+autoCorrect:false})));
+
+
+
+};
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flex:0},
+
+
+textInput:{
+height:height*0.07,
+padding:width*0.02,
+backgroundColor:colors.BASIC}});exports.default=
+
+
+
+Input;
+}, 559, null, "telegram/src/components/ListMessages/Input.js");
 __d(/* telegram/src/images/arrow_back.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"bdb79a342d2be1a9bdd8e65eb16420e7","name":"arrow_back","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
 }, 526, null, "telegram/src/images/arrow_back.png");
 ;require(217);
