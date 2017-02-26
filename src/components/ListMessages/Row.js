@@ -17,8 +17,13 @@ const Row = props => {
 		userStatus,
 	} = props;
 
-	const container = (email === userStatus.email) ? styles.containerCurrentUser : styles.containerOtherPeople;
-	const chat = (email === userStatus.email) ? styles.chatCurrentUser : styles.chatOtherPeople;
+	const container = (email === userStatus.email) ? 
+		[styles.container, styles.containerCurrentUser] :
+		[styles.container, styles.containerOtherPeople];
+
+	const chat = (email === userStatus.email) ?
+		[styles. chat, styles.chatCurrentUser] :
+		[styles.chat, styles.chatOtherPeople];
 	
 	return (
 		<View style={container}>
@@ -34,29 +39,27 @@ const Row = props => {
 const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
 
 const styles = StyleSheet.create({
-	containerCurrentUser: {
+	container: {
 		flex: 1,
-		justifyContent: 'flex-end',
 		flexDirection: 'row',
 		marginVertical: width * 0.01,
 		marginHorizontal: width * 0.02,
+	},
+	containerCurrentUser: {
+		justifyContent: 'flex-end',
 	},
 	containerOtherPeople: {
-		flex: 1,
 		justifyContent: 'flex-start',
-		flexDirection: 'row',
-		marginVertical: width * 0.01,
-		marginHorizontal: width * 0.02,
+	},
+	chat: {
+		padding: width * 0.02,
+		borderRadius: width * 0.02,
 	},
 	chatOtherPeople: {
-		padding: width * 0.02,
 		backgroundColor: 'white',
-		borderRadius: width * 0.02,
 	},
 	chatCurrentUser: {
-		padding: width * 0.02,
 		backgroundColor: '#efffde',
-		borderRadius: width * 0.02,
 	},
 	chatText: {
 		backgroundColor: 'transparent',

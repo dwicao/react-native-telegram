@@ -78712,8 +78712,13 @@ email=
 
 props.email,userStatus=props.userStatus;
 
-var container=email===userStatus.email?styles.containerCurrentUser:styles.containerOtherPeople;
-var chat=email===userStatus.email?styles.chatCurrentUser:styles.chatOtherPeople;
+var container=email===userStatus.email?
+[styles.container,styles.containerCurrentUser]:
+[styles.container,styles.containerOtherPeople];
+
+var chat=email===userStatus.email?
+[styles.chat,styles.chatCurrentUser]:
+[styles.chat,styles.chatOtherPeople];
 
 return(
 _react2.default.createElement(_reactNative.View,{style:container},
@@ -78729,29 +78734,27 @@ _react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test in
 var BOTTOM_BLANK=_reactNative.Platform.OS==='ios'?height*0.035:0;
 
 var styles=_reactNative.StyleSheet.create({
-containerCurrentUser:{
+container:{
 flex:1,
-justifyContent:'flex-end',
 flexDirection:'row',
 marginVertical:width*0.01,
 marginHorizontal:width*0.02},
+
+containerCurrentUser:{
+justifyContent:'flex-end'},
 
 containerOtherPeople:{
-flex:1,
-justifyContent:'flex-start',
-flexDirection:'row',
-marginVertical:width*0.01,
-marginHorizontal:width*0.02},
+justifyContent:'flex-start'},
+
+chat:{
+padding:width*0.02,
+borderRadius:width*0.02},
 
 chatOtherPeople:{
-padding:width*0.02,
-backgroundColor:'white',
-borderRadius:width*0.02},
+backgroundColor:'white'},
 
 chatCurrentUser:{
-padding:width*0.02,
-backgroundColor:'#efffde',
-borderRadius:width*0.02},
+backgroundColor:'#efffde'},
 
 chatText:{
 backgroundColor:'transparent'}});exports.default=
