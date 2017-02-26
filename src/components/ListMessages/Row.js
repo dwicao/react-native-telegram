@@ -12,16 +12,19 @@ import * as utils from '../../utils';
 const { width, height } = Dimensions.get('window');
 
 const Row = props => {
+	const {
+		email,
+		userStatus,
+	} = props;
+
+	const container = (email === userStatus.email) ? styles.containerCurrentUser : styles.containerOtherPeople;
+	const chat = (email === userStatus.email) ? styles.chatCurrentUser : styles.chatOtherPeople;
+	
 	return (
-		<View style={styles.container}>
-			<View style={[styles.peopleCircle, {backgroundColor: colors.random()}]}>
-				<Text style={styles.shortText}>
-					{utils.firstLetter(props.name)}
-				</Text>
-			</View>
-			<View style={styles.chatBubble}>
+		<View style={container}>
+			<View style={chat}>
 				<Text style={styles.chatText}>
-					Test ini adalah rwefdf dsfsdf sasdsad sadasd asd asdas sadasd 
+					Test ini adalah
 				</Text>
 			</View>
 		</View>
@@ -31,30 +34,28 @@ const Row = props => {
 const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
 
 const styles = StyleSheet.create({
-	container: {
+	containerCurrentUser: {
 		flex: 1,
-		alignItems: 'center',
+		justifyContent: 'flex-end',
 		flexDirection: 'row',
 		marginVertical: width * 0.01,
-		marginHorizontal: width * 0.025,
+		marginHorizontal: width * 0.02,
 	},
-	peopleCircle: {
-		marginRight: width * 0.02,
-		alignItems: 'center',
-		justifyContent: 'center',
-		width: width * 0.11,
-		height: width * 0.11,
-		borderRadius: width * 0.3,
-	},
-	shortText: {
-		color: colors.BASIC,
-		fontWeight: 'bold',
-		fontSize: width * 0.05,
-	},
-	chatBubble: {
+	containerOtherPeople: {
 		flex: 1,
+		justifyContent: 'flex-start',
+		flexDirection: 'row',
+		marginVertical: width * 0.01,
+		marginHorizontal: width * 0.02,
+	},
+	chatOtherPeople: {
 		padding: width * 0.02,
 		backgroundColor: 'white',
+		borderRadius: width * 0.02,
+	},
+	chatCurrentUser: {
+		padding: width * 0.02,
+		backgroundColor: '#efffde',
 		borderRadius: width * 0.02,
 	},
 	chatText: {

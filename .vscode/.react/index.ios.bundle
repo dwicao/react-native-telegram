@@ -78504,8 +78504,8 @@ email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
-name:'Lutfi Dwica',
-email:'lutfi@example.com',
+name:'Elisha',
+email:'elisha@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
@@ -78549,13 +78549,13 @@ email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
-name:'Lutfi Dwica',
-email:'lutfi@example.com',
+name:'Test',
+email:'test@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
-name:'Lutfi Dwica',
-email:'lutfi@example.com',
+name:'mantap',
+email:'mantap@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
@@ -78652,7 +78652,7 @@ EXAMPLE_NAME)),
 _react2.default.createElement(_reactNative.ListView,{
 style:styles.listview,
 dataSource:dataSource,
-renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,data);}})));
+renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}})));
 
 
 
@@ -78706,16 +78706,19 @@ var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
-var Row=function Row(props){
+var Row=function Row(props){var
+
+email=
+
+props.email,userStatus=props.userStatus;
+
+var container=email===userStatus.email?styles.containerCurrentUser:styles.containerOtherPeople;
+var chat=email===userStatus.email?styles.chatCurrentUser:styles.chatOtherPeople;
+
 return(
-_react2.default.createElement(_reactNative.View,{style:styles.container},
-_react2.default.createElement(_reactNative.View,{style:[styles.peopleCircle,{backgroundColor:colors.random()}]},
-_react2.default.createElement(_reactNative.Text,{style:styles.shortText},
-utils.firstLetter(props.name))),
-
-
-_react2.default.createElement(_reactNative.View,{style:styles.chatBubble},
-_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test ini adalah rwefdf dsfsdf sasdsad sadasd asd asdas sadasd'))));
+_react2.default.createElement(_reactNative.View,{style:container},
+_react2.default.createElement(_reactNative.View,{style:chat},
+_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test ini adalah'))));
 
 
 
@@ -78726,30 +78729,28 @@ _react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Test in
 var BOTTOM_BLANK=_reactNative.Platform.OS==='ios'?height*0.035:0;
 
 var styles=_reactNative.StyleSheet.create({
-container:{
+containerCurrentUser:{
 flex:1,
-alignItems:'center',
+justifyContent:'flex-end',
 flexDirection:'row',
 marginVertical:width*0.01,
-marginHorizontal:width*0.025},
+marginHorizontal:width*0.02},
 
-peopleCircle:{
-marginRight:width*0.02,
-alignItems:'center',
-justifyContent:'center',
-width:width*0.11,
-height:width*0.11,
-borderRadius:width*0.3},
-
-shortText:{
-color:colors.BASIC,
-fontWeight:'bold',
-fontSize:width*0.05},
-
-chatBubble:{
+containerOtherPeople:{
 flex:1,
+justifyContent:'flex-start',
+flexDirection:'row',
+marginVertical:width*0.01,
+marginHorizontal:width*0.02},
+
+chatOtherPeople:{
 padding:width*0.02,
 backgroundColor:'white',
+borderRadius:width*0.02},
+
+chatCurrentUser:{
+padding:width*0.02,
+backgroundColor:'#efffde',
 borderRadius:width*0.02},
 
 chatText:{

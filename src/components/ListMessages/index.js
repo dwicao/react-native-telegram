@@ -59,7 +59,7 @@ const ListMessages = props => {
 			<ListView
 			  style={styles.listview}
 			  dataSource={dataSource}
-			  renderRow={(data) => <Row {...data} />}
+			  renderRow={(data) => <Row {...data} {...props} />}
 			/>
 		</View>
 	)
