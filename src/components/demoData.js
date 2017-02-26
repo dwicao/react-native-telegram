@@ -1,70 +1,77 @@
 export default data = [
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 	{
 		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
-	},
-	{
-		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
-	},
-	{
-		name: 'Lutfi Dwica',
-		previewMessage: 'Syalalal mantap jaya',
+		email: 'lutfi@example.com',
+		previewMessage: 'Hari ini minggu kan? ntap banget haahahha',
 	},
 ];

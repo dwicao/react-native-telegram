@@ -11,6 +11,7 @@ class Container extends Component {
 		const myState = {
 			telegram: this.props.telegram,
 			actions: this.props.actions,
+			userStatus: this.props.userStatus,
 		};
 
 		const renderChildren = Array.isArray(children) ?
@@ -37,12 +38,14 @@ const styles = StyleSheet.create({
 
 Container.propTypes = {
 	telegram: PropTypes.array.isRequired,
+	userStatus: PropTypes.object.isRequired,
 	actions: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {
 	return {
 		telegram: state.telegram,
+		userStatus: state.userStatus,
 	};
 }
 

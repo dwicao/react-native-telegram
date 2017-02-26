@@ -15,7 +15,7 @@ import * as utils from '../../utils';
 import imgArrowBack from '../../images/arrow_back.png';
 import demoData from '../demoData';
 
-const EXAMPLE_NAME = 'Lutfi Dwica';
+const EXAMPLE_NAME = 'React Native Indo Jaya';
 const { width, height } = Dimensions.get('window');
 
 const ListMessages = props => {
