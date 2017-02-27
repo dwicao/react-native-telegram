@@ -7,7 +7,6 @@ import {
 	StyleSheet,
 	ListView,
 	Platform,
-	KeyboardAvoidingView,
 } from 'react-native';
 import TopBar from '../TopBar';
 import Row from './Row';
@@ -63,9 +62,7 @@ const ListMessages = props => {
 			  dataSource={dataSource}
 			  renderRow={(data) => <Row {...data} {...props} />}
 			/>
-			<KeyboardAvoidingView style={{flex: 0}} behavior='position'>
-				<Input />
-			</KeyboardAvoidingView>
+			<Input />
 		</View>
 	)
 };

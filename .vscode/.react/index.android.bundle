@@ -1600,8 +1600,8 @@ __d(/* telegram/index.android.js */function(global, require, module, exports) {v
 var _reactNative=require(43            ); // 43 = react-native
 var _reactRedux=require(404          ); // 404 = react-redux
 var _configureStore=require(441                         );var _configureStore2=babelHelpers.interopRequireDefault(_configureStore); // 441 = ./src/store/configureStore
-var _components=require(458                );var _components2=babelHelpers.interopRequireDefault(_components); // 458 = ./src/components/
-var _telegramActions=require(511                            );var actions=babelHelpers.interopRequireWildcard(_telegramActions); // 511 = ./src/actions/telegramActions
+var _components=require(459                );var _components2=babelHelpers.interopRequireDefault(_components); // 459 = ./src/components/
+var _telegramActions=require(512                            );var actions=babelHelpers.interopRequireWildcard(_telegramActions); // 512 = ./src/actions/telegramActions
 
 var store=(0,_configureStore2.default)();var
 
@@ -5377,9 +5377,9 @@ var ReactNative={
 get ActivityIndicator(){return require(44                 );}, // 44 = ActivityIndicator
 get ART(){return require(177             );}, // 177 = ReactNativeART
 get Button(){return require(183     );}, // 183 = Button
-get DatePickerIOS(){return require(536            );}, // 536 = DatePickerIOS
-get DrawerLayoutAndroid(){return require(537                  );}, // 537 = DrawerLayoutAndroid
-get Image(){return require(534    );}, // 534 = Image
+get DatePickerIOS(){return require(539            );}, // 539 = DatePickerIOS
+get DrawerLayoutAndroid(){return require(540                  );}, // 540 = DrawerLayoutAndroid
+get Image(){return require(537    );}, // 537 = Image
 get ImageEditor(){return require(272          );}, // 272 = ImageEditor
 get ImageStore(){return require(273         );}, // 273 = ImageStore
 get KeyboardAvoidingView(){return require(274                   );}, // 274 = KeyboardAvoidingView
@@ -5387,33 +5387,33 @@ get ListView(){return require(276       );}, // 276 = ListView
 get MapView(){return require(281      );}, // 281 = MapView
 get Modal(){return require(282    );}, // 282 = Modal
 get Navigator(){return require(306        );}, // 306 = Navigator
-get NavigatorIOS(){return require(540           );}, // 540 = NavigatorIOS
+get NavigatorIOS(){return require(543           );}, // 543 = NavigatorIOS
 get Picker(){return require(326     );}, // 326 = Picker
-get PickerIOS(){return require(541        );}, // 541 = PickerIOS
-get ProgressBarAndroid(){return require(543                 );}, // 543 = ProgressBarAndroid
-get ProgressViewIOS(){return require(544              );}, // 544 = ProgressViewIOS
+get PickerIOS(){return require(544        );}, // 544 = PickerIOS
+get ProgressBarAndroid(){return require(546                 );}, // 546 = ProgressBarAndroid
+get ProgressViewIOS(){return require(547              );}, // 547 = ProgressViewIOS
 get ScrollView(){return require(213         );}, // 213 = ScrollView
-get SegmentedControlIOS(){return require(545                  );}, // 545 = SegmentedControlIOS
+get SegmentedControlIOS(){return require(548                  );}, // 548 = SegmentedControlIOS
 get Slider(){return require(332     );}, // 332 = Slider
-get SnapshotViewIOS(){return require(546              );}, // 546 = SnapshotViewIOS
+get SnapshotViewIOS(){return require(549              );}, // 549 = SnapshotViewIOS
 get Switch(){return require(334     );}, // 334 = Switch
-get RecyclerViewBackedScrollView(){return require(538                           );}, // 538 = RecyclerViewBackedScrollView
+get RecyclerViewBackedScrollView(){return require(541                           );}, // 541 = RecyclerViewBackedScrollView
 get RefreshControl(){return require(335             );}, // 335 = RefreshControl
 get StatusBar(){return require(336        );}, // 336 = StatusBar
 get SwipeableListView(){return require(337                );}, // 337 = SwipeableListView
-get TabBarIOS(){return require(547        );}, // 547 = TabBarIOS
+get TabBarIOS(){return require(550        );}, // 550 = TabBarIOS
 get Text(){return require(184   );}, // 184 = Text
 get TextInput(){return require(342        );}, // 342 = TextInput
-get ToastAndroid(){return require(530           );}, // 530 = ToastAndroid
-get ToolbarAndroid(){return require(548             );}, // 548 = ToolbarAndroid
+get ToastAndroid(){return require(533           );}, // 533 = ToastAndroid
+get ToolbarAndroid(){return require(551             );}, // 551 = ToolbarAndroid
 get Touchable(){return require(185        );}, // 185 = Touchable
 get TouchableHighlight(){return require(294                 );}, // 294 = TouchableHighlight
-get TouchableNativeFeedback(){return require(532                      );}, // 532 = TouchableNativeFeedback
+get TouchableNativeFeedback(){return require(535                      );}, // 535 = TouchableNativeFeedback
 get TouchableOpacity(){return require(192               );}, // 192 = TouchableOpacity
 get TouchableWithoutFeedback(){return require(268                       );}, // 268 = TouchableWithoutFeedback
 get View(){return require(120   );}, // 120 = View
-get ViewPagerAndroid(){return require(549               );}, // 549 = ViewPagerAndroid
-get WebView(){return require(550      );}, // 550 = WebView
+get ViewPagerAndroid(){return require(552               );}, // 552 = ViewPagerAndroid
+get WebView(){return require(553      );}, // 553 = WebView
 
 
 get ActionSheetIOS(){return require(353             );}, // 353 = ActionSheetIOS
@@ -5424,10 +5424,10 @@ get Animated(){return require(193       );}, // 193 = Animated
 get AppRegistry(){return require(355          );}, // 355 = AppRegistry
 get AppState(){return require(86        );}, // 86 = AppState
 get AsyncStorage(){return require(363           );}, // 363 = AsyncStorage
-get BackAndroid(){return require(551          );}, // 551 = BackAndroid
+get BackAndroid(){return require(554          );}, // 554 = BackAndroid
 get CameraRoll(){return require(364         );}, // 364 = CameraRoll
 get Clipboard(){return require(365        );}, // 365 = Clipboard
-get DatePickerAndroid(){return require(552                );}, // 552 = DatePickerAndroid
+get DatePickerAndroid(){return require(555                );}, // 555 = DatePickerAndroid
 get Dimensions(){return require(103         );}, // 103 = Dimensions
 get Easing(){return require(209     );}, // 209 = Easing
 get I18nManager(){return require(305          );}, // 305 = I18nManager
@@ -5443,21 +5443,21 @@ get PanResponder(){return require(320           );}, // 320 = PanResponder
 get PermissionsAndroid(){return require(391                 );}, // 391 = PermissionsAndroid
 get PixelRatio(){return require(102         );}, // 102 = PixelRatio
 get PushNotificationIOS(){return require(392                  );}, // 392 = PushNotificationIOS
-get Settings(){return require(554       );}, // 554 = Settings
+get Settings(){return require(557       );}, // 557 = Settings
 get Share(){return require(394    );}, // 394 = Share
-get StatusBarIOS(){return require(528           );}, // 528 = StatusBarIOS
+get StatusBarIOS(){return require(531           );}, // 531 = StatusBarIOS
 get StyleSheet(){return require(101         );}, // 101 = StyleSheet
 get Systrace(){return require(59        );}, // 59 = Systrace
-get TimePickerAndroid(){return require(555                );}, // 555 = TimePickerAndroid
+get TimePickerAndroid(){return require(558                );}, // 558 = TimePickerAndroid
 get UIManager(){return require(97         );}, // 97 = UIManager
 get Vibration(){return require(396        );}, // 396 = Vibration
-get VibrationIOS(){return require(556           );}, // 556 = VibrationIOS
+get VibrationIOS(){return require(559           );}, // 559 = VibrationIOS
 
 
 get DeviceEventEmitter(){return require(82                     );}, // 82 = RCTDeviceEventEmitter
 get NativeAppEventEmitter(){return require(245                       );}, // 245 = RCTNativeAppEventEmitter
 get NativeModules(){return require(54             );}, // 54 = NativeModules
-get Platform(){return require(527       );}, // 527 = Platform
+get Platform(){return require(530       );}, // 530 = Platform
 get processColor(){return require(95            );}, // 95 = processColor
 get requireNativeComponent(){return require(129                     );}, // 129 = requireNativeComponent
 
@@ -5565,7 +5565,7 @@ __d(/* ActivityIndicator */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
@@ -7034,7 +7034,7 @@ __d(/* TextInputState */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var UIManager=require(97         ); // 97 = UIManager
 
 var TextInputState={
@@ -7118,7 +7118,7 @@ select:function select(obj){return obj.android;}};
 
 
 module.exports=Platform;
-}, 527, null, "Platform");
+}, 530, null, "Platform");
 __d(/* NativeModules */function(global, require, module, exports) {
 
 
@@ -9162,7 +9162,7 @@ __d(/* HMRClient */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
 
 
@@ -9224,7 +9224,7 @@ throw new Error(error);
 };
 activeWS.onmessage=function(_ref){var data=_ref.data;
 
-var HMRLoadingView=require(529             ); // 529 = HMRLoadingView
+var HMRLoadingView=require(532             ); // 532 = HMRLoadingView
 
 data=JSON.parse(data);
 
@@ -9307,7 +9307,7 @@ __d(/* WebSocket */function(global, require, module, exports) {
 'use strict';
 
 var NativeEventEmitter=require(77                  ); // 77 = NativeEventEmitter
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var RCTWebSocketModule=require(54             ).WebSocketModule; // 54 = NativeModules
 var WebSocketEvent=require(88              ); // 88 = WebSocketEvent
 
@@ -9514,7 +9514,7 @@ __d(/* NativeEventEmitter */function(global, require, module, exports) {
 'use strict';
 
 var EventEmitter=require(78            ); // 78 = EventEmitter
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var RCTDeviceEventEmitter=require(82                     ); // 82 = RCTDeviceEventEmitter
 var invariant=require(19                  );var // 19 = fbjs/lib/invariant
 
@@ -10026,7 +10026,7 @@ eventType){
 if(eventType){
 if(eventType.lastIndexOf('statusBar',0)===0){
 console.warn('`%s` event should be registered via the StatusBarIOS module',eventType);
-return require(528           ); // 528 = StatusBarIOS
+return require(531           ); // 531 = StatusBarIOS
 }
 if(eventType.lastIndexOf('keyboard',0)===0){
 console.warn('`%s` event should be registered via the Keyboard module',eventType);
@@ -10086,7 +10086,7 @@ __d(/* StatusBarIOS */function(global, require, module, exports) {
 var NativeEventEmitter=require(77                  ); // 77 = NativeEventEmitter
 
 module.exports=new NativeEventEmitter('StatusBarManager');
-}, 528, null, "StatusBarIOS");
+}, 531, null, "StatusBarIOS");
 __d(/* Keyboard */function(global, require, module, exports) {
 
 
@@ -11121,7 +11121,7 @@ __d(/* HMRLoadingView */function(global, require, module, exports) {
 
 'use strict';
 
-var ToastAndroid=require(530           ); // 530 = ToastAndroid
+var ToastAndroid=require(533           ); // 533 = ToastAndroid
 
 var TOAST_SHORT_DELAY=2000;var
 
@@ -11145,7 +11145,7 @@ HMRLoadingView._showing=false;
 
 
 module.exports=HMRLoadingView;
-}, 529, null, "HMRLoadingView");
+}, 532, null, "HMRLoadingView");
 __d(/* ToastAndroid */function(global, require, module, exports) {
 
 
@@ -11206,7 +11206,7 @@ RCTToastAndroid.showWithGravity(message,duration,gravity);
 
 
 module.exports=ToastAndroid;
-}, 530, null, "ToastAndroid");
+}, 533, null, "ToastAndroid");
 __d(/* defineLazyObjectProperty */function(global, require, module, exports) {
 
 
@@ -11283,7 +11283,7 @@ __d(/* UIManager */function(global, require, module, exports) {
 'use strict';
 
 var NativeModules=require(54             ); // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var defineLazyObjectProperty=require(96                        ); // 96 = defineLazyObjectProperty
 var findNodeHandle=require(98              ); // 98 = findNodeHandle
@@ -11865,7 +11865,7 @@ __d(/* Dimensions */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var UIManager=require(97         ); // 97 = UIManager
 var RCTDeviceEventEmitter=require(82                     ); // 82 = RCTDeviceEventEmitter
 
@@ -12948,7 +12948,7 @@ __d(/* processColor */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var normalizeColor=require(46              ); // 46 = normalizeColor
 
@@ -12992,7 +12992,7 @@ __d(/* processTransform */function(global, require, module, exports) {
 'use strict';
 
 var MatrixMath=require(117         ); // 117 = MatrixMath
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
 var stringifySafe=require(72             ); // 72 = stringifySafe
@@ -13897,7 +13897,7 @@ __d(/* View */function(global, require, module, exports) {
 var EdgeInsetsPropType=require(121                 ); // 121 = EdgeInsetsPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
 var NativeModules=require(54             ); // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var ReactNativeStyleAttributes=require(104                         ); // 104 = ReactNativeStyleAttributes
 var ReactNativeViewAttributes=require(126                        ); // 126 = ReactNativeViewAttributes
@@ -21355,7 +21355,7 @@ __d(/* AssetSourceResolver */function(global, require, module, exports) {
 
 
 var PixelRatio=require(102         ); // 102 = PixelRatio
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var assetPathUtils=require(175                                    ); // 175 = ../../local-cli/bundle/assetPathUtils
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
@@ -22957,11 +22957,11 @@ __d(/* Button */function(global, require, module, exports) {
 'use strict';
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var Text=require(184   ); // 184 = Text
-var TouchableNativeFeedback=require(532                      ); // 532 = TouchableNativeFeedback
+var TouchableNativeFeedback=require(535                      ); // 535 = TouchableNativeFeedback
 var TouchableOpacity=require(192               ); // 192 = TouchableOpacity
 var View=require(120   ); // 120 = View
 
@@ -23129,7 +23129,7 @@ __d(/* Text */function(global, require, module, exports) {
 
 var EdgeInsetsPropType=require(121                 ); // 121 = EdgeInsetsPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var ReactNativeViewAttributes=require(126                        ); // 126 = ReactNativeViewAttributes
 var StyleSheetPropType=require(127                 ); // 127 = StyleSheetPropType
@@ -23484,10 +23484,10 @@ __d(/* Touchable */function(global, require, module, exports) {
 'use strict';
 
 var BoundingDimensions=require(186                 ); // 186 = BoundingDimensions
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var Position=require(187       ); // 187 = Position
 var React=require(100    ); // 100 = React
-var TVEventHandler=require(531             ); // 531 = TVEventHandler
+var TVEventHandler=require(534             ); // 534 = TVEventHandler
 var TouchEventUtils=require(189                       ); // 189 = fbjs/lib/TouchEventUtils
 var UIManager=require(97         ); // 97 = UIManager
 var View=require(120   ); // 120 = View
@@ -24404,7 +24404,7 @@ TVEventHandler.prototype.enable=function(component,callback){};
 TVEventHandler.prototype.disable=function(){};
 
 module.exports=TVEventHandler;
-}, 531, null, "TVEventHandler");
+}, 534, null, "TVEventHandler");
 __d(/* fbjs/lib/TouchEventUtils.js */function(global, require, module, exports) {"use strict";
 
 
@@ -24487,7 +24487,7 @@ __d(/* TouchableNativeFeedback */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var ReactNative=require(215          ); // 215 = ReactNative
 var Touchable=require(185        ); // 185 = Touchable
@@ -24739,7 +24739,7 @@ childProps);
 
 
 module.exports=TouchableNativeFeedback;
-}, 532, null, "TouchableNativeFeedback");
+}, 535, null, "TouchableNativeFeedback");
 __d(/* ReactNative */function(global, require, module, exports) {
 
 
@@ -25923,7 +25923,7 @@ __d(/* Alert */function(global, require, module, exports) {
 'use strict';
 
 var AlertIOS=require(225       ); // 225 = AlertIOS
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var DialogModuleAndroid=require(54             ).DialogManagerAndroid;var // 54 = NativeModules
 
 
@@ -27512,7 +27512,7 @@ __d(/* XMLHttpRequest */function(global, require, module, exports) {
 'use strict';
 
 var EventTarget=require(89                 ); // 89 = event-target-shim
-var RCTNetworking=require(533            ); // 533 = RCTNetworking
+var RCTNetworking=require(536            ); // 536 = RCTNetworking
 
 var base64=require(93         ); // 93 = base64-js
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
@@ -28153,7 +28153,7 @@ return part;
 }
 
 module.exports=new RCTNetworking();
-}, 533, null, "RCTNetworking");
+}, 536, null, "RCTNetworking");
 __d(/* FormData */function(global, require, module, exports) {
 
 
@@ -29498,7 +29498,7 @@ __d(/* setupDevtools */function(global, require, module, exports) {
 'use strict';
 
 var NativeModules=require(54             ); // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 function setupDevtools(){
 var messageListeners=[];
@@ -33353,7 +33353,7 @@ __d(/* Animated */function(global, require, module, exports) {
 
 
 var AnimatedImplementation=require(194                     ); // 194 = AnimatedImplementation
-var Image=require(534    ); // 534 = Image
+var Image=require(537    ); // 537 = Image
 var Text=require(184   ); // 184 = Text
 var View=require(120   ); // 120 = View
 var ScrollView=require(213         ); // 213 = ScrollView
@@ -37175,7 +37175,7 @@ var merge=require(123    ); // 123 = merge
 var requireNativeComponent=require(129                     ); // 129 = requireNativeComponent
 var resolveAssetSource=require(172                 ); // 172 = resolveAssetSource
 var Set=require(196  ); // 196 = Set
-var filterObject=require(535                    ); // 535 = fbjs/lib/filterObject
+var filterObject=require(538                    ); // 538 = fbjs/lib/filterObject
 
 var PropTypes=React.PropTypes;var
 
@@ -37502,7 +37502,7 @@ var RKImage=requireNativeComponent('RCTImageView',Image,cfg);
 var RCTTextInlineImage=requireNativeComponent('RCTTextInlineImage',Image,cfg);
 
 module.exports=Image;
-}, 534, null, "Image");
+}, 537, null, "Image");
 __d(/* fbjs/lib/filterObject.js */function(global, require, module, exports) {
 
 
@@ -37554,7 +37554,7 @@ return result;
 }
 
 module.exports=filterObject;
-}, 535, null, "fbjs/lib/filterObject.js");
+}, 538, null, "fbjs/lib/filterObject.js");
 __d(/* ScrollView */function(global, require, module, exports) {
 
 
@@ -37570,7 +37570,7 @@ __d(/* ScrollView */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var EdgeInsetsPropType=require(121                 ); // 121 = EdgeInsetsPropType
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var PointPropType=require(214            ); // 214 = PointPropType
 var React=require(100    ); // 100 = React
 var ReactNative=require(215          ); // 215 = ReactNative
@@ -38230,7 +38230,7 @@ __d(/* ScrollResponder */function(global, require, module, exports) {
 'use strict';
 
 var Dimensions=require(103         ); // 103 = Dimensions
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var Keyboard=require(84        ); // 84 = Keyboard
 var ReactNative=require(215          ); // 215 = ReactNative
 var Subscribable=require(265           ); // 265 = Subscribable
@@ -38940,7 +38940,7 @@ margin:20}});
 
 
 module.exports=DummyDatePickerIOS;
-}, 536, null, "DatePickerIOS");
+}, 539, null, "DatePickerIOS");
 __d(/* DrawerLayoutAndroid */function(global, require, module, exports) {
 
 
@@ -38955,7 +38955,7 @@ __d(/* DrawerLayoutAndroid */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var ReactNative=require(215          ); // 215 = ReactNative
 var StatusBar=require(336        ); // 336 = StatusBar
@@ -39268,7 +39268,7 @@ backgroundColor:'rgba(0, 0, 0, 0.251)'}});
 var AndroidDrawerLayout=requireNativeComponent('AndroidDrawerLayout',DrawerLayoutAndroid);
 
 module.exports=DrawerLayoutAndroid;
-}, 537, null, "DrawerLayoutAndroid");
+}, 540, null, "DrawerLayoutAndroid");
 __d(/* StatusBar */function(global, require, module, exports) {
 
 
@@ -39284,7 +39284,7 @@ __d(/* StatusBar */function(global, require, module, exports) {
 
 var React=require(100    ); // 100 = React
 var ColorPropType=require(45             ); // 45 = ColorPropType
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var processColor=require(95            ); // 95 = processColor
 
@@ -39841,7 +39841,7 @@ __d(/* KeyboardAvoidingView */function(global, require, module, exports) {
 
 var Keyboard=require(84        ); // 84 = Keyboard
 var LayoutAnimation=require(275              ); // 275 = LayoutAnimation
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var TimerMixin=require(267                ); // 267 = react-timer-mixin
 var View=require(120   ); // 120 = View
@@ -41438,7 +41438,7 @@ __d(/* MapView */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var EdgeInsetsPropType=require(121                 ); // 121 = EdgeInsetsPropType
-var Image=require(534    ); // 534 = Image
+var Image=require(537    ); // 537 = Image
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
@@ -42002,7 +42002,7 @@ __d(/* Modal */function(global, require, module, exports) {
 
 var AppContainer=require(283           ); // 283 = AppContainer
 var I18nManager=require(305          ); // 305 = I18nManager
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
@@ -42323,7 +42323,7 @@ var Dimensions=require(103         ); // 103 = Dimensions
 var InspectorOverlay=require(285               ); // 285 = InspectorOverlay
 var InspectorPanel=require(290             ); // 290 = InspectorPanel
 var InspectorUtils=require(286             ); // 286 = InspectorUtils
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var Touchable=require(185        ); // 185 = Touchable
@@ -43799,7 +43799,7 @@ __d(/* NetworkOverlay */function(global, require, module, exports) {
 
 var ListView=require(276       ); // 276 = ListView
 var React=require(100    ); // 100 = React
-var RecyclerViewBackedScrollView=require(538                           ); // 538 = RecyclerViewBackedScrollView
+var RecyclerViewBackedScrollView=require(541                           ); // 541 = RecyclerViewBackedScrollView
 var ScrollView=require(213         ); // 213 = ScrollView
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var Text=require(184   ); // 184 = Text
@@ -44602,7 +44602,7 @@ RecyclerViewBackedScrollView);
 
 
 module.exports=RecyclerViewBackedScrollView;
-}, 538, null, "RecyclerViewBackedScrollView");
+}, 541, null, "RecyclerViewBackedScrollView");
 __d(/* WebSocketInterceptor */function(global, require, module, exports) {
 
 
@@ -45071,7 +45071,7 @@ __d(/* YellowBox */function(global, require, module, exports) {
 'use strict';
 
 var EventEmitter=require(78            ); // 78 = EventEmitter
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 
@@ -45604,7 +45604,7 @@ var PanResponder=require(320           ); // 320 = PanResponder
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var Subscribable=require(265           ); // 265 = Subscribable
-var TVEventHandler=require(531             ); // 531 = TVEventHandler
+var TVEventHandler=require(534             ); // 534 = TVEventHandler
 var TimerMixin=require(267                ); // 267 = react-timer-mixin
 var View=require(120   ); // 120 = View
 
@@ -52654,10 +52654,10 @@ __d(/* NavigatorBreadcrumbNavigationBar */function(global, require, module, expo
 
 'use strict';
 
-var NavigatorBreadcrumbNavigationBarStyles=require(539                                     ); // 539 = NavigatorBreadcrumbNavigationBarStyles
+var NavigatorBreadcrumbNavigationBarStyles=require(542                                     ); // 542 = NavigatorBreadcrumbNavigationBarStyles
 var NavigatorNavigationBarStylesAndroid=require(317                                  ); // 317 = NavigatorNavigationBarStylesAndroid
 var NavigatorNavigationBarStylesIOS=require(315                              ); // 315 = NavigatorNavigationBarStylesIOS
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
@@ -53160,7 +53160,7 @@ IconWidth:ICON_WIDTH,
 IconHeight:NAV_BAR_HEIGHT,
 SeparatorWidth:SEPARATOR_WIDTH,
 SeparatorHeight:NAV_BAR_HEIGHT};
-}, 539, null, "NavigatorBreadcrumbNavigationBarStyles");
+}, 542, null, "NavigatorBreadcrumbNavigationBarStyles");
 __d(/* NavigatorNavigationBarStylesAndroid */function(global, require, module, exports) {
 
 
@@ -54108,7 +54108,7 @@ __d(/* NavigatorNavigationBar */function(global, require, module, exports) {
 var React=require(100    ); // 100 = React
 var NavigatorNavigationBarStylesAndroid=require(317                                  ); // 317 = NavigatorNavigationBarStylesAndroid
 var NavigatorNavigationBarStylesIOS=require(315                              ); // 315 = NavigatorNavigationBarStylesIOS
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
 
@@ -56813,7 +56813,7 @@ __d(/* NavigatorIOS */function(global, require, module, exports) {
 'use strict';
 
 module.exports=require(130                ); // 130 = UnimplementedView
-}, 540, null, "NavigatorIOS");
+}, 543, null, "NavigatorIOS");
 __d(/* Picker */function(global, require, module, exports) {
 
 
@@ -56829,9 +56829,9 @@ __d(/* Picker */function(global, require, module, exports) {
 'use strict';var _class,_temp;
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
-var PickerIOS=require(541        ); // 541 = PickerIOS
-var PickerAndroid=require(542            ); // 542 = PickerAndroid
-var Platform=require(527       ); // 527 = Platform
+var PickerIOS=require(544        ); // 544 = PickerIOS
+var PickerAndroid=require(545            ); // 545 = PickerAndroid
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheetPropType=require(127                 ); // 127 = StyleSheetPropType
 var TextStylePropTypes=require(113                 ); // 113 = TextStylePropTypes
@@ -56998,7 +56998,7 @@ __d(/* PickerIOS */function(global, require, module, exports) {
 'use strict';
 
 module.exports=require(130                ); // 130 = UnimplementedView
-}, 541, null, "PickerIOS");
+}, 544, null, "PickerIOS");
 __d(/* PickerAndroid */function(global, require, module, exports) {
 
 
@@ -57167,7 +57167,7 @@ var DropdownPicker=requireNativeComponent('AndroidDropdownPicker',PickerAndroid,
 var DialogPicker=requireNativeComponent('AndroidDialogPicker',PickerAndroid,cfg);
 
 module.exports=PickerAndroid;
-}, 542, null, "PickerAndroid");
+}, 545, null, "PickerAndroid");
 __d(/* ProgressBarAndroid */function(global, require, module, exports) {
 
 
@@ -57298,7 +57298,7 @@ ProgressBarAndroid,
 
 
 module.exports=ProgressBarAndroid;
-}, 543, null, "ProgressBarAndroid");
+}, 546, null, "ProgressBarAndroid");
 __d(/* ProgressViewIOS */function(global, require, module, exports) {
 
 
@@ -57348,7 +57348,7 @@ fontSize:10}});
 
 
 module.exports=DummyProgressViewIOS;
-}, 544, null, "ProgressViewIOS");
+}, 547, null, "ProgressViewIOS");
 __d(/* SegmentedControlIOS */function(global, require, module, exports) {
 
 
@@ -57398,7 +57398,7 @@ fontSize:10}});
 
 
 module.exports=DummySegmentedControlIOS;
-}, 545, null, "SegmentedControlIOS");
+}, 548, null, "SegmentedControlIOS");
 __d(/* Slider */function(global, require, module, exports) {
 
 
@@ -57412,10 +57412,10 @@ __d(/* Slider */function(global, require, module, exports) {
 
 'use strict';
 
-var Image=require(534    ); // 534 = Image
+var Image=require(537    ); // 537 = Image
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
 var ReactNativeViewAttributes=require(126                        ); // 126 = ReactNativeViewAttributes
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
@@ -57617,7 +57617,7 @@ __d(/* SnapshotViewIOS */function(global, require, module, exports) {
 'use strict';
 
 module.exports=require(130                ); // 130 = UnimplementedView
-}, 546, null, "SnapshotViewIOS");
+}, 549, null, "SnapshotViewIOS");
 __d(/* Switch */function(global, require, module, exports) {
 
 
@@ -57633,7 +57633,7 @@ __d(/* Switch */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var StyleSheet=require(101         ); // 101 = StyleSheet
 var View=require(120   ); // 120 = View
@@ -57771,7 +57771,7 @@ __d(/* RefreshControl */function(global, require, module, exports) {
 
 var ColorPropType=require(45             ); // 45 = ColorPropType
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var View=require(120   ); // 120 = View
 
@@ -58707,7 +58707,7 @@ flex:1}});
 
 
 module.exports=DummyTabBarIOS;
-}, 547, null, "TabBarIOS");
+}, 550, null, "TabBarIOS");
 __d(/* TextInput */function(global, require, module, exports) {
 
 
@@ -58725,7 +58725,7 @@ var ColorPropType=require(45             ); // 45 = ColorPropType
 var DocumentSelectionState=require(343                     ); // 343 = DocumentSelectionState
 var EventEmitter=require(78            ); // 78 = EventEmitter
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var React=require(100    ); // 100 = React
 var ReactNative=require(215          ); // 215 = ReactNative
 var StyleSheet=require(101         ); // 101 = StyleSheet
@@ -60346,7 +60346,7 @@ __d(/* ToolbarAndroid */function(global, require, module, exports) {
 
 'use strict';
 
-var Image=require(534    ); // 534 = Image
+var Image=require(537    ); // 537 = Image
 var NativeMethodsMixin=require(47                  ); // 47 = NativeMethodsMixin
 var React=require(100    ); // 100 = React
 var ReactNativeViewAttributes=require(126                        ); // 126 = ReactNativeViewAttributes
@@ -60547,7 +60547,7 @@ nativeActions:true}});
 
 
 module.exports=ToolbarAndroid;
-}, 548, null, "ToolbarAndroid");
+}, 551, null, "ToolbarAndroid");
 __d(/* ViewPagerAndroid */function(global, require, module, exports) {
 
 
@@ -60794,7 +60794,7 @@ children:this._childrenWithOverridenStyle()})));
 var NativeAndroidViewPager=requireNativeComponent('AndroidViewPager',ViewPagerAndroid);
 
 module.exports=ViewPagerAndroid;
-}, 549, null, "ViewPagerAndroid");
+}, 552, null, "ViewPagerAndroid");
 __d(/* WebView */function(global, require, module, exports) {
 
 
@@ -61157,7 +61157,7 @@ height:20}});
 
 
 module.exports=WebView;
-}, 550, null, "WebView");
+}, 553, null, "WebView");
 __d(/* ActionSheetIOS */function(global, require, module, exports) {
 
 
@@ -61861,7 +61861,7 @@ var ReactNative=require(215          ); // 215 = ReactNative
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
 
 
-require(551          ); // 551 = BackAndroid
+require(554          ); // 554 = BackAndroid
 
 function renderApplication(
 RootComponent,
@@ -61972,7 +61972,7 @@ _backPressSubscriptions.delete(handler);
 
 
 module.exports=BackAndroid;
-}, 551, null, "BackAndroid");
+}, 554, null, "BackAndroid");
 __d(/* RCTRenderingPerf */function(global, require, module, exports) {
 
 
@@ -63370,7 +63370,7 @@ DatePickerModule.open(options));case 3:case'end':return _context.stop();}}},null
 
 
 module.exports=DatePickerAndroid;
-}, 552, null, "DatePickerAndroid");
+}, 555, null, "DatePickerAndroid");
 __d(/* ImagePickerIOS */function(global, require, module, exports) {
 
 
@@ -63427,7 +63427,7 @@ __d(/* Linking */function(global, require, module, exports) {
 
 var NativeEventEmitter=require(77                  ); // 77 = NativeEventEmitter
 var NativeModules=require(54             ); // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
 
@@ -65827,7 +65827,7 @@ var NavigationPropTypes=require(378                  ); // 378 = NavigationPropT
 var React=require(100    ); // 100 = React
 var ReactComponentWithPureRenderMixin=require(387                                          ); // 387 = react/lib/ReactComponentWithPureRenderMixin
 var ReactNative=require(43            ); // 43 = react-native
-var TVEventHandler=require(531             );var // 531 = TVEventHandler
+var TVEventHandler=require(534             );var // 534 = TVEventHandler
 
 
 Animated=
@@ -66120,7 +66120,7 @@ ReactNative.I18nManager,Image=ReactNative.Image,Platform=ReactNative.Platform,St
 
 var NavigationHeaderBackButton=function NavigationHeaderBackButton(props){return(
 React.createElement(TouchableOpacity,{style:styles.buttonContainer,onPress:props.onPress},
-React.createElement(Image,{style:styles.button,source:require(553                     )})));}; // 553 = ./assets/back-icon.png
+React.createElement(Image,{style:styles.button,source:require(556                     )})));}; // 556 = ./assets/back-icon.png
 
 
 
@@ -66147,7 +66147,7 @@ transform:[{scaleX:I18nManager.isRTL?-1:1}]}});
 module.exports=NavigationHeaderBackButton;
 }, 383, null, "NavigationHeaderBackButton");
 __d(/* react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/node_modules/react-native/Libraries/CustomComponents/NavigationExperimental/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"hash":"a364dc7a784101f7c8f6791c7b4514ce","name":"back-icon","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 553, null, "react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png");
+}, 556, null, "react-native/Libraries/CustomComponents/NavigationExperimental/assets/back-icon.png");
 __d(/* NavigationHeaderStyleInterpolator */function(global, require, module, exports) {
 
 
@@ -66634,7 +66634,7 @@ __d(/* NetInfo */function(global, require, module, exports) {
 var Map=require(197  ); // 197 = Map
 var NativeEventEmitter=require(77                  ); // 77 = NativeEventEmitter
 var NativeModules=require(54             ); // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 var RCTNetInfo=NativeModules.NetInfo;
 
 var NetInfoEventEmitter=new NativeEventEmitter(RCTNetInfo);
@@ -67556,7 +67556,7 @@ console.warn('Settings is not yet supported on Android');
 
 
 module.exports=Settings;
-}, 554, null, "Settings");
+}, 557, null, "Settings");
 __d(/* Share */function(global, require, module, exports) {
 
 
@@ -67570,7 +67570,7 @@ __d(/* Share */function(global, require, module, exports) {
 
 'use strict';
 
-var Platform=require(527       );var _require= // 527 = Platform
+var Platform=require(530       );var _require= // 530 = Platform
 
 
 
@@ -67741,7 +67741,7 @@ TimePickerModule.open(options));case 1:case'end':return _context.stop();}}},null
 
 
 module.exports=TimePickerAndroid;
-}, 555, null, "TimePickerAndroid");
+}, 558, null, "TimePickerAndroid");
 __d(/* Vibration */function(global, require, module, exports) {
 
 
@@ -67756,7 +67756,7 @@ __d(/* Vibration */function(global, require, module, exports) {
 'use strict';
 
 var RCTVibration=require(54             ).Vibration; // 54 = NativeModules
-var Platform=require(527       ); // 527 = Platform
+var Platform=require(530       ); // 530 = Platform
 
 
 
@@ -67877,7 +67877,7 @@ warning('VibrationIOS is not supported on this platform!');
 
 
 module.exports=VibrationIOS;
-}, 556, null, "VibrationIOS");
+}, 559, null, "VibrationIOS");
 __d(/* react/lib/LinkedStateMixin.js */function(global, require, module, exports) {
 
 
@@ -71164,7 +71164,7 @@ exports['default']=thunk;
 }, 454, null, "redux-thunk/lib/index.js");
 __d(/* telegram/src/reducers/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _redux=require(415    ); // 415 = redux
 var _telegramReducer=require(456                );var _telegramReducer2=babelHelpers.interopRequireDefault(_telegramReducer); // 456 = ./telegramReducer
-var _userStatusReducer=require(558                  );var _userStatusReducer2=babelHelpers.interopRequireDefault(_userStatusReducer); // 558 = ./userStatusReducer
+var _userStatusReducer=require(458                  );var _userStatusReducer2=babelHelpers.interopRequireDefault(_userStatusReducer); // 458 = ./userStatusReducer
 
 var rootReducer=(0,_redux.combineReducers)({
 telegram:_telegramReducer2.default,
@@ -71213,11 +71213,11 @@ return state;}
 };exports.default=
 
 userStatusReducer;
-}, 558, null, "telegram/src/reducers/userStatusReducer.js");
+}, 458, null, "telegram/src/reducers/userStatusReducer.js");
 __d(/* telegram/src/components/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _reactNativeRouterFlux=require(459                       ); // 459 = react-native-router-flux
-var _Main=require(506             );var _Main2=babelHelpers.interopRequireDefault(_Main); // 506 = ./Screens/Main
-var _Messages=require(523                 );var _Messages2=babelHelpers.interopRequireDefault(_Messages);var // 523 = ./Screens/Messages
+var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
+var _Main=require(507             );var _Main2=babelHelpers.interopRequireDefault(_Main); // 507 = ./Screens/Main
+var _Messages=require(524                 );var _Messages2=babelHelpers.interopRequireDefault(_Messages);var // 524 = ./Screens/Messages
 
 App=function(_Component){babelHelpers.inherits(App,_Component);function App(){babelHelpers.classCallCheck(this,App);return babelHelpers.possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).apply(this,arguments));}babelHelpers.createClass(App,[{key:'render',value:function render()
 {
@@ -71238,20 +71238,20 @@ hideNavBar:true,initial:true}))));
 
 
 }}]);return App;}(_react.Component);exports.default=App;
-}, 458, null, "telegram/src/components/index.js");
-__d(/* react-native-router-flux/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.Util=exports.getInitialState=exports.TabbedView=exports.TabBar=exports.Switch=exports.Scene=exports.Router=exports.Reducer=exports.NavBar=exports.Modal=exports.DefaultRenderer=exports.ActionConst=exports.Actions=undefined;var _Actions=require(460            );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 460 = ./src/Actions
-var _ActionConst=require(463                );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst); // 463 = ./src/ActionConst
-var _DefaultRenderer=require(464                    );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 464 = ./src/DefaultRenderer
-var _TabbedView=require(467               );var _TabbedView2=babelHelpers.interopRequireDefault(_TabbedView); // 467 = ./src/TabbedView
-var _Modal=require(501          );var _Modal2=babelHelpers.interopRequireDefault(_Modal); // 501 = ./src/Modal
-var _NavBar=require(470           );var _NavBar2=babelHelpers.interopRequireDefault(_NavBar); // 470 = ./src/NavBar
-var _Reducer=require(502            );var _Reducer2=babelHelpers.interopRequireDefault(_Reducer); // 502 = ./src/Reducer
-var _Router=require(504           );var _Router2=babelHelpers.interopRequireDefault(_Router); // 504 = ./src/Router
-var _Scene=require(462          );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 462 = ./src/Scene
-var _Switch=require(505           );var _Switch2=babelHelpers.interopRequireDefault(_Switch); // 505 = ./src/Switch
-var _TabBar=require(465           );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar); // 465 = ./src/TabBar
-var _State=require(503          );var _State2=babelHelpers.interopRequireDefault(_State); // 503 = ./src/State
-var _Util=require(461         );var _Util2=babelHelpers.interopRequireDefault(_Util);exports. // 461 = ./src/Util
+}, 459, null, "telegram/src/components/index.js");
+__d(/* react-native-router-flux/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.Util=exports.getInitialState=exports.TabbedView=exports.TabBar=exports.Switch=exports.Scene=exports.Router=exports.Reducer=exports.NavBar=exports.Modal=exports.DefaultRenderer=exports.ActionConst=exports.Actions=undefined;var _Actions=require(461            );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 461 = ./src/Actions
+var _ActionConst=require(464                );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst); // 464 = ./src/ActionConst
+var _DefaultRenderer=require(465                    );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 465 = ./src/DefaultRenderer
+var _TabbedView=require(468               );var _TabbedView2=babelHelpers.interopRequireDefault(_TabbedView); // 468 = ./src/TabbedView
+var _Modal=require(502          );var _Modal2=babelHelpers.interopRequireDefault(_Modal); // 502 = ./src/Modal
+var _NavBar=require(471           );var _NavBar2=babelHelpers.interopRequireDefault(_NavBar); // 471 = ./src/NavBar
+var _Reducer=require(503            );var _Reducer2=babelHelpers.interopRequireDefault(_Reducer); // 503 = ./src/Reducer
+var _Router=require(505           );var _Router2=babelHelpers.interopRequireDefault(_Router); // 505 = ./src/Router
+var _Scene=require(463          );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 463 = ./src/Scene
+var _Switch=require(506           );var _Switch2=babelHelpers.interopRequireDefault(_Switch); // 506 = ./src/Switch
+var _TabBar=require(466           );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar); // 466 = ./src/TabBar
+var _State=require(504          );var _State2=babelHelpers.interopRequireDefault(_State); // 504 = ./src/State
+var _Util=require(462         );var _Util2=babelHelpers.interopRequireDefault(_Util);exports. // 462 = ./src/Util
 
 
 Actions=_Actions2.default;exports.
@@ -71267,7 +71267,7 @@ TabBar=_TabBar2.default;exports.
 TabbedView=_TabbedView2.default;exports.
 getInitialState=_State2.default;exports.
 Util=_Util2.default;
-}, 459, null, "react-native-router-flux/index.js");
+}, 460, null, "react-native-router-flux/index.js");
 __d(/* react-native-router-flux/src/Actions.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.ActionsTest=exports.ActionMap=undefined;var _ActionMap;
 
 
@@ -71276,9 +71276,9 @@ __d(/* react-native-router-flux/src/Actions.js */function(global, require, modul
 
 
 
-var _Util=require(461     ); // 461 = ./Util
-var _Scene=require(462      );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 462 = ./Scene
-var _ActionConst=require(463            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst); // 463 = ./ActionConst
+var _Util=require(462     ); // 462 = ./Util
+var _Scene=require(463      );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 463 = ./Scene
+var _ActionConst=require(464            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst); // 464 = ./ActionConst
 
 var ActionMap=exports.ActionMap=(_ActionMap={
 jump:ActionConst.JUMP,
@@ -71477,7 +71477,7 @@ return refs;
 
 ActionsTest=Actions;exports.default=
 new Actions();
-}, 460, null, "react-native-router-flux/src/Actions.js");
+}, 461, null, "react-native-router-flux/src/Actions.js");
 __d(/* react-native-router-flux/src/Util.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.
 
 deepestExplicitValueForKey=deepestExplicitValueForKey;exports.
@@ -71518,7 +71518,7 @@ throw new Error('[react-native-router-flux] '+failDescription);
 {
 deepestExplicitValueForKey:deepestExplicitValueForKey,
 assert:assert};
-}, 461, null, "react-native-router-flux/src/Util.js");
+}, 462, null, "react-native-router-flux/src/Util.js");
 __d(/* react-native-router-flux/src/Scene.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});
 
 
@@ -71549,7 +71549,7 @@ var _reactNative=require(43            );var _class=function(_React$Component){b
 {
 return null;
 }}]);return _class;}(_react2.default.Component);_class.propTypes={tabBarStyle:_reactNative.View.propTypes.style,tabBarSelectedItemStyle:_reactNative.View.propTypes.style,tabBarIconContainerStyle:_reactNative.View.propTypes.style,tabBarShadowStyle:_reactNative.View.propTypes.style,tabSceneStyle:_reactNative.View.propTypes.style,tabStyle:_reactNative.View.propTypes.style,tabTitleStyle:_reactNative.Text.propTypes.style,tabSelectedTitleStyle:_reactNative.Text.propTypes.style,tabTitle:_react.PropTypes.string};exports.default=_class;
-}, 462, null, "react-native-router-flux/src/Scene.js");
+}, 463, null, "react-native-router-flux/src/Scene.js");
 __d(/* react-native-router-flux/src/ActionConst.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var JUMP=exports.JUMP='REACT_NATIVE_ROUTER_FLUX_JUMP';
 var PUSH=exports.PUSH='REACT_NATIVE_ROUTER_FLUX_PUSH';
 var PUSH_OR_POP=exports.PUSH_OR_POP='REACT_NATIVE_ROUTER_FLUX_PUSH_OR_POP';
@@ -71561,7 +71561,7 @@ var POP_TO=exports.POP_TO='REACT_NATIVE_ROUTER_FLUX_POP_TO';
 var REFRESH=exports.REFRESH='REACT_NATIVE_ROUTER_FLUX_REFRESH';
 var RESET=exports.RESET='REACT_NATIVE_ROUTER_FLUX_RESET';
 var FOCUS=exports.FOCUS='REACT_NATIVE_ROUTER_FLUX_FOCUS';
-}, 463, null, "react-native-router-flux/src/ActionConst.js");
+}, 464, null, "react-native-router-flux/src/ActionConst.js");
 __d(/* react-native-router-flux/src/DefaultRenderer.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});
 
 
@@ -71581,12 +71581,12 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _TabBar=require(465       );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar); // 465 = ./TabBar
-var _NavBar=require(470       );var _NavBar2=babelHelpers.interopRequireDefault(_NavBar); // 470 = ./NavBar
-var _Actions=require(460        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 460 = ./Actions
-var _Util=require(461     ); // 461 = ./Util
-var _reactNativeExperimentalNavigation=require(473                                   );var _reactNativeExperimentalNavigation2=babelHelpers.interopRequireDefault(_reactNativeExperimentalNavigation); // 473 = react-native-experimental-navigation
-var _reactAddonsPureRenderMixin=require(489                             );var _reactAddonsPureRenderMixin2=babelHelpers.interopRequireDefault(_reactAddonsPureRenderMixin); // 489 = react-addons-pure-render-mixin
+var _TabBar=require(466       );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar); // 466 = ./TabBar
+var _NavBar=require(471       );var _NavBar2=babelHelpers.interopRequireDefault(_NavBar); // 471 = ./NavBar
+var _Actions=require(461        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 461 = ./Actions
+var _Util=require(462     ); // 462 = ./Util
+var _reactNativeExperimentalNavigation=require(474                                   );var _reactNativeExperimentalNavigation2=babelHelpers.interopRequireDefault(_reactNativeExperimentalNavigation); // 474 = react-native-experimental-navigation
+var _reactAddonsPureRenderMixin=require(490                             );var _reactAddonsPureRenderMixin2=babelHelpers.interopRequireDefault(_reactAddonsPureRenderMixin); // 490 = react-addons-pure-render-mixin
 
 var SCREEN_WIDTH=_reactNative.Dimensions.get('window').width;var
 
@@ -71903,17 +71903,17 @@ optionals)));
 
 
 }}]);return DefaultRenderer;}(_react.Component);DefaultRenderer.propTypes={navigationState:_react.PropTypes.object,onNavigate:_react.PropTypes.func};DefaultRenderer.childContextTypes={navigationState:_react.PropTypes.any};exports.default=DefaultRenderer;
-}, 464, null, "react-native-router-flux/src/DefaultRenderer.js");
+}, 465, null, "react-native-router-flux/src/DefaultRenderer.js");
 __d(/* react-native-router-flux/src/TabBar.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _reactNativeTabs=require(466                );var _reactNativeTabs2=babelHelpers.interopRequireDefault(_reactNativeTabs); // 466 = react-native-tabs
-var _DefaultRenderer=require(464                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 464 = ./DefaultRenderer
-var _Actions=require(460        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 460 = ./Actions
-var _TabbedView=require(467           );var _TabbedView2=babelHelpers.interopRequireDefault(_TabbedView); // 467 = ./TabbedView
-var _Util=require(461     );var // 461 = ./Util
+var _reactNativeTabs=require(467                );var _reactNativeTabs2=babelHelpers.interopRequireDefault(_reactNativeTabs); // 467 = react-native-tabs
+var _DefaultRenderer=require(465                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 465 = ./DefaultRenderer
+var _Actions=require(461        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 461 = ./Actions
+var _TabbedView=require(468           );var _TabbedView2=babelHelpers.interopRequireDefault(_TabbedView); // 468 = ./TabbedView
+var _Util=require(462     );var // 462 = ./Util
 
 TabBar=function(_Component){babelHelpers.inherits(TabBar,_Component);
 
@@ -72000,7 +72000,7 @@ contents)));
 
 
 TabBar;
-}, 465, null, "react-native-router-flux/src/TabBar.js");
+}, 466, null, "react-native-router-flux/src/TabBar.js");
 __d(/* react-native-tabs/index.js */function(global, require, module, exports) {'use strict';
 
 var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
@@ -72070,10 +72070,10 @@ alignItems:'center'}});
 
 
 module.exports=Tabs;
-}, 466, null, "react-native-tabs/index.js");
+}, 467, null, "react-native-tabs/index.js");
 __d(/* react-native-router-flux/src/TabbedView.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
-var _reactStaticContainer=require(468                     );var _reactStaticContainer2=babelHelpers.interopRequireDefault(_reactStaticContainer); // 468 = react-static-container
+var _reactStaticContainer=require(469                     );var _reactStaticContainer2=babelHelpers.interopRequireDefault(_reactStaticContainer); // 469 = react-static-container
 
 var styles=_reactNative.StyleSheet.create({
 scene:{
@@ -72139,7 +72139,7 @@ scenes));
 
 
 TabbedView;
-}, 467, null, "react-native-router-flux/src/TabbedView.js");
+}, 468, null, "react-native-router-flux/src/TabbedView.js");
 __d(/* react-static-container/index.js */function(global, require, module, exports) {
 
 
@@ -72149,8 +72149,8 @@ __d(/* react-static-container/index.js */function(global, require, module, expor
 
 
 
-module.exports=require(469                          ); // 469 = ./lib/StaticContainer.react
-}, 468, null, "react-static-container/index.js");
+module.exports=require(470                          ); // 470 = ./lib/StaticContainer.react
+}, 469, null, "react-static-container/index.js");
 __d(/* react-static-container/lib/StaticContainer.react.js */function(global, require, module, exports) {
 
 
@@ -72221,7 +72221,7 @@ return StaticContainer;
 }(React.Component);
 
 module.exports=StaticContainer;
-}, 469, null, "react-static-container/lib/StaticContainer.react.js");
+}, 470, null, "react-static-container/lib/StaticContainer.react.js");
 __d(/* react-native-router-flux/src/NavBar.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});
 
 
@@ -72259,9 +72259,9 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _Actions=require(460        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 460 = ./Actions
-var _menu_burger=require(471                );var _menu_burger2=babelHelpers.interopRequireDefault(_menu_burger); // 471 = ./menu_burger.png
-var _back_chevron=require(472                 );var _back_chevron2=babelHelpers.interopRequireDefault(_back_chevron); // 472 = ./back_chevron.png
+var _Actions=require(461        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 461 = ./Actions
+var _menu_burger=require(472                );var _menu_burger2=babelHelpers.interopRequireDefault(_menu_burger); // 472 = ./menu_burger.png
+var _back_chevron=require(473                 );var _back_chevron2=babelHelpers.interopRequireDefault(_back_chevron); // 473 = ./back_chevron.png
 
 var styles=_reactNative.StyleSheet.create({
 title:{
@@ -72743,11 +72743,11 @@ NavBar.contextTypes=contextTypes;
 NavBar.defaultProps=defaultProps;exports.default=
 
 NavBar;
-}, 470, null, "react-native-router-flux/src/NavBar.js");
+}, 471, null, "react-native-router-flux/src/NavBar.js");
 __d(/* react-native-router-flux/src/menu_burger.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/node_modules/react-native-router-flux/src","width":26,"height":42,"scales":[1],"hash":"315b6bc9518b83448be6761e6cc5cb7e","name":"menu_burger","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 471, null, "react-native-router-flux/src/menu_burger.png");
+}, 472, null, "react-native-router-flux/src/menu_burger.png");
 __d(/* react-native-router-flux/src/back_chevron.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/node_modules/react-native-router-flux/src","width":26,"height":42,"scales":[1],"hash":"fb13fafd1da1ad19e708c53cfad2e514","name":"back_chevron","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 472, null, "react-native-router-flux/src/back_chevron.png");
+}, 473, null, "react-native-router-flux/src/back_chevron.png");
 __d(/* react-native-experimental-navigation/NavigationExperimental.js */function(global, require, module, exports) {
 
 
@@ -72761,17 +72761,17 @@ __d(/* react-native-experimental-navigation/NavigationExperimental.js */function
 
 'use strict';
 
-var NavigationAnimatedView=require(474                       ); // 474 = ./NavigationAnimatedView
-var NavigationCard=require(480               ); // 480 = ./NavigationCard
-var NavigationCardStack=require(490                    ); // 490 = ./NavigationCardStack
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationHeader=require(491                 ); // 491 = ./NavigationHeader
+var NavigationAnimatedView=require(475                       ); // 475 = ./NavigationAnimatedView
+var NavigationCard=require(481               ); // 481 = ./NavigationCard
+var NavigationCardStack=require(491                    ); // 491 = ./NavigationCardStack
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationHeader=require(492                 ); // 492 = ./NavigationHeader
 var NavigationLegacyNavigator=null;
-var NavigationReducer=require(496                  ); // 496 = ./NavigationReducer
-var NavigationRootContainer=require(476                        ); // 476 = ./NavigationRootContainer
-var NavigationStateUtils=require(478                     ); // 478 = ./NavigationStateUtils
-var NavigationView=require(500               ); // 500 = ./NavigationView
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
+var NavigationReducer=require(497                  ); // 497 = ./NavigationReducer
+var NavigationRootContainer=require(477                        ); // 477 = ./NavigationRootContainer
+var NavigationStateUtils=require(479                     ); // 479 = ./NavigationStateUtils
+var NavigationView=require(501               ); // 501 = ./NavigationView
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
 
 var NavigationExperimental={
 
@@ -72796,7 +72796,7 @@ PropTypes:NavigationPropTypes};
 
 
 module.exports=NavigationExperimental;
-}, 473, null, "react-native-experimental-navigation/NavigationExperimental.js");
+}, 474, null, "react-native-experimental-navigation/NavigationExperimental.js");
 __d(/* react-native-experimental-navigation/NavigationAnimatedView.js */function(global, require, module, exports) {
 
 
@@ -72811,9 +72811,9 @@ __d(/* react-native-experimental-navigation/NavigationAnimatedView.js */function
 'use strict';
 
 var Animated=require(43            ).Animated; // 43 = react-native
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
-var NavigationScenesReducer=require(479                        ); // 479 = ./NavigationScenesReducer
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
+var NavigationScenesReducer=require(480                        ); // 480 = ./NavigationScenesReducer
 var React=require(13     ); // 13 = react
 var StyleSheet=require(43            ).StyleSheet; // 43 = react-native
 var View=require(43            ).View;var // 43 = react-native
@@ -73043,7 +73043,7 @@ flex:1}});
 NavigationAnimatedView=NavigationContainer.create(NavigationAnimatedView);
 
 module.exports=NavigationAnimatedView;
-}, 474, null, "react-native-experimental-navigation/NavigationAnimatedView.js");
+}, 475, null, "react-native-experimental-navigation/NavigationAnimatedView.js");
 __d(/* react-native-experimental-navigation/NavigationContainer.js */function(global, require, module, exports) {
 
 
@@ -73058,7 +73058,7 @@ __d(/* react-native-experimental-navigation/NavigationContainer.js */function(gl
 'use strict';
 
 var React=require(13     ); // 13 = react
-var NavigationRootContainer=require(476                        ); // 476 = ./NavigationRootContainer
+var NavigationRootContainer=require(477                        ); // 477 = ./NavigationRootContainer
 
 function createNavigationContainer(
 Component)
@@ -73097,7 +73097,7 @@ RootContainer:NavigationRootContainer};
 
 
 module.exports=NavigationContainer;
-}, 475, null, "react-native-experimental-navigation/NavigationContainer.js");
+}, 476, null, "react-native-experimental-navigation/NavigationContainer.js");
 __d(/* react-native-experimental-navigation/NavigationRootContainer.js */function(global, require, module, exports) {
 
 
@@ -73113,8 +73113,8 @@ __d(/* react-native-experimental-navigation/NavigationRootContainer.js */functio
 
 var AsyncStorage=require(43            ).AsyncStorage; // 43 = react-native
 var Linking=require(43            ).Linking; // 43 = react-native
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
-var NavigationStateUtils=require(478                     ); // 478 = ./NavigationStateUtils
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
+var NavigationStateUtils=require(479                     ); // 479 = ./NavigationStateUtils
 var Platform=require(43            ).Platform; // 43 = react-native
 var React=require(13     ); // 13 = react
 
@@ -73289,7 +73289,7 @@ return navigation;
 
 
 module.exports=NavigationRootContainer;
-}, 476, null, "react-native-experimental-navigation/NavigationRootContainer.js");
+}, 477, null, "react-native-experimental-navigation/NavigationRootContainer.js");
 __d(/* react-native-experimental-navigation/NavigationPropTypes.js */function(global, require, module, exports) {
 
 
@@ -73413,7 +73413,7 @@ navigationParentState:navigationParentState,
 navigationState:navigationState,
 panHandlers:panHandlers,
 SceneRenderer:SceneRenderer};
-}, 477, null, "react-native-experimental-navigation/NavigationPropTypes.js");
+}, 478, null, "react-native-experimental-navigation/NavigationPropTypes.js");
 __d(/* react-native-experimental-navigation/NavigationStateUtils.js */function(global, require, module, exports) {
 
 
@@ -73606,7 +73606,7 @@ replaceAtIndex:replaceAtIndex};
 
 
 module.exports=NavigationStateUtils;
-}, 478, null, "react-native-experimental-navigation/NavigationStateUtils.js");
+}, 479, null, "react-native-experimental-navigation/NavigationStateUtils.js");
 __d(/* react-native-experimental-navigation/NavigationScenesReducer.js */function(global, require, module, exports) {
 
 
@@ -73756,7 +73756,7 @@ return nextScenes.sort(compareScenes);
 }
 
 module.exports=NavigationScenesReducer;
-}, 479, null, "react-native-experimental-navigation/NavigationScenesReducer.js");
+}, 480, null, "react-native-experimental-navigation/NavigationScenesReducer.js");
 __d(/* react-native-experimental-navigation/NavigationCard.js */function(global, require, module, exports) {
 
 
@@ -73792,15 +73792,15 @@ __d(/* react-native-experimental-navigation/NavigationCard.js */function(global,
 'use strict';
 
 var Animated=require(43            ).Animated; // 43 = react-native
-var NavigationCardStackPanResponder=require(481                                ); // 481 = ./NavigationCardStackPanResponder
-var NavigationCardStackStyleInterpolator=require(484                                     ); // 484 = ./NavigationCardStackStyleInterpolator
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationPagerPanResponder=require(485                            ); // 485 = ./NavigationPagerPanResponder
-var NavigationPagerStyleInterpolator=require(486                                 ); // 486 = ./NavigationPagerStyleInterpolator
-var NavigationPointerEventsContainer=require(487                                 ); // 487 = ./NavigationPointerEventsContainer
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
+var NavigationCardStackPanResponder=require(482                                ); // 482 = ./NavigationCardStackPanResponder
+var NavigationCardStackStyleInterpolator=require(485                                     ); // 485 = ./NavigationCardStackStyleInterpolator
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationPagerPanResponder=require(486                            ); // 486 = ./NavigationPagerPanResponder
+var NavigationPagerStyleInterpolator=require(487                                 ); // 487 = ./NavigationPagerStyleInterpolator
+var NavigationPointerEventsContainer=require(488                                 ); // 488 = ./NavigationPointerEventsContainer
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
 var React=require(13     ); // 13 = react
-var ReactComponentWithPureRenderMixin=require(489                             ); // 489 = react-addons-pure-render-mixin
+var ReactComponentWithPureRenderMixin=require(490                             ); // 490 = react-addons-pure-render-mixin
 var StyleSheet=require(43            ).StyleSheet; // 43 = react-native
 var View=require(43            ).View;var // 43 = react-native
 
@@ -73920,7 +73920,7 @@ NavigationCard.PagerPanResponder=NavigationPagerPanResponder;
 NavigationCard.PagerStyleInterpolator=NavigationPagerStyleInterpolator;
 
 module.exports=NavigationCard;
-}, 480, null, "react-native-experimental-navigation/NavigationCard.js");
+}, 481, null, "react-native-experimental-navigation/NavigationCard.js");
 __d(/* react-native-experimental-navigation/NavigationCardStackPanResponder.js */function(global, require, module, exports) {
 
 
@@ -73936,9 +73936,9 @@ __d(/* react-native-experimental-navigation/NavigationCardStackPanResponder.js *
 'use strict';
 
 var Animated=require(43            ).Animated; // 43 = react-native
-var NavigationAbstractPanResponder=require(482                               ); // 482 = ./NavigationAbstractPanResponder
+var NavigationAbstractPanResponder=require(483                               ); // 483 = ./NavigationAbstractPanResponder
 
-var clamp=require(483    ); // 483 = clamp
+var clamp=require(484    ); // 484 = clamp
 
 
 
@@ -74161,7 +74161,7 @@ Directions:Directions,
 
 forHorizontal:forHorizontal,
 forVertical:forVertical};
-}, 481, null, "react-native-experimental-navigation/NavigationCardStackPanResponder.js");
+}, 482, null, "react-native-experimental-navigation/NavigationCardStackPanResponder.js");
 __d(/* react-native-experimental-navigation/NavigationAbstractPanResponder.js */function(global, require, module, exports) {
 
 
@@ -74218,7 +74218,7 @@ this.panHandlers=PanResponder.create(config).panHandlers;
 
 
 module.exports=NavigationAbstractPanResponder;
-}, 482, null, "react-native-experimental-navigation/NavigationAbstractPanResponder.js");
+}, 483, null, "react-native-experimental-navigation/NavigationAbstractPanResponder.js");
 __d(/* clamp/index.js */function(global, require, module, exports) {module.exports=clamp;
 
 function clamp(value,min,max){
@@ -74226,7 +74226,7 @@ return min<max?
 value<min?min:value>max?max:value:
 value<max?max:value>min?min:value;
 }
-}, 483, null, "clamp/index.js");
+}, 484, null, "clamp/index.js");
 __d(/* react-native-experimental-navigation/NavigationCardStackStyleInterpolator.js */function(global, require, module, exports) {
 
 
@@ -74387,7 +74387,7 @@ transform:[
 module.exports={
 forHorizontal:forHorizontal,
 forVertical:forVertical};
-}, 484, null, "react-native-experimental-navigation/NavigationCardStackStyleInterpolator.js");
+}, 485, null, "react-native-experimental-navigation/NavigationCardStackStyleInterpolator.js");
 __d(/* react-native-experimental-navigation/NavigationPagerPanResponder.js */function(global, require, module, exports) {
 
 
@@ -74403,10 +74403,10 @@ __d(/* react-native-experimental-navigation/NavigationPagerPanResponder.js */fun
 'use strict';
 
 var Animated=require(43            ).Animated; // 43 = react-native
-var NavigationAbstractPanResponder=require(482                               ); // 482 = ./NavigationAbstractPanResponder
-var NavigationCardStackPanResponder=require(481                                ); // 481 = ./NavigationCardStackPanResponder
+var NavigationAbstractPanResponder=require(483                               ); // 483 = ./NavigationAbstractPanResponder
+var NavigationCardStackPanResponder=require(482                                ); // 482 = ./NavigationCardStackPanResponder
 
-var clamp=require(483    );var // 483 = clamp
+var clamp=require(484    );var // 484 = clamp
 
 
 
@@ -74609,7 +74609,7 @@ return createPanHandlers(Directions.HORIZONTAL,props);
 module.exports={
 Actions:Actions,
 forHorizontal:forHorizontal};
-}, 485, null, "react-native-experimental-navigation/NavigationPagerPanResponder.js");
+}, 486, null, "react-native-experimental-navigation/NavigationPagerPanResponder.js");
 __d(/* react-native-experimental-navigation/NavigationPagerStyleInterpolator.js */function(global, require, module, exports) {
 
 
@@ -74720,7 +74720,7 @@ transform:[
 
 module.exports={
 forHorizontal:forHorizontal};
-}, 486, null, "react-native-experimental-navigation/NavigationPagerStyleInterpolator.js");
+}, 487, null, "react-native-experimental-navigation/NavigationPagerStyleInterpolator.js");
 __d(/* react-native-experimental-navigation/NavigationPointerEventsContainer.js */function(global, require, module, exports) {
 
 
@@ -74756,7 +74756,7 @@ __d(/* react-native-experimental-navigation/NavigationPointerEventsContainer.js 
 'use strict';
 
 var React=require(13     ); // 13 = react
-var NavigationAnimatedValueSubscription=require(488                                    ); // 488 = ./NavigationAnimatedValueSubscription
+var NavigationAnimatedValueSubscription=require(489                                    ); // 489 = ./NavigationAnimatedValueSubscription
 
 var invariant=require(19                  ); // 19 = fbjs/lib/invariant
 
@@ -74878,7 +74878,7 @@ return Container;
 
 module.exports={
 create:create};
-}, 487, null, "react-native-experimental-navigation/NavigationPointerEventsContainer.js");
+}, 488, null, "react-native-experimental-navigation/NavigationPointerEventsContainer.js");
 __d(/* react-native-experimental-navigation/NavigationAnimatedValueSubscription.js */function(global, require, module, exports) {
 
 
@@ -74927,9 +74927,9 @@ this._value.removeListener(this._token);
 
 
 module.exports=NavigationAnimatedValueSubscription;
-}, 488, null, "react-native-experimental-navigation/NavigationAnimatedValueSubscription.js");
+}, 489, null, "react-native-experimental-navigation/NavigationAnimatedValueSubscription.js");
 __d(/* react-addons-pure-render-mixin/index.js */function(global, require, module, exports) {module.exports=require(387                                          ); // 387 = react/lib/ReactComponentWithPureRenderMixin
-}, 489, null, "react-addons-pure-render-mixin/index.js");
+}, 490, null, "react-addons-pure-render-mixin/index.js");
 __d(/* react-native-experimental-navigation/NavigationCardStack.js */function(global, require, module, exports) {
 
 
@@ -74964,14 +74964,14 @@ __d(/* react-native-experimental-navigation/NavigationCardStack.js */function(gl
 
 'use strict';
 
-var NavigationAnimatedView=require(474                       ); // 474 = ./NavigationAnimatedView
-var NavigationCard=require(480               ); // 480 = ./NavigationCard
-var NavigationCardStackStyleInterpolator=require(484                                     ); // 484 = ./NavigationCardStackStyleInterpolator
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationCardStackPanResponder=require(481                                ); // 481 = ./NavigationCardStackPanResponder
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
+var NavigationAnimatedView=require(475                       ); // 475 = ./NavigationAnimatedView
+var NavigationCard=require(481               ); // 481 = ./NavigationCard
+var NavigationCardStackStyleInterpolator=require(485                                     ); // 485 = ./NavigationCardStackStyleInterpolator
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationCardStackPanResponder=require(482                                ); // 482 = ./NavigationCardStackPanResponder
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
 var React=require(13     ); // 13 = react
-var ReactComponentWithPureRenderMixin=require(489                             ); // 489 = react-addons-pure-render-mixin
+var ReactComponentWithPureRenderMixin=require(490                             ); // 490 = react-addons-pure-render-mixin
 var StyleSheet=require(43            ).StyleSheet; // 43 = react-native
 
 var emptyFunction=require(23                      );var // 23 = fbjs/lib/emptyFunction
@@ -75088,7 +75088,7 @@ flex:1}});
 
 
 module.exports=NavigationContainer.create(NavigationCardStack);
-}, 490, null, "react-native-experimental-navigation/NavigationCardStack.js");
+}, 491, null, "react-native-experimental-navigation/NavigationCardStack.js");
 __d(/* react-native-experimental-navigation/NavigationHeader.js */function(global, require, module, exports) {
 
 
@@ -75125,12 +75125,12 @@ __d(/* react-native-experimental-navigation/NavigationHeader.js */function(globa
 
 var React=require(13     ); // 13 = react
 var ReactNative=require(43            ); // 43 = react-native
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationHeaderTitle=require(492                      ); // 492 = ./NavigationHeaderTitle
-var NavigationHeaderBackButton=require(493                           ); // 493 = ./NavigationHeaderBackButton
-var NavigationPropTypes=require(477                    ); // 477 = ./NavigationPropTypes
-var NavigationHeaderStyleInterpolator=require(495                                  ); // 495 = ./NavigationHeaderStyleInterpolator
-var ReactComponentWithPureRenderMixin=require(489                             );var // 489 = react-addons-pure-render-mixin
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationHeaderTitle=require(493                      ); // 493 = ./NavigationHeaderTitle
+var NavigationHeaderBackButton=require(494                           ); // 494 = ./NavigationHeaderBackButton
+var NavigationPropTypes=require(478                    ); // 478 = ./NavigationPropTypes
+var NavigationHeaderStyleInterpolator=require(496                                  ); // 496 = ./NavigationHeaderStyleInterpolator
+var ReactComponentWithPureRenderMixin=require(490                             );var // 490 = react-addons-pure-render-mixin
 
 
 Animated=
@@ -75342,7 +75342,7 @@ NavigationHeaderContainer.Title=NavigationHeaderTitle;
 NavigationHeaderContainer.BackButton=NavigationHeaderBackButton;
 
 module.exports=NavigationHeaderContainer;
-}, 491, null, "react-native-experimental-navigation/NavigationHeader.js");
+}, 492, null, "react-native-experimental-navigation/NavigationHeader.js");
 __d(/* react-native-experimental-navigation/NavigationHeaderTitle.js */function(global, require, module, exports) {
 
 
@@ -75419,7 +75419,7 @@ textStyle:Text.propTypes.style};
 
 
 module.exports=NavigationHeaderTitle;
-}, 492, null, "react-native-experimental-navigation/NavigationHeaderTitle.js");
+}, 493, null, "react-native-experimental-navigation/NavigationHeaderTitle.js");
 __d(/* react-native-experimental-navigation/NavigationHeaderBackButton.js */function(global, require, module, exports) {
 
 
@@ -75440,8 +75440,8 @@ __d(/* react-native-experimental-navigation/NavigationHeaderBackButton.js */func
 
 var React=require(13     ); // 13 = react
 var ReactNative=require(43            ); // 43 = react-native
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
-var NavigationRootContainer=require(476                        );var // 476 = ./NavigationRootContainer
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
+var NavigationRootContainer=require(477                        );var // 477 = ./NavigationRootContainer
 
 
 Image=
@@ -75456,7 +75456,7 @@ ReactNative.Image,Platform=ReactNative.Platform,StyleSheet=ReactNative.StyleShee
 
 var NavigationHeaderBackButton=function NavigationHeaderBackButton(props){return(
 React.createElement(TouchableOpacity,{style:styles.buttonContainer,onPress:function onPress(){return props.onNavigate(NavigationRootContainer.getBackAction());}},
-React.createElement(Image,{style:styles.button,source:require(557                )})));}; // 557 = ./assets/back.png
+React.createElement(Image,{style:styles.button,source:require(560                )})));}; // 560 = ./assets/back.png
 
 
 
@@ -75480,9 +75480,9 @@ resizeMode:'contain'}});
 
 
 module.exports=NavigationContainer.create(NavigationHeaderBackButton);
-}, 493, null, "react-native-experimental-navigation/NavigationHeaderBackButton.js");
+}, 494, null, "react-native-experimental-navigation/NavigationHeaderBackButton.js");
 __d(/* react-native-experimental-navigation/assets/back.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/node_modules/react-native-experimental-navigation/assets","width":24,"height":24,"scales":[1,1.5,2,3,4],"hash":"a364dc7a784101f7c8f6791c7b4514ce","name":"back","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 557, null, "react-native-experimental-navigation/assets/back.png");
+}, 560, null, "react-native-experimental-navigation/assets/back.png");
 __d(/* react-native-experimental-navigation/NavigationHeaderStyleInterpolator.js */function(global, require, module, exports) {
 
 
@@ -75578,7 +75578,7 @@ module.exports={
 forCenter:forCenter,
 forLeft:forLeft,
 forRight:forRight};
-}, 495, null, "react-native-experimental-navigation/NavigationHeaderStyleInterpolator.js");
+}, 496, null, "react-native-experimental-navigation/NavigationHeaderStyleInterpolator.js");
 __d(/* react-native-experimental-navigation/NavigationReducer.js */function(global, require, module, exports) {
 
 
@@ -75592,9 +75592,9 @@ __d(/* react-native-experimental-navigation/NavigationReducer.js */function(glob
 
 'use strict';
 
-var NavigationFindReducer=require(497                      ); // 497 = ./NavigationFindReducer
-var NavigationStackReducer=require(498                       ); // 498 = ./NavigationStackReducer
-var NavigationTabsReducer=require(499                      ); // 499 = ./NavigationTabsReducer
+var NavigationFindReducer=require(498                      ); // 498 = ./NavigationFindReducer
+var NavigationStackReducer=require(499                       ); // 499 = ./NavigationStackReducer
+var NavigationTabsReducer=require(500                      ); // 500 = ./NavigationTabsReducer
 
 var NavigationReducer={
 FindReducer:NavigationFindReducer,
@@ -75603,7 +75603,7 @@ TabsReducer:NavigationTabsReducer};
 
 
 module.exports=NavigationReducer;
-}, 496, null, "react-native-experimental-navigation/NavigationReducer.js");
+}, 497, null, "react-native-experimental-navigation/NavigationReducer.js");
 __d(/* react-native-experimental-navigation/NavigationFindReducer.js */function(global, require, module, exports) {
 
 
@@ -75645,7 +75645,7 @@ return lastState||defaultState;
 }
 
 module.exports=NavigationFindReducer;
-}, 497, null, "react-native-experimental-navigation/NavigationFindReducer.js");
+}, 498, null, "react-native-experimental-navigation/NavigationFindReducer.js");
 __d(/* react-native-experimental-navigation/NavigationStackReducer.js */function(global, require, module, exports) {
 
 
@@ -75659,7 +75659,7 @@ __d(/* react-native-experimental-navigation/NavigationStackReducer.js */function
 
 'use strict';
 
-var NavigationStateUtils=require(478                     ); // 478 = ./NavigationStateUtils
+var NavigationStateUtils=require(479                     ); // 479 = ./NavigationStateUtils
 
 
 
@@ -75756,7 +75756,7 @@ return lastParentState;
 }
 
 module.exports=NavigationStackReducer;
-}, 498, null, "react-native-experimental-navigation/NavigationStackReducer.js");
+}, 499, null, "react-native-experimental-navigation/NavigationStackReducer.js");
 __d(/* react-native-experimental-navigation/NavigationTabsReducer.js */function(global, require, module, exports) {
 
 
@@ -75770,8 +75770,8 @@ __d(/* react-native-experimental-navigation/NavigationTabsReducer.js */function(
 
 'use strict';
 
-var NavigationFindReducer=require(497                      ); // 497 = ./NavigationFindReducer
-var NavigationStateUtils=require(478                     ); // 478 = ./NavigationStateUtils
+var NavigationFindReducer=require(498                      ); // 498 = ./NavigationFindReducer
+var NavigationStateUtils=require(479                     ); // 479 = ./NavigationStateUtils
 
 
 
@@ -75860,7 +75860,7 @@ return findReducer(lastParentNavState,action);
 NavigationTabsReducer.JumpToAction=NavigationTabsJumpToAction;
 
 module.exports=NavigationTabsReducer;
-}, 499, null, "react-native-experimental-navigation/NavigationTabsReducer.js");
+}, 500, null, "react-native-experimental-navigation/NavigationTabsReducer.js");
 __d(/* react-native-experimental-navigation/NavigationView.js */function(global, require, module, exports) {
 
 
@@ -75875,12 +75875,12 @@ __d(/* react-native-experimental-navigation/NavigationView.js */function(global,
 'use strict';
 
 var Animated=require(43            ).Animated; // 43 = react-native
-var NavigationContainer=require(475                    ); // 475 = ./NavigationContainer
+var NavigationContainer=require(476                    ); // 476 = ./NavigationContainer
 var React=require(13     ); // 13 = react
 var StyleSheet=require(43            ).StyleSheet; // 43 = react-native
 var View=require(43            ).View; // 43 = react-native
-var NavigationScenesReducer=require(479                        ); // 479 = ./NavigationScenesReducer
-var ReactComponentWithPureRenderMixin=require(489                             );var // 489 = react-addons-pure-render-mixin
+var NavigationScenesReducer=require(480                        ); // 480 = ./NavigationScenesReducer
+var ReactComponentWithPureRenderMixin=require(490                             );var // 490 = react-addons-pure-render-mixin
 
 
 
@@ -76040,7 +76040,7 @@ top:0}});
 
 
 module.exports=NavigationContainer.create(NavigationView);
-}, 500, null, "react-native-experimental-navigation/NavigationView.js");
+}, 501, null, "react-native-experimental-navigation/NavigationView.js");
 __d(/* react-native-router-flux/src/Modal.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
@@ -76056,7 +76056,7 @@ __d(/* react-native-router-flux/src/Modal.js */function(global, require, module,
 
 
 
-Modal;var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react);var _reactNative=require(43            );var _DefaultRenderer=require(464                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer);var propTypes={navigationState:_react.PropTypes.shape({children:_react.PropTypes.array}),onNavigate:_react.PropTypes.func};function Modal(props){ // 464 = ./DefaultRenderer // 43 = react-native // 13 = react
+Modal;var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react);var _reactNative=require(43            );var _DefaultRenderer=require(465                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer);var propTypes={navigationState:_react.PropTypes.shape({children:_react.PropTypes.array}),onNavigate:_react.PropTypes.func};function Modal(props){ // 465 = ./DefaultRenderer // 43 = react-native // 13 = react
 var children=props.navigationState.children;
 var state=children[0];
 
@@ -76081,7 +76081,7 @@ return null;
 }
 
 Modal.propTypes=propTypes;
-}, 501, null, "react-native-router-flux/src/Modal.js");
+}, 502, null, "react-native-router-flux/src/Modal.js");
 __d(/* react-native-router-flux/src/Reducer.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.
 
 
@@ -76348,7 +76348,7 @@ findElement=findElement;exports.
 
 
 
-getCurrent=getCurrent;var _ActionConst=require(463            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);var _Actions=require(460        );var _Util=require(461     );var _State=require(503      );var _reactNative=require(43            );function checkPropertiesEqual(action,lastAction){var isEqual=true;for(var _iterator=Object.keys(action),_isArray=Array.isArray(_iterator),_i=0,_iterator=_isArray?_iterator:_iterator[typeof Symbol==='function'?Symbol.iterator:'@@iterator']();;){var _ref;if(_isArray){if(_i>=_iterator.length)break;_ref=_iterator[_i++];}else{_i=_iterator.next();if(_i.done)break;_ref=_i.value;}var key=_ref;if(['key','type','parent'].indexOf(key)===-1){if(action[key]!==lastAction[key]){isEqual=false;}}}return isEqual;}function resetHistoryStack(child){var newChild=child;newChild.index=0;child.children.map(function(el,i){if(el.initial){newChild.index=i;if(!newChild.tabs){newChild.children=[el];}}if(el.children){resetHistoryStack(el);}return newChild;});}function refreshTopChild(children,refresh){if(refresh){var topChild=children[children.length-1];return[].concat(babelHelpers.toConsumableArray(children.slice(0,-1)),[babelHelpers.extends({},topChild,refresh)]);}return children;}function inject(state,action,props,scenes){var condition=_Actions.ActionMap[action.type]===ActionConst.REFRESH?state.key===props.key||state.sceneKey===action.key:state.sceneKey===props.parent;if(!condition){if(state.children){var res=state.children.map(function(el){return inject(el,action,props,scenes);});var changed=false;var changedIndex=-1;for(var i=0;i<res.length;i++){if(res[i]!==state.children[i]){changed=true;changedIndex=i;break;}}return changed?babelHelpers.extends({},state,{children:res,index:changedIndex}):state;}return state;}var ind=void 0;switch(_Actions.ActionMap[action.type]){case ActionConst.POP_TO:{var targetIndex=action.targetIndex;return babelHelpers.extends({},state,{index:targetIndex,children:refreshTopChild(state.children.slice(0,targetIndex+1),action.refresh)});}case ActionConst.BACK:case ActionConst.BACK_ACTION:{(0,_Util.assert)(!state.tabs,'pop() operation cannot be run on tab bar (tabs=true)');if(_reactNative.Platform.OS==='android'){(0,_Util.assert)(state.index>0,'You are already in the root scene.');}if(state.index===0){return state;}var popNum=1;if(action.popNum){(0,_Util.assert)(typeof action.popNum==='number','The data is the number of scenes you want to pop, it must be Number');popNum=action.popNum;(0,_Util.assert)(popNum%1===0,'The data is the number of scenes you want to pop, it must be integer.');(0,_Util.assert)(popNum>1,'The data is the number of scenes you want to pop, it must be bigger than 1.');(0,_Util.assert)(popNum<=state.index,'The data is the number of scenes you want to pop, '+"it must be smaller than scenes stack's length.");}return babelHelpers.extends({},state,{index:state.index-popNum,from:state.children[state.children.length-popNum],children:refreshTopChild(state.children.slice(0,-1*popNum),action.refresh)});}case ActionConst.POP_AND_REPLACE:{(0,_Util.assert)(!state.tabs,'pop() operation cannot be run on tab bar (tabs=true)');(0,_Util.assert)(state.index>0,'You are already in the root scene.');var _popNum=1;if(action.popNum){(0,_Util.assert)(typeof action.popNum==='number','The data is the number of scenes you want to pop, it must be Number');_popNum=action.popNum;(0,_Util.assert)(_popNum%1===0,'The data is the number of scenes you want to pop, it must be integer.');(0,_Util.assert)(_popNum>1,'The data is the number of scenes you want to pop, it must be bigger than 1.');(0,_Util.assert)(_popNum<=state.index,'The data is the number of scenes you want to pop, '+"it must be smaller than scenes stack's length.");}state=babelHelpers.extends({},state,{index:state.index-_popNum,from:state.children[state.children.length-_popNum],children:state.children.slice(0,-1*_popNum)});if(state.children[state.index].sceneKey===action.key){return state;}var newAction=babelHelpers.extends({duration:0},action);delete newAction.popNum;var newProps=babelHelpers.extends({},props);delete newProps.popNum;state.children[state.children.length-1]=(0,_State.getInitialState)(newProps,scenes,state.index,newAction);return babelHelpers.extends({},state,{children:state.children});}case ActionConst.REFRESH:return props.base?babelHelpers.extends({navBar:state.navBar},scenes.rootProps,props,{key:state.key,from:null}):babelHelpers.extends({},state,props,{key:state.key,from:null});case ActionConst.PUSH_OR_POP:ind=state.children.findIndex(function(el){return el.sceneKey===action.key;});if(ind!==-1){return babelHelpers.extends({},state,{index:ind,from:state.children[state.index],children:refreshTopChild(state.children.slice(0,ind+1),action.refresh)});}return babelHelpers.extends({},state,{index:state.index+1,from:null,children:[].concat(babelHelpers.toConsumableArray(state.children),[(0,_State.getInitialState)(props,scenes,state.index+1,action)])});case ActionConst.PUSH:if(state.children[state.index].sceneKey===action.key&&!props.clone&&checkPropertiesEqual(action,state.children[state.index])){return state;}return babelHelpers.extends({},state,{index:state.index+1,from:null,children:[].concat(babelHelpers.toConsumableArray(state.children),[(0,_State.getInitialState)(props,scenes,state.index+1,action)])});case ActionConst.JUMP:{(0,_Util.assert)(state.tabs,'Parent='+state.key+' is not tab bar, jump action is not valid');ind=-1;state.children.forEach(function(c,i){if(c.sceneKey===action.key){ind=i;}});(0,_Util.assert)(ind!==-1,'Cannot find route with key='+action.key+' for parent='+state.key);if(action.unmountScenes){resetHistoryStack(state.children[ind]);}return babelHelpers.extends({},state,{index:ind});}case ActionConst.REPLACE:if(state.children[state.index].sceneKey===action.key){return state;}state.children[state.children.length-1]=(0,_State.getInitialState)(props,scenes,state.index,action);return babelHelpers.extends({},state,{children:state.children});case ActionConst.RESET:if(state.children[state.index].sceneKey===action.key){return state;}state.children=state.children.splice(0,1);state.children[0]=(0,_State.getInitialState)(props,scenes,state.index,action);return babelHelpers.extends({},state,{index:0,from:null,children:state.children});default:return state;}}function findElement(state,key,type){if(_Actions.ActionMap[type]===ActionConst.REFRESH&&state.key===key||state.sceneKey===key){return state;}if(state.children){for(var _iterator2=state.children,_isArray2=Array.isArray(_iterator2),_i2=0,_iterator2=_isArray2?_iterator2:_iterator2[typeof Symbol==='function'?Symbol.iterator:'@@iterator']();;){var _ref2;if(_isArray2){if(_i2>=_iterator2.length)break;_ref2=_iterator2[_i2++];}else{_i2=_iterator2.next();if(_i2.done)break;_ref2=_i2.value;}var child=_ref2;var current=findElement(child,key,type);if(current)return current;}}return null;}function getCurrent(state){ // 43 = react-native // 503 = ./State // 461 = ./Util // 460 = ./Actions // 463 = ./ActionConst
+getCurrent=getCurrent;var _ActionConst=require(464            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);var _Actions=require(461        );var _Util=require(462     );var _State=require(504      );var _reactNative=require(43            );function checkPropertiesEqual(action,lastAction){var isEqual=true;for(var _iterator=Object.keys(action),_isArray=Array.isArray(_iterator),_i=0,_iterator=_isArray?_iterator:_iterator[typeof Symbol==='function'?Symbol.iterator:'@@iterator']();;){var _ref;if(_isArray){if(_i>=_iterator.length)break;_ref=_iterator[_i++];}else{_i=_iterator.next();if(_i.done)break;_ref=_i.value;}var key=_ref;if(['key','type','parent'].indexOf(key)===-1){if(action[key]!==lastAction[key]){isEqual=false;}}}return isEqual;}function resetHistoryStack(child){var newChild=child;newChild.index=0;child.children.map(function(el,i){if(el.initial){newChild.index=i;if(!newChild.tabs){newChild.children=[el];}}if(el.children){resetHistoryStack(el);}return newChild;});}function refreshTopChild(children,refresh){if(refresh){var topChild=children[children.length-1];return[].concat(babelHelpers.toConsumableArray(children.slice(0,-1)),[babelHelpers.extends({},topChild,refresh)]);}return children;}function inject(state,action,props,scenes){var condition=_Actions.ActionMap[action.type]===ActionConst.REFRESH?state.key===props.key||state.sceneKey===action.key:state.sceneKey===props.parent;if(!condition){if(state.children){var res=state.children.map(function(el){return inject(el,action,props,scenes);});var changed=false;var changedIndex=-1;for(var i=0;i<res.length;i++){if(res[i]!==state.children[i]){changed=true;changedIndex=i;break;}}return changed?babelHelpers.extends({},state,{children:res,index:changedIndex}):state;}return state;}var ind=void 0;switch(_Actions.ActionMap[action.type]){case ActionConst.POP_TO:{var targetIndex=action.targetIndex;return babelHelpers.extends({},state,{index:targetIndex,children:refreshTopChild(state.children.slice(0,targetIndex+1),action.refresh)});}case ActionConst.BACK:case ActionConst.BACK_ACTION:{(0,_Util.assert)(!state.tabs,'pop() operation cannot be run on tab bar (tabs=true)');if(_reactNative.Platform.OS==='android'){(0,_Util.assert)(state.index>0,'You are already in the root scene.');}if(state.index===0){return state;}var popNum=1;if(action.popNum){(0,_Util.assert)(typeof action.popNum==='number','The data is the number of scenes you want to pop, it must be Number');popNum=action.popNum;(0,_Util.assert)(popNum%1===0,'The data is the number of scenes you want to pop, it must be integer.');(0,_Util.assert)(popNum>1,'The data is the number of scenes you want to pop, it must be bigger than 1.');(0,_Util.assert)(popNum<=state.index,'The data is the number of scenes you want to pop, '+"it must be smaller than scenes stack's length.");}return babelHelpers.extends({},state,{index:state.index-popNum,from:state.children[state.children.length-popNum],children:refreshTopChild(state.children.slice(0,-1*popNum),action.refresh)});}case ActionConst.POP_AND_REPLACE:{(0,_Util.assert)(!state.tabs,'pop() operation cannot be run on tab bar (tabs=true)');(0,_Util.assert)(state.index>0,'You are already in the root scene.');var _popNum=1;if(action.popNum){(0,_Util.assert)(typeof action.popNum==='number','The data is the number of scenes you want to pop, it must be Number');_popNum=action.popNum;(0,_Util.assert)(_popNum%1===0,'The data is the number of scenes you want to pop, it must be integer.');(0,_Util.assert)(_popNum>1,'The data is the number of scenes you want to pop, it must be bigger than 1.');(0,_Util.assert)(_popNum<=state.index,'The data is the number of scenes you want to pop, '+"it must be smaller than scenes stack's length.");}state=babelHelpers.extends({},state,{index:state.index-_popNum,from:state.children[state.children.length-_popNum],children:state.children.slice(0,-1*_popNum)});if(state.children[state.index].sceneKey===action.key){return state;}var newAction=babelHelpers.extends({duration:0},action);delete newAction.popNum;var newProps=babelHelpers.extends({},props);delete newProps.popNum;state.children[state.children.length-1]=(0,_State.getInitialState)(newProps,scenes,state.index,newAction);return babelHelpers.extends({},state,{children:state.children});}case ActionConst.REFRESH:return props.base?babelHelpers.extends({navBar:state.navBar},scenes.rootProps,props,{key:state.key,from:null}):babelHelpers.extends({},state,props,{key:state.key,from:null});case ActionConst.PUSH_OR_POP:ind=state.children.findIndex(function(el){return el.sceneKey===action.key;});if(ind!==-1){return babelHelpers.extends({},state,{index:ind,from:state.children[state.index],children:refreshTopChild(state.children.slice(0,ind+1),action.refresh)});}return babelHelpers.extends({},state,{index:state.index+1,from:null,children:[].concat(babelHelpers.toConsumableArray(state.children),[(0,_State.getInitialState)(props,scenes,state.index+1,action)])});case ActionConst.PUSH:if(state.children[state.index].sceneKey===action.key&&!props.clone&&checkPropertiesEqual(action,state.children[state.index])){return state;}return babelHelpers.extends({},state,{index:state.index+1,from:null,children:[].concat(babelHelpers.toConsumableArray(state.children),[(0,_State.getInitialState)(props,scenes,state.index+1,action)])});case ActionConst.JUMP:{(0,_Util.assert)(state.tabs,'Parent='+state.key+' is not tab bar, jump action is not valid');ind=-1;state.children.forEach(function(c,i){if(c.sceneKey===action.key){ind=i;}});(0,_Util.assert)(ind!==-1,'Cannot find route with key='+action.key+' for parent='+state.key);if(action.unmountScenes){resetHistoryStack(state.children[ind]);}return babelHelpers.extends({},state,{index:ind});}case ActionConst.REPLACE:if(state.children[state.index].sceneKey===action.key){return state;}state.children[state.children.length-1]=(0,_State.getInitialState)(props,scenes,state.index,action);return babelHelpers.extends({},state,{children:state.children});case ActionConst.RESET:if(state.children[state.index].sceneKey===action.key){return state;}state.children=state.children.splice(0,1);state.children[0]=(0,_State.getInitialState)(props,scenes,state.index,action);return babelHelpers.extends({},state,{index:0,from:null,children:state.children});default:return state;}}function findElement(state,key,type){if(_Actions.ActionMap[type]===ActionConst.REFRESH&&state.key===key||state.sceneKey===key){return state;}if(state.children){for(var _iterator2=state.children,_isArray2=Array.isArray(_iterator2),_i2=0,_iterator2=_isArray2?_iterator2:_iterator2[typeof Symbol==='function'?Symbol.iterator:'@@iterator']();;){var _ref2;if(_isArray2){if(_i2>=_iterator2.length)break;_ref2=_iterator2[_i2++];}else{_i2=_iterator2.next();if(_i2.done)break;_ref2=_i2.value;}var child=_ref2;var current=findElement(child,key,type);if(current)return current;}}return null;}function getCurrent(state){ // 43 = react-native // 504 = ./State // 462 = ./Util // 461 = ./Actions // 464 = ./ActionConst
 if(!state.children){
 return state;
 }
@@ -76485,7 +76485,7 @@ return state;}
 }exports.default=
 
 reducer;
-}, 502, null, "react-native-router-flux/src/Reducer.js");
+}, 503, null, "react-native-router-flux/src/Reducer.js");
 __d(/* react-native-router-flux/src/State.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.
 
 
@@ -76575,8 +76575,8 @@ var rootRoute=Object.keys(scenes).find(function(route){return(
 scenes.hasOwnProperty(route)&&!scenes[route].parent);});
 
 return getInitialState(scenes[rootRoute],scenes);
-};var _Util=require(461     );var _ActionConst=require(463            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);function getStateFromScenes(route,scenes,props){var getters=[];var result={};var scene=route;while(scene){if(scene.getInitialState){getters.push(scene.getInitialState);}scene=scenes[scene.parent];}if(scenes.rootProps&&scenes.rootProps.getInitialState){getters.push(scenes.rootProps.getInitialState);}getters.reverse().forEach(function(fn){result=babelHelpers.extends({},result,fn(props));});return result;}function getSceneKey(parent,key,position,sceneKey){return[parent,key,position,sceneKey].filter(function(v){return typeof v!=='undefined'&&v!==null;}).join('_');}function getInitialState(route,scenes){var position=arguments.length>2&&arguments[2]!==undefined?arguments[2]:0;var props=arguments.length>3&&arguments[3]!==undefined?arguments[3]:{};var parent=props.parent,key=props.key,style=props.style,type=props.type,parentProps=babelHelpers.objectWithoutProperties(props,['parent','key','style','type']);if(!route.children){return babelHelpers.extends({},scenes.rootProps,route,{key:getSceneKey(parent,key,position,route.sceneKey)},parentProps,getStateFromScenes(route,scenes,props));}var res=babelHelpers.extends({},route,scenes.rootProps,parentProps);var index=0;route.children.forEach(function(r,i){(0,_Util.assert)(scenes[r],'Empty scene for key='+route.key);if(scenes[r].initial){index=i;}});if(route.tabs){res.children=route.children.map(function(r,i){return getInitialState(scenes[r],scenes,i,babelHelpers.extends({},props,{parentIndex:position}));});res.index=index;}else{res.children=[getInitialState(scenes[route.children[index]],scenes,0,props)];res.index=0;}if(route.type===ActionConst.JUMP){res.children=res.children.map(function(child){return babelHelpers.extends({},props,child);});}res.key=position+'_'+res.key;return res;} // 463 = ./ActionConst // 461 = ./Util
-}, 503, null, "react-native-router-flux/src/State.js");
+};var _Util=require(462     );var _ActionConst=require(464            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);function getStateFromScenes(route,scenes,props){var getters=[];var result={};var scene=route;while(scene){if(scene.getInitialState){getters.push(scene.getInitialState);}scene=scenes[scene.parent];}if(scenes.rootProps&&scenes.rootProps.getInitialState){getters.push(scenes.rootProps.getInitialState);}getters.reverse().forEach(function(fn){result=babelHelpers.extends({},result,fn(props));});return result;}function getSceneKey(parent,key,position,sceneKey){return[parent,key,position,sceneKey].filter(function(v){return typeof v!=='undefined'&&v!==null;}).join('_');}function getInitialState(route,scenes){var position=arguments.length>2&&arguments[2]!==undefined?arguments[2]:0;var props=arguments.length>3&&arguments[3]!==undefined?arguments[3]:{};var parent=props.parent,key=props.key,style=props.style,type=props.type,parentProps=babelHelpers.objectWithoutProperties(props,['parent','key','style','type']);if(!route.children){return babelHelpers.extends({},scenes.rootProps,route,{key:getSceneKey(parent,key,position,route.sceneKey)},parentProps,getStateFromScenes(route,scenes,props));}var res=babelHelpers.extends({},route,scenes.rootProps,parentProps);var index=0;route.children.forEach(function(r,i){(0,_Util.assert)(scenes[r],'Empty scene for key='+route.key);if(scenes[r].initial){index=i;}});if(route.tabs){res.children=route.children.map(function(r,i){return getInitialState(scenes[r],scenes,i,babelHelpers.extends({},props,{parentIndex:position}));});res.index=index;}else{res.children=[getInitialState(scenes[route.children[index]],scenes,0,props)];res.index=0;}if(route.type===ActionConst.JUMP){res.children=res.children.map(function(child){return babelHelpers.extends({},props,child);});}res.key=position+'_'+res.key;return res;} // 464 = ./ActionConst // 462 = ./Util
+}, 504, null, "react-native-router-flux/src/State.js");
 __d(/* react-native-router-flux/src/Router.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});
 
 
@@ -76590,14 +76590,14 @@ var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_reac
 
 
 var _reactNative=require(43            ); // 43 = react-native
-var _reactNativeExperimentalNavigation=require(473                                   );var _reactNativeExperimentalNavigation2=babelHelpers.interopRequireDefault(_reactNativeExperimentalNavigation); // 473 = react-native-experimental-navigation
+var _reactNativeExperimentalNavigation=require(474                                   );var _reactNativeExperimentalNavigation2=babelHelpers.interopRequireDefault(_reactNativeExperimentalNavigation); // 474 = react-native-experimental-navigation
 
-var _Actions=require(460        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 460 = ./Actions
-var _State=require(503      );var _State2=babelHelpers.interopRequireDefault(_State); // 503 = ./State
-var _Reducer=require(502        );var _Reducer2=babelHelpers.interopRequireDefault(_Reducer); // 502 = ./Reducer
-var _DefaultRenderer=require(464                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 464 = ./DefaultRenderer
-var _Scene=require(462      );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 462 = ./Scene
-var _ActionConst=require(463            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);var // 463 = ./ActionConst
+var _Actions=require(461        );var _Actions2=babelHelpers.interopRequireDefault(_Actions); // 461 = ./Actions
+var _State=require(504      );var _State2=babelHelpers.interopRequireDefault(_State); // 504 = ./State
+var _Reducer=require(503        );var _Reducer2=babelHelpers.interopRequireDefault(_Reducer); // 503 = ./Reducer
+var _DefaultRenderer=require(465                );var _DefaultRenderer2=babelHelpers.interopRequireDefault(_DefaultRenderer); // 465 = ./DefaultRenderer
+var _Scene=require(463      );var _Scene2=babelHelpers.interopRequireDefault(_Scene); // 463 = ./Scene
+var _ActionConst=require(464            );var ActionConst=babelHelpers.interopRequireWildcard(_ActionConst);var // 464 = ./ActionConst
 
 
 NavigationRootContainer=_reactNativeExperimentalNavigation2.default.RootContainer;
@@ -76743,12 +76743,12 @@ renderNavigation:this.renderNavigation}));
 Router.propTypes=propTypes;exports.default=
 
 Router;
-}, 504, null, "react-native-router-flux/src/Router.js");
+}, 505, null, "react-native-router-flux/src/Router.js");
 __d(/* react-native-router-flux/src/Switch.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.default=
 
 
 
-Switch;var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react);var _TabBar=require(465       );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar);var _Actions=require(460        );var _Actions2=babelHelpers.interopRequireDefault(_Actions);function Switch(props){ // 460 = ./Actions // 465 = ./TabBar // 13 = react
+Switch;var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react);var _TabBar=require(466       );var _TabBar2=babelHelpers.interopRequireDefault(_TabBar);var _Actions=require(461        );var _Actions2=babelHelpers.interopRequireDefault(_Actions);function Switch(props){ // 461 = ./Actions // 466 = ./TabBar // 13 = react
 var navState=props.navigationState;
 
 var selector=props.selector;
@@ -76817,9 +76817,9 @@ onNavigate:_react.PropTypes.func,
 selector:_react.PropTypes.func,
 statem:_react.PropTypes.any,
 unmountScenes:_react.PropTypes.bool};
-}, 505, null, "react-native-router-flux/src/Switch.js");
+}, 506, null, "react-native-router-flux/src/Switch.js");
 __d(/* telegram/src/components/Screens/Main.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _reactNativeDrawer=require(507                  );var _reactNativeDrawer2=babelHelpers.interopRequireDefault(_reactNativeDrawer); // 507 = react-native-drawer
+var _reactNativeDrawer=require(508                  );var _reactNativeDrawer2=babelHelpers.interopRequireDefault(_reactNativeDrawer); // 508 = react-native-drawer
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
 var _reactNative=require(43            ); // 43 = react-native
 
@@ -76827,13 +76827,13 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _Container=require(510           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 510 = ../Container
-var _ControlPanel=require(512              );var _ControlPanel2=babelHelpers.interopRequireDefault(_ControlPanel); // 512 = ../ControlPanel
-var _TopBar=require(517        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 517 = ../TopBar
-var _ListMain=require(518          );var _ListMain2=babelHelpers.interopRequireDefault(_ListMain); // 518 = ../ListMain
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _menu=require(521                    );var _menu2=babelHelpers.interopRequireDefault(_menu); // 521 = ../../images/menu.png
-var _person_add=require(522                          );var _person_add2=babelHelpers.interopRequireDefault(_person_add);var _Dimensions$get= // 522 = ../../images/person_add.png
+var _Container=require(511           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 511 = ../Container
+var _ControlPanel=require(513              );var _ControlPanel2=babelHelpers.interopRequireDefault(_ControlPanel); // 513 = ../ControlPanel
+var _TopBar=require(518        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 518 = ../TopBar
+var _ListMain=require(519          );var _ListMain2=babelHelpers.interopRequireDefault(_ListMain); // 519 = ../ListMain
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _menu=require(522                    );var _menu2=babelHelpers.interopRequireDefault(_menu); // 522 = ../../images/menu.png
+var _person_add=require(523                          );var _person_add2=babelHelpers.interopRequireDefault(_person_add);var _Dimensions$get= // 523 = ../../images/person_add.png
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -76894,11 +76894,11 @@ paddingLeft:3}};exports.default=
 
 
 MainScreen;
-}, 506, null, "telegram/src/components/Screens/Main.js");
+}, 507, null, "telegram/src/components/Screens/Main.js");
 __d(/* react-native-drawer/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
 
-var _tweener=require(508        );var _tweener2=babelHelpers.interopRequireDefault(_tweener); // 508 = ./tweener
+var _tweener=require(509        );var _tweener2=babelHelpers.interopRequireDefault(_tweener); // 509 = ./tweener
 
 var deviceScreen=_reactNative.Dimensions.get('window');
 var DOUBLE_TAP_INTERVAL=500;
@@ -77458,8 +77458,8 @@ top:0,
 bottom:0,
 position:'absolute',
 backgroundColor:'transparent'}});
-}, 507, null, "react-native-drawer/index.js");
-__d(/* react-native-drawer/tweener.js */function(global, require, module, exports) {var easingTypes=require(509              ); // 509 = tween-functions
+}, 508, null, "react-native-drawer/index.js");
+__d(/* react-native-drawer/tweener.js */function(global, require, module, exports) {var easingTypes=require(510              ); // 510 = tween-functions
 
 module.exports=function(config){
 return new Tween(config);
@@ -77496,7 +77496,7 @@ requestAnimationFrame(this._rafLoop);
 Tween.prototype.terminate=function(){
 this._break=true;
 };
-}, 508, null, "react-native-drawer/tweener.js");
+}, 509, null, "react-native-drawer/tweener.js");
 __d(/* tween-functions/index.js */function(global, require, module, exports) {'use strict';
 
 
@@ -77746,11 +77746,11 @@ return v*0.5+c*0.5+b;
 
 
 module.exports=tweenFunctions;
-}, 509, null, "tween-functions/index.js");
+}, 510, null, "tween-functions/index.js");
 __d(/* telegram/src/components/Container/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactRedux=require(404          ); // 404 = react-redux
 var _redux=require(415    ); // 415 = redux
-var _telegramActions=require(511                            );var telegramActions=babelHelpers.interopRequireWildcard(_telegramActions); // 511 = ../../actions/telegramActions
+var _telegramActions=require(512                            );var telegramActions=babelHelpers.interopRequireWildcard(_telegramActions); // 512 = ../../actions/telegramActions
 var _reactNative=require(43            );var // 43 = react-native
 
 Container=function(_Component){babelHelpers.inherits(Container,_Component);function Container(){babelHelpers.classCallCheck(this,Container);return babelHelpers.possibleConstructorReturn(this,(Container.__proto__||Object.getPrototypeOf(Container)).apply(this,arguments));}babelHelpers.createClass(Container,[{key:'render',value:function render()
@@ -77805,7 +77805,7 @@ actions:(0,_redux.bindActionCreators)(telegramActions,dispatch)};
 }exports.default=
 
 (0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(Container);
-}, 510, null, "telegram/src/components/Container/index.js");
+}, 511, null, "telegram/src/components/Container/index.js");
 __d(/* telegram/src/actions/telegramActions.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.changeUserStatus=exports.coba=undefined;var _actionTypes=require(457            );var types=babelHelpers.interopRequireWildcard(_actionTypes); // 457 = ./actionTypes
 
 var coba=exports.coba=function coba(payload){return{
@@ -77816,10 +77816,10 @@ payload:payload};};
 var changeUserStatus=exports.changeUserStatus=function changeUserStatus(payload){return{
 type:types.CHANGE_USER_STATUS,
 payload:payload};};
-}, 511, null, "telegram/src/actions/telegramActions.js");
+}, 512, null, "telegram/src/actions/telegramActions.js");
 __d(/* telegram/src/components/ControlPanel/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _Container=require(510           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 510 = ../Container
-var _Content=require(513        );var _Content2=babelHelpers.interopRequireDefault(_Content); // 513 = ./Content
+var _Container=require(511           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 511 = ../Container
+var _Content=require(514        );var _Content2=babelHelpers.interopRequireDefault(_Content); // 514 = ./Content
 
 var ControlPanelWrapper=function ControlPanelWrapper(props){
 return(
@@ -77830,7 +77830,7 @@ _react2.default.createElement(_Content2.default,null)));
 };exports.default=
 
 ControlPanelWrapper;
-}, 512, null, "telegram/src/components/ControlPanel/index.js");
+}, 513, null, "telegram/src/components/ControlPanel/index.js");
 __d(/* telegram/src/components/ControlPanel/Content.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
 var _reactNative=require(43            ); // 43 = react-native
@@ -77840,9 +77840,9 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils); // 515 = ../../utils
-var _logout=require(516                      );var _logout2=babelHelpers.interopRequireDefault(_logout); // 516 = ../../images/logout.png
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _utils=require(516          );var utils=babelHelpers.interopRequireWildcard(_utils); // 516 = ../../utils
+var _logout=require(517                      );var _logout2=babelHelpers.interopRequireDefault(_logout); // 517 = ../../images/logout.png
 
 var EXAMPLE_NAME='Lutfi Dwica';var _Dimensions$get=
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
@@ -77939,7 +77939,7 @@ marginLeft:width*0.03}});exports.default=
 
 
 ControlPanel;
-}, 513, null, "telegram/src/components/ControlPanel/Content.js");
+}, 514, null, "telegram/src/components/ControlPanel/Content.js");
 __d(/* telegram/src/colors/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.random=random;function random(){
 var colors=['#16a085','#27ae60','#2c3e50','#f39c12','#e74c3c','#9b59b6','#FB6964','#342224',"#472E32","#BDBB99","#77B1A9","#73A857"];
 var color=Math.floor(Math.random()*colors.length);
@@ -77951,13 +77951,13 @@ var SECONDARY=exports.SECONDARY='#efffde';
 var THIRD=exports.THIRD='#CCCCCC';
 var BASIC=exports.BASIC='white';
 var BORDER=exports.BORDER='rgba(0, 0, 0, 0.1)';
-}, 514, null, "telegram/src/colors/index.js");
+}, 515, null, "telegram/src/colors/index.js");
 __d(/* telegram/src/utils/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.firstLetter=firstLetter;function firstLetter(str){
 return str.slice(0,1).toUpperCase();
 }
-}, 515, null, "telegram/src/utils/index.js");
+}, 516, null, "telegram/src/utils/index.js");
 __d(/* telegram/src/images/logout.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"56fb6975de817b230e2ef7aac1bad0eb","name":"logout","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 516, null, "telegram/src/images/logout.png");
+}, 517, null, "telegram/src/images/logout.png");
 __d(/* telegram/src/components/TopBar/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
 
@@ -77966,7 +77966,7 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions);var _Dimensions$get= // 103 = Dimensions
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
@@ -78034,7 +78034,7 @@ height:width*0.08}});exports.default=
 
 
 TopBar;
-}, 517, null, "telegram/src/components/TopBar/index.js");
+}, 518, null, "telegram/src/components/TopBar/index.js");
 __d(/* telegram/src/components/ListMain/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
 
@@ -78042,8 +78042,8 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
-var _Row=require(519    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 519 = ./Row
-var _demoData=require(520          );var _demoData2=babelHelpers.interopRequireDefault(_demoData);var _Dimensions$get= // 520 = ../demoData
+var _Row=require(520    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 520 = ./Row
+var _demoData=require(521          );var _demoData2=babelHelpers.interopRequireDefault(_demoData);var _Dimensions$get= // 521 = ../demoData
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78085,9 +78085,9 @@ marginBottom:BOTTOM_BLANK}});exports.default=
 
 
 ListActive;
-}, 518, null, "telegram/src/components/ListMain/index.js");
+}, 519, null, "telegram/src/components/ListMain/index.js");
 __d(/* telegram/src/components/ListMain/Row.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _reactNativeRouterFlux=require(459                       ); // 459 = react-native-router-flux
+var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
 var _reactNative=require(43            ); // 43 = react-native
 
 
@@ -78095,8 +78095,8 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils);var _Dimensions$get= // 515 = ../../utils
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _utils=require(516          );var utils=babelHelpers.interopRequireWildcard(_utils);var _Dimensions$get= // 516 = ../../utils
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78183,7 +78183,7 @@ time:{}});exports.default=
 
 
 Row;
-}, 519, null, "telegram/src/components/ListMain/Row.js");
+}, 520, null, "telegram/src/components/ListMain/Row.js");
 __d(/* telegram/src/components/demoData.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.default=data=[
 {
 name:'Lutfi Dwica',
@@ -78259,14 +78259,14 @@ previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'}];
-}, 520, null, "telegram/src/components/demoData.js");
+}, 521, null, "telegram/src/components/demoData.js");
 __d(/* telegram/src/images/menu.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"9cd2ca85f0a29c5666f642d3838aa159","name":"menu","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 521, null, "telegram/src/images/menu.png");
+}, 522, null, "telegram/src/images/menu.png");
 __d(/* telegram/src/images/person_add.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"ade1c95990b54ae0d87027e717347553","name":"person_add","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 522, null, "telegram/src/images/person_add.png");
+}, 523, null, "telegram/src/images/person_add.png");
 __d(/* telegram/src/components/Screens/Messages.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _Container=require(510           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 510 = ../Container
-var _ListMessages=require(524              );var _ListMessages2=babelHelpers.interopRequireDefault(_ListMessages); // 524 = ../ListMessages
+var _Container=require(511           );var _Container2=babelHelpers.interopRequireDefault(_Container); // 511 = ../Container
+var _ListMessages=require(525              );var _ListMessages2=babelHelpers.interopRequireDefault(_ListMessages); // 525 = ../ListMessages
 
 var MessagesScreen=function MessagesScreen(props){
 return(
@@ -78277,10 +78277,10 @@ _react2.default.createElement(_ListMessages2.default,null)));
 };exports.default=
 
 MessagesScreen;
-}, 523, null, "telegram/src/components/Screens/Messages.js");
+}, 524, null, "telegram/src/components/Screens/Messages.js");
 __d(/* telegram/src/components/ListMessages/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
-var _reactNativeRouterFlux=require(459                       ); // 459 = react-native-router-flux
+var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
 var _reactNative=require(43            ); // 43 = react-native
 
 
@@ -78288,14 +78288,13 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-
-var _TopBar=require(517        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 517 = ../TopBar
-var _Row=require(525    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 525 = ./Row
-var _Input=require(559      );var _Input2=babelHelpers.interopRequireDefault(_Input); // 559 = ./Input
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors); // 514 = ../../colors
-var _utils=require(515          );var utils=babelHelpers.interopRequireWildcard(_utils); // 515 = ../../utils
-var _arrow_back=require(526                          );var _arrow_back2=babelHelpers.interopRequireDefault(_arrow_back); // 526 = ../../images/arrow_back.png
-var _demoData=require(520          );var _demoData2=babelHelpers.interopRequireDefault(_demoData); // 520 = ../demoData
+var _TopBar=require(518        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 518 = ../TopBar
+var _Row=require(526    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 526 = ./Row
+var _Input=require(527      );var _Input2=babelHelpers.interopRequireDefault(_Input); // 527 = ./Input
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _utils=require(516          );var utils=babelHelpers.interopRequireWildcard(_utils); // 516 = ../../utils
+var _arrow_back=require(529                          );var _arrow_back2=babelHelpers.interopRequireDefault(_arrow_back); // 529 = ../../images/arrow_back.png
+var _demoData=require(521          );var _demoData2=babelHelpers.interopRequireDefault(_demoData); // 521 = ../demoData
 
 var EXAMPLE_NAME='React Native Indo Jaya';var _Dimensions$get=
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
@@ -78343,9 +78342,7 @@ style:styles.listview,
 dataSource:dataSource,
 renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}}),
 
-_react2.default.createElement(_reactNative.KeyboardAvoidingView,{style:{flex:0},behavior:'position'},
-_react2.default.createElement(_Input2.default,null))));
-
+_react2.default.createElement(_Input2.default,null)));
 
 
 };
@@ -78384,7 +78381,7 @@ color:colors.BASIC}});exports.default=
 
 
 ListMessages;
-}, 524, null, "telegram/src/components/ListMessages/index.js");
+}, 525, null, "telegram/src/components/ListMessages/index.js");
 __d(/* telegram/src/components/ListMessages/Row.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
 var _reactNative=require(43            ); // 43 = react-native
@@ -78393,7 +78390,7 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 515 = ../../colors
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78453,7 +78450,7 @@ backgroundColor:'transparent'}});exports.default=
 
 
 Row;
-}, 525, null, "telegram/src/components/ListMessages/Row.js");
+}, 526, null, "telegram/src/components/ListMessages/Row.js");
 __d(/* telegram/src/components/ListMessages/Input.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
 var _reactNative=require(43            ); // 43 = react-native
@@ -78461,7 +78458,8 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _colors=require(514           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 514 = ../../colors
+var _KeyboardSpacer=require(528                );var _KeyboardSpacer2=babelHelpers.interopRequireDefault(_KeyboardSpacer); // 528 = ../KeyboardSpacer
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 515 = ../../colors
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78473,8 +78471,10 @@ _react2.default.createElement(_reactNative.TextInput,{
 style:styles.textInput,
 placeholder:'Message',
 autoCapitalize:'none',
-autoCorrect:false})));
+underlineColorAndroid:'transparent',
+autoCorrect:false}),
 
+_react2.default.createElement(_KeyboardSpacer2.default,null)));
 
 
 };
@@ -78483,18 +78483,135 @@ var styles=_reactNative.StyleSheet.create({
 container:{
 flex:0},
 
-
 textInput:{
 height:height*0.07,
-padding:width*0.02,
+paddingHorizontal:width*0.02,
 backgroundColor:colors.BASIC}});exports.default=
 
 
 
 Input;
-}, 559, null, "telegram/src/components/ListMessages/Input.js");
+}, 527, null, "telegram/src/components/ListMessages/Input.js");
+__d(/* telegram/src/components/KeyboardSpacer/index.js */function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
+
+
+
+var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
+var _reactNative=require(43            ); // 43 = react-native
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var KeyboardSpacer=function KeyboardSpacer(){return(
+_reactNative.Platform.OS==='ios'?_react2.default.createElement(KeyboardSpacerIOS,null):null);};var
+
+
+KeyboardSpacerIOS=function(_Component){babelHelpers.inherits(KeyboardSpacerIOS,_Component);function KeyboardSpacerIOS(){var _ref;var _temp,_this,_ret;babelHelpers.classCallCheck(this,KeyboardSpacerIOS);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=babelHelpers.possibleConstructorReturn(this,(_ref=KeyboardSpacerIOS.__proto__||Object.getPrototypeOf(KeyboardSpacerIOS)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+
+
+
+
+
+
+
+state={
+keyboardHeight:0},_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+_registerEvents=function(){
+_this._keyboardWillShowSubscription=_reactNative.Keyboard.addListener(
+'keyboardWillShow',
+_this._keyboardWillShow);
+
+_this._keyboardWillHideSubscription=_reactNative.Keyboard.addListener(
+'keyboardWillHide',
+_this._keyboardWillHide);
+
+},_this.
+
+_unRegisterEvents=function(){
+_this._keyboardWillShowSubscription.remove();
+_this._keyboardWillHideSubscription.remove();
+},_this.
+
+_configureLayoutAnimation=function(){
+
+_reactNative.LayoutAnimation.configureNext({
+duration:100,
+update:{
+type:'keyboard'}});
+
+
+},_this.
+
+_keyboardWillShow=function(e){
+_this._configureLayoutAnimation();
+_this.setState({
+keyboardHeight:e.endCoordinates.height-(_this.props.offset||0)});
+
+},_this.
+
+_keyboardWillHide=function(){
+_this._configureLayoutAnimation();
+_this.setState({
+keyboardHeight:0});
+
+},_temp),babelHelpers.possibleConstructorReturn(_this,_ret);}babelHelpers.createClass(KeyboardSpacerIOS,[{key:'componentWillMount',value:function componentWillMount(){this._registerEvents();}},{key:'componentWillUnmount',value:function componentWillUnmount(){this._unRegisterEvents();}},{key:'render',value:function render()
+
+{
+return _react2.default.createElement(_reactNative.View,{style:{height:this.state.keyboardHeight}});
+}}]);return KeyboardSpacerIOS;}(_react.Component);KeyboardSpacerIOS.propTypes={offset:_react.PropTypes.number};KeyboardSpacerIOS.defaultProps={offset:0};exports.default=
+
+
+KeyboardSpacer;
+}, 528, null, "telegram/src/components/KeyboardSpacer/index.js");
 __d(/* telegram/src/images/arrow_back.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"bdb79a342d2be1a9bdd8e65eb16420e7","name":"arrow_back","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 526, null, "telegram/src/images/arrow_back.png");
+}, 529, null, "telegram/src/images/arrow_back.png");
 ;require(217);
 ;require(12);
 //# sourceMappingURL=index.android.map

@@ -5,6 +5,7 @@ import {
     TextInput,
     StyleSheet,
 } from 'react-native';
+import KeyboardSpacer from '../KeyboardSpacer';
 import * as colors from '../../colors';
 
 const { width, height } = Dimensions.get('window');
@@ -17,8 +18,10 @@ const Input = props => {
                 style={styles.textInput}
                 placeholder='Message'
                 autoCapitalize='none'
+                underlineColorAndroid='transparent'
                 autoCorrect={false}
             />
+            <KeyboardSpacer />
         </View>
     );
 }
@@ -26,11 +29,10 @@ const Input = props => {
 const styles = StyleSheet.create({
     container: {
         flex: 0,
-       // marginBottom: height * 0.035,
     },
     textInput: {
         height: height * 0.07,
-        padding: width * 0.02,
+        paddingHorizontal: width * 0.02,
         backgroundColor: colors.BASIC,
     },
 });
