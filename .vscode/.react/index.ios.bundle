@@ -78606,12 +78606,13 @@ var _reactNative=require(43            ); // 43 = react-native
 var _TopBar=require(518        );var _TopBar2=babelHelpers.interopRequireDefault(_TopBar); // 518 = ../TopBar
 var _Row=require(526    );var _Row2=babelHelpers.interopRequireDefault(_Row); // 526 = ./Row
 var _Input=require(527      );var _Input2=babelHelpers.interopRequireDefault(_Input); // 527 = ./Input
+var _KeyboardSpacer=require(528                );var _KeyboardSpacer2=babelHelpers.interopRequireDefault(_KeyboardSpacer); // 528 = ../KeyboardSpacer
 var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
 var _utils=require(516          );var utils=babelHelpers.interopRequireWildcard(_utils); // 516 = ../../utils
 var _arrow_back=require(529                          );var _arrow_back2=babelHelpers.interopRequireDefault(_arrow_back); // 529 = ../../images/arrow_back.png
 var _demoData=require(521          );var _demoData2=babelHelpers.interopRequireDefault(_demoData); // 521 = ../demoData
 
-var EXAMPLE_NAME='React Native Indo Jaya';var _Dimensions$get=
+var EXAMPLE_NAME='Lutfi Dwica';var _Dimensions$get=
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
 var ListMessages=function ListMessages(props){
@@ -78657,7 +78658,8 @@ style:styles.listview,
 dataSource:dataSource,
 renderRow:function renderRow(data){return _react2.default.createElement(_Row2.default,babelHelpers.extends({},data,props));}}),
 
-_react2.default.createElement(_Input2.default,null)));
+_react2.default.createElement(_Input2.default,null),
+_react2.default.createElement(_KeyboardSpacer2.default,null)));
 
 
 };
@@ -78726,7 +78728,7 @@ var chat=email===userStatus.email?
 return(
 _react2.default.createElement(_reactNative.View,{style:container},
 _react2.default.createElement(_reactNative.View,{style:chat},
-_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Halo Dunia'))));
+_react2.default.createElement(_reactNative.Text,{style:styles.chatText},'Selamat Pagi!'))));
 
 
 
@@ -78773,8 +78775,9 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
-var _KeyboardSpacer=require(528                );var _KeyboardSpacer2=babelHelpers.interopRequireDefault(_KeyboardSpacer); // 528 = ../KeyboardSpacer
-var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors);var _Dimensions$get= // 515 = ../../colors
+
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _send=require(562                    );var _send2=babelHelpers.interopRequireDefault(_send);var _Dimensions$get= // 562 = ../../images/send.png
 
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
 
@@ -78789,24 +78792,34 @@ autoCapitalize:'none',
 underlineColorAndroid:'transparent',
 autoCorrect:false}),
 
-_react2.default.createElement(_KeyboardSpacer2.default,null)));
+_react2.default.createElement(_reactNative.Image,{source:_send2.default,style:styles.send})));
 
 
 };
 
 var styles=_reactNative.StyleSheet.create({
 container:{
-flex:0},
+flex:0,
+alignItems:'center',
+flexDirection:'row',
+backgroundColor:'white'},
 
 textInput:{
+width:width*0.9,
 height:height*0.07,
 paddingHorizontal:width*0.02,
-backgroundColor:colors.BASIC}});exports.default=
+backgroundColor:colors.BASIC},
+
+send:{
+height:width*0.08,
+width:width*0.08}});exports.default=
 
 
 
 Input;
 }, 527, null, "telegram/src/components/ListMessages/Input.js");
+__d(/* telegram/src/images/send.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"99ab20f361110d442390da696742ad90","name":"send","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
+}, 562, null, "telegram/src/images/send.png");
 __d(/* telegram/src/components/KeyboardSpacer/index.js */function(global, require, module, exports) {'use strict';Object.defineProperty(exports,"__esModule",{value:true});
 
 

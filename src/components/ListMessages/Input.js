@@ -4,9 +4,10 @@ import {
     View,
     TextInput,
     StyleSheet,
+    Image,
 } from 'react-native';
-import KeyboardSpacer from '../KeyboardSpacer';
 import * as colors from '../../colors';
+import imgSend from '../../images/send.png';
 
 const { width, height } = Dimensions.get('window');
 
@@ -21,7 +22,7 @@ const Input = props => {
                 underlineColorAndroid='transparent'
                 autoCorrect={false}
             />
-            <KeyboardSpacer />
+            <Image source={imgSend} style={styles.send} />
         </View>
     );
 }
@@ -29,11 +30,19 @@ const Input = props => {
 const styles = StyleSheet.create({
     container: {
         flex: 0,
+        alignItems: 'center',
+        flexDirection: 'row',
+        backgroundColor: 'white',
     },
     textInput: {
+        width: width * 0.9,
         height: height * 0.07,
         paddingHorizontal: width * 0.02,
         backgroundColor: colors.BASIC,
+    },
+    send: {
+        height: width * 0.08,
+        width: width * 0.08,
     },
 });
 

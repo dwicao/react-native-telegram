@@ -28,7 +28,7 @@ const Row = props => {
 		<View style={container}>
 			<View style={chat}>
 				<Text style={styles.chatText}>
-					Halo Dunia
+					Selamat Pagi!
 				</Text>
 			</View>
 		</View>

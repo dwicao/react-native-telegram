@@ -11,12 +11,13 @@ import {
 import TopBar from '../TopBar';
 import Row from './Row';
 import Input from './Input';
+import KeyboardSpacer from '../KeyboardSpacer';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
 import imgArrowBack from '../../images/arrow_back.png';
 import demoData from '../demoData';
 
-const EXAMPLE_NAME = 'React Native Indo Jaya';
+const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
 
 const ListMessages = props => {
@@ -63,6 +64,7 @@ const ListMessages = props => {
 			  renderRow={(data) => <Row {...data} {...props} />}
 			/>
 			<Input />
+			<KeyboardSpacer />
 		</View>
 	)
 };
