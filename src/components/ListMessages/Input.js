@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Dimensions from 'Dimensions';
 import {
     View,
@@ -11,20 +11,37 @@ import imgSend from '../../images/send.png';
 
 const { width, height } = Dimensions.get('window');
 
-const Input = props => {
+class Input extends Component {
+    constructor() {
+        super();
 
-    return (
-        <View style={styles.container}>
-            <TextInput
-                style={styles.textInput}
-                placeholder='Message'
-                autoCapitalize='none'
-                underlineColorAndroid='transparent'
-                autoCorrect={false}
-            />
-            <Image source={imgSend} style={styles.send} />
-        </View>
-    );
+        this.state = {
+            myMessage: '',
+        };
+    }
+
+    _onChangeText = (text) => {
+        this.setState({ myMessage: text });
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder='Message'
+                    autoCapitalize='none'
+                    underlineColorAndroid='transparent'
+                    autoCorrect={false}
+                    value={this.state.myMessage}
+                    onChangeText={this._onChangeText}
+                />
+                { this.state.myMessage !== '' && (
+                    <Image source={imgSend} style={styles.send} />
+                )}
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
