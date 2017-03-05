@@ -8,13 +8,13 @@ import {
 	ListView,
 	Platform,
 } from 'react-native';
-import TopBar from '../TopBar';
+import TopBar from '@components/TopBar';
 import Row from './Row';
 import Input from './Input';
-import KeyboardSpacer from '../KeyboardSpacer';
-import * as colors from '../../colors';
-import { myHeight, myWidth, firstLetter } from '../../utils';
-import demoData from '../demoData';
+import KeyboardSpacer from '@components/KeyboardSpacer';
+import * as colors from '@colors';
+import { myHeight, myWidth, firstLetter } from '@utils';
+import demoData from '@components/demoData';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 

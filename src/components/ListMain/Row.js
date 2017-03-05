@@ -6,8 +6,8 @@ import {
 	StyleSheet,
 	TouchableOpacity,
 } from 'react-native';
-import * as colors from '../../colors';
-import { myHeight, myWidth, firstLetter } from '../../utils';
+import * as colors from '@colors';
+import { myHeight, myWidth, firstLetter } from '@utils';
 
 const Row = props => {
 	const onPress = () => Actions.messagesScreen();

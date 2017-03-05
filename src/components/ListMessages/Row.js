@@ -5,8 +5,8 @@ import {
 	Platform,
 	StyleSheet,
 } from 'react-native';
-import * as colors from '../../colors';
-import { myHeight, myWidth } from '../../utils';
+import * as colors from '@colors';
+import { myHeight, myWidth } from '@utils';
 
 const Row = props => {
 	const {

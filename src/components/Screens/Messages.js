@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from '../Container';
-import ListMessages from '../ListMessages';
+import Container from '@components/Container';
+import ListMessages from '@components/ListMessages';
 
 const MessagesScreen = props => {
 	return (

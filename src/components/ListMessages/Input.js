@@ -6,8 +6,8 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import * as colors from '../../colors';
-import { myHeight, myWidth } from '../../utils';
+import * as colors from '@colors';
+import { myHeight, myWidth } from '@utils';
 
 class Input extends Component {
     constructor() {

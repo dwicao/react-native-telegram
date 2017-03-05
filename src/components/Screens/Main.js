@@ -6,12 +6,12 @@ import {
   Alert,
   StyleSheet,
 } from 'react-native';
-import Container from '../Container';
-import ControlPanel from '../ControlPanel';
-import TopBar from '../TopBar';
-import ListMain from '../ListMain';
-import * as colors from '../../colors';
-import { myHeight, myWidth, firstLetter } from '../../utils';
+import Container from '@components/Container';
+import ControlPanel from '@components/ControlPanel';
+import TopBar from '@components/TopBar';
+import ListMain from '@components/ListMain';
+import * as colors from '@colors';
+import { myHeight, myWidth, firstLetter } from '@utils';
 
 const MainScreen = props => {
 	let _drawer;

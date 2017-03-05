@@ -5,8 +5,8 @@ import {
 	Platform,
 } from 'react-native';
 import Row from './Row';
-import demoData from '../demoData';
-import { myHeight, myWidth } from '../../utils';
+import demoData from '@components/demoData';
+import { myHeight, myWidth } from '@utils';
 
 const ListActive = props => {
 	const formatData = (data) => {

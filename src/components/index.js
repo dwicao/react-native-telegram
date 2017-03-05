@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-import MainScreen from './Screens/Main';
-import MessagesScreen from './Screens/Messages';
+import MainScreen from '@components/Screens/Main';
+import MessagesScreen from '@components/Screens/Messages';
 
 export default class App extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as telegramActions from '../../actions/telegramActions';
+import * as telegramActions from '@actions/telegramActions';
 import { View, StyleSheet, Platform } from 'react-native';
 
 class Container extends Component {
