@@ -30,15 +30,15 @@ const ControlPanel = props => {
 			</View>
 			<View style={styles.bottom}>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 			</View>

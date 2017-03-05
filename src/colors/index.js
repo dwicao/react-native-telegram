@@ -8,4 +8,5 @@ export const PRIMARY = '#6084A5';
 export const SECONDARY = '#efffde';
 export const THIRD = '#CCCCCC';
 export const BASIC = 'white';
+export const DARK = 'black';
 export const BORDER = 'rgba(0, 0, 0, 0.1)';

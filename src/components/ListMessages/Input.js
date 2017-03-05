@@ -3,7 +3,7 @@ import {
     View,
     TextInput,
     StyleSheet,
-    Image,
+    TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
@@ -16,10 +16,16 @@ class Input extends Component {
         this.state = {
             myMessage: '',
         };
+
+        this._onPressSend = this._onPressSend.bind(this);
     }
 
     _onChangeText = (text) => {
         this.setState({ myMessage: text });
+    }
+
+    _onPressSend() {
+        alert('send be pressed');
     }
 
     render() {
@@ -35,7 +41,9 @@ class Input extends Component {
                     onChangeText={this._onChangeText}
                 />
                 { this.state.myMessage !== '' && (
-                    <Icon name="send" size={myWidth * 0.08} color="black" />
+                    <TouchableOpacity onPress={this._onPressSend} style={styles.buttonSend}>
+                        <Icon name="send" size={myWidth * 0.08} color={colors.PRIMARY} />
+                    </TouchableOpacity>
                 )}
             </View>
         );
@@ -54,6 +62,8 @@ const styles = StyleSheet.create({
         height: myHeight * 0.07,
         paddingHorizontal: myWidth * 0.02,
         backgroundColor: colors.BASIC,
+    },
+    buttonSend: {
     },
 });
 
