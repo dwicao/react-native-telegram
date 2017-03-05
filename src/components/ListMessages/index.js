@@ -1,6 +1,7 @@
 import React from 'react';
 import Dimensions from 'Dimensions';
 import { Actions, ActionConst } from 'react-native-router-flux';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
 	View,
 	Text,
@@ -48,6 +49,7 @@ const ListMessages = props => {
 			<TopBar 
 				imgLeft={imgArrowBack}
 				onPressLeft={_onPressLeft}
+				iconLeftName="arrow-back"
 			>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 					<Text style={styles.shortText}>

@@ -6,6 +6,7 @@ import {
 	Image,
 	TouchableOpacity,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
 import Dimensions from 'Dimensions';
 
@@ -15,9 +16,8 @@ const TopBar = props => {
 	const {
 		children,
 		onPressLeft,
-		imgLeft,
 		onPressRight,
-		imgRight,
+		iconLeftName,
 		enableRightButton,
 	} = props;
 
@@ -25,14 +25,14 @@ const TopBar = props => {
 		<View style={styles.container}>
 			<View style={styles.left}>
 				<TouchableOpacity onPress={onPressLeft}>
-					<Image source={imgLeft} style={styles.icon} />
+					<Icon name={iconLeftName} size={width * 0.08} color={colors.BASIC} />
 				</TouchableOpacity>
 				{children}
 			</View>
 			{ enableRightButton &&
 				<View style={styles.right}>
 					<TouchableOpacity onPress={onPressRight}>
-						<Image source={imgRight} style={styles.icon} />
+						<Icon name="person-add" size={width * 0.08} color={colors.BASIC} />
 					</TouchableOpacity>
 				</View>
 			}
@@ -40,11 +40,13 @@ const TopBar = props => {
 	);
 };
 
+TopBar.defaultProps = {
+	iconLeftName: "menu",
+};
+
 TopBar.propTypes = {
 	onPressLeft: PropTypes.func.isRequired,
-	imgLeft: PropTypes.number.isRequired,
 	onPressRight: PropTypes.func,
-	imgRight: PropTypes.number,
 	enableRightButton: PropTypes.bool,
 };
 
@@ -66,10 +68,6 @@ const styles = StyleSheet.create({
 		fontSize: width * 0.06,
 		paddingLeft: width * 0.09,
 		color: colors.BASIC,
-	},
-	icon: {
-		width: width * 0.08,
-		height: width * 0.08,
 	},
 });
 
