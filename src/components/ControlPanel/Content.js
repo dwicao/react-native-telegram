@@ -7,9 +7,9 @@ import {
 	StyleSheet,
 	TouchableOpacity,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
 import * as utils from '../../utils';
-import imgLogout from '../../images/logout.png';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 const { width, height } = Dimensions.get('window');
@@ -32,15 +32,15 @@ const ControlPanel = props => {
 			</View>
 			<View style={styles.bottom}>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgLogout} style={styles.buttonImg} />
+					<Icon name="exit-to-app" size={width * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgLogout} style={styles.buttonImg} />
+					<Icon name="exit-to-app" size={width * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Image source={imgLogout} style={styles.buttonImg} />
+					<Icon name="exit-to-app" size={width * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 			</View>
@@ -94,10 +94,6 @@ const styles = StyleSheet.create({
 		justifyContent: 'flex-start',
 		paddingHorizontal: width * 0.03,
 		paddingVertical: width * 0.02,
-	},
-	buttonImg: {
-		width: width * 0.07,
-		height: width * 0.07,
 	},
 	buttonText: {
 		fontSize: width * 0.045,

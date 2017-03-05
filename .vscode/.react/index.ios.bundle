@@ -78155,9 +78155,9 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
+var _MaterialIcons=require(531                                      );var _MaterialIcons2=babelHelpers.interopRequireDefault(_MaterialIcons); // 531 = react-native-vector-icons/MaterialIcons
 var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
 var _utils=require(516          );var utils=babelHelpers.interopRequireWildcard(_utils); // 516 = ../../utils
-var _logout=require(517                      );var _logout2=babelHelpers.interopRequireDefault(_logout); // 517 = ../../images/logout.png
 
 var EXAMPLE_NAME='Lutfi Dwica';var _Dimensions$get=
 _Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
@@ -78180,15 +78180,15 @@ _react2.default.createElement(_reactNative.Text,{numberOfLines:1,style:styles.h2
 
 _react2.default.createElement(_reactNative.View,{style:styles.bottom},
 _react2.default.createElement(_reactNative.TouchableOpacity,{style:styles.button},
-_react2.default.createElement(_reactNative.Image,{source:_logout2.default,style:styles.buttonImg}),
+_react2.default.createElement(_MaterialIcons2.default,{name:'exit-to-app',size:width*0.07,color:'black'}),
 _react2.default.createElement(_reactNative.Text,{style:styles.buttonText},'Logout')),
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{style:styles.button},
-_react2.default.createElement(_reactNative.Image,{source:_logout2.default,style:styles.buttonImg}),
+_react2.default.createElement(_MaterialIcons2.default,{name:'exit-to-app',size:width*0.07,color:'black'}),
 _react2.default.createElement(_reactNative.Text,{style:styles.buttonText},'Logout')),
 
 _react2.default.createElement(_reactNative.TouchableOpacity,{style:styles.button},
-_react2.default.createElement(_reactNative.Image,{source:_logout2.default,style:styles.buttonImg}),
+_react2.default.createElement(_MaterialIcons2.default,{name:'exit-to-app',size:width*0.07,color:'black'}),
 _react2.default.createElement(_reactNative.Text,{style:styles.buttonText},'Logout')))));
 
 
@@ -78243,10 +78243,6 @@ justifyContent:'flex-start',
 paddingHorizontal:width*0.03,
 paddingVertical:width*0.02},
 
-buttonImg:{
-width:width*0.07,
-height:width*0.07},
-
 buttonText:{
 fontSize:width*0.045,
 marginLeft:width*0.03}});exports.default=
@@ -78255,102 +78251,6 @@ marginLeft:width*0.03}});exports.default=
 
 ControlPanel;
 }, 514, null, "telegram/src/components/ControlPanel/Content.js");
-__d(/* telegram/src/colors/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.random=random;function random(){
-var colors=['#16a085','#27ae60','#2c3e50','#f39c12','#e74c3c','#9b59b6','#FB6964','#342224',"#472E32","#BDBB99","#77B1A9","#73A857"];
-var color=Math.floor(Math.random()*colors.length);
-
-return colors[color];
-}
-var PRIMARY=exports.PRIMARY='#6084A5';
-var SECONDARY=exports.SECONDARY='#efffde';
-var THIRD=exports.THIRD='#CCCCCC';
-var BASIC=exports.BASIC='white';
-var BORDER=exports.BORDER='rgba(0, 0, 0, 0.1)';
-}, 515, null, "telegram/src/colors/index.js");
-__d(/* telegram/src/utils/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.firstLetter=firstLetter;function firstLetter(str){
-return str.slice(0,1).toUpperCase();
-}
-}, 516, null, "telegram/src/utils/index.js");
-__d(/* telegram/src/images/logout.png */function(global, require, module, exports) {module.exports = require(173                                         ).registerAsset({"__packager_asset":true,"httpServerLocation":"/assets/src/images","width":48,"height":48,"scales":[1],"hash":"56fb6975de817b230e2ef7aac1bad0eb","name":"logout","type":"png"}); // 173 = react-native/Libraries/Image/AssetRegistry
-}, 517, null, "telegram/src/images/logout.png");
-__d(/* telegram/src/components/TopBar/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
-var _reactNative=require(43            ); // 43 = react-native
-
-
-
-
-
-
-var _MaterialIcons=require(531                                      );var _MaterialIcons2=babelHelpers.interopRequireDefault(_MaterialIcons); // 531 = react-native-vector-icons/MaterialIcons
-var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
-var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions);var _Dimensions$get= // 103 = Dimensions
-
-_Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
-
-var TopBar=function TopBar(props){var
-
-children=
-
-
-
-
-
-props.children,onPressLeft=props.onPressLeft,imgLeft=props.imgLeft,onPressRight=props.onPressRight,imgRight=props.imgRight,enableRightButton=props.enableRightButton;
-
-return(
-_react2.default.createElement(_reactNative.View,{style:styles.container},
-_react2.default.createElement(_reactNative.View,{style:styles.left},
-_react2.default.createElement(_reactNative.TouchableOpacity,{onPress:onPressLeft},
-_react2.default.createElement(_MaterialIcons2.default,{name:'menu',size:30,color:colors.BASIC})),
-
-children),
-
-enableRightButton&&
-_react2.default.createElement(_reactNative.View,{style:styles.right},
-_react2.default.createElement(_reactNative.TouchableOpacity,{onPress:onPressRight},
-_react2.default.createElement(_reactNative.Image,{source:imgRight,style:styles.icon})))));
-
-
-
-
-
-};
-
-TopBar.propTypes={
-onPressLeft:_react.PropTypes.func.isRequired,
-imgLeft:_react.PropTypes.number.isRequired,
-onPressRight:_react.PropTypes.func,
-imgRight:_react.PropTypes.number,
-enableRightButton:_react.PropTypes.bool};
-
-
-var styles=_reactNative.StyleSheet.create({
-container:{
-paddingHorizontal:width*0.03,
-flexDirection:'row',
-alignItems:'center',
-justifyContent:'space-between',
-backgroundColor:colors.PRIMARY,
-height:height*0.08},
-
-left:{
-alignItems:'center',
-flexDirection:'center',
-flexDirection:'row'},
-
-title:{
-fontSize:width*0.06,
-paddingLeft:width*0.09,
-color:colors.BASIC},
-
-icon:{
-width:width*0.08,
-height:width*0.08}});exports.default=
-
-
-
-TopBar;
-}, 518, null, "telegram/src/components/TopBar/index.js");
 __d(/* react-native-vector-icons/MaterialIcons.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.getImageSource=exports.ToolbarAndroid=exports.TabBarItemIOS=exports.TabBarItem=exports.Button=undefined;
 
 
@@ -83821,6 +83721,97 @@ __d(/* react-native-vector-icons/glyphmaps/MaterialIcons.json */function(global,
 "zoom-out":59648,
 "zoom-out-map":58731};
 }, 685, null, "react-native-vector-icons/glyphmaps/MaterialIcons.json");
+__d(/* telegram/src/colors/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.random=random;function random(){
+var colors=['#16a085','#27ae60','#2c3e50','#f39c12','#e74c3c','#9b59b6','#FB6964','#342224',"#472E32","#BDBB99","#77B1A9","#73A857"];
+var color=Math.floor(Math.random()*colors.length);
+
+return colors[color];
+}
+var PRIMARY=exports.PRIMARY='#6084A5';
+var SECONDARY=exports.SECONDARY='#efffde';
+var THIRD=exports.THIRD='#CCCCCC';
+var BASIC=exports.BASIC='white';
+var BORDER=exports.BORDER='rgba(0, 0, 0, 0.1)';
+}, 515, null, "telegram/src/colors/index.js");
+__d(/* telegram/src/utils/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.firstLetter=firstLetter;function firstLetter(str){
+return str.slice(0,1).toUpperCase();
+}
+}, 516, null, "telegram/src/utils/index.js");
+__d(/* telegram/src/components/TopBar/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
+var _reactNative=require(43            ); // 43 = react-native
+
+
+
+
+
+
+var _MaterialIcons=require(531                                      );var _MaterialIcons2=babelHelpers.interopRequireDefault(_MaterialIcons); // 531 = react-native-vector-icons/MaterialIcons
+var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
+var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions);var _Dimensions$get= // 103 = Dimensions
+
+_Dimensions2.default.get('window'),width=_Dimensions$get.width,height=_Dimensions$get.height;
+
+var TopBar=function TopBar(props){var
+
+children=
+
+
+
+
+props.children,onPressLeft=props.onPressLeft,onPressRight=props.onPressRight,iconLeftName=props.iconLeftName,enableRightButton=props.enableRightButton;
+
+return(
+_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.View,{style:styles.left},
+_react2.default.createElement(_reactNative.TouchableOpacity,{onPress:onPressLeft},
+_react2.default.createElement(_MaterialIcons2.default,{name:iconLeftName,size:width*0.08,color:colors.BASIC})),
+
+children),
+
+enableRightButton&&
+_react2.default.createElement(_reactNative.View,{style:styles.right},
+_react2.default.createElement(_reactNative.TouchableOpacity,{onPress:onPressRight},
+_react2.default.createElement(_MaterialIcons2.default,{name:'person-add',size:width*0.08,color:colors.BASIC})))));
+
+
+
+
+
+};
+
+TopBar.defaultProps={
+iconLeftName:"menu"};
+
+
+TopBar.propTypes={
+onPressLeft:_react.PropTypes.func.isRequired,
+onPressRight:_react.PropTypes.func,
+enableRightButton:_react.PropTypes.bool};
+
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+paddingHorizontal:width*0.03,
+flexDirection:'row',
+alignItems:'center',
+justifyContent:'space-between',
+backgroundColor:colors.PRIMARY,
+height:height*0.08},
+
+left:{
+alignItems:'center',
+flexDirection:'center',
+flexDirection:'row'},
+
+title:{
+fontSize:width*0.06,
+paddingLeft:width*0.09,
+color:colors.BASIC}});exports.default=
+
+
+
+TopBar;
+}, 518, null, "telegram/src/components/TopBar/index.js");
 __d(/* telegram/src/components/ListMain/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNative=require(43            ); // 43 = react-native
 
@@ -84067,6 +84058,7 @@ MessagesScreen;
 __d(/* telegram/src/components/ListMessages/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Dimensions=require(103         );var _Dimensions2=babelHelpers.interopRequireDefault(_Dimensions); // 103 = Dimensions
 var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
+var _MaterialIcons=require(531                                      );var _MaterialIcons2=babelHelpers.interopRequireDefault(_MaterialIcons); // 531 = react-native-vector-icons/MaterialIcons
 var _reactNative=require(43            ); // 43 = react-native
 
 
@@ -84113,7 +84105,8 @@ return(
 _react2.default.createElement(_reactNative.View,{style:styles.container},
 _react2.default.createElement(_TopBar2.default,{
 imgLeft:_arrow_back2.default,
-onPressLeft:_onPressLeft},
+onPressLeft:_onPressLeft,
+iconLeftName:'arrow-back'},
 
 _react2.default.createElement(_reactNative.View,{style:[styles.circle,{backgroundColor:colors.random()}]},
 _react2.default.createElement(_reactNative.Text,{style:styles.shortText},
@@ -84247,6 +84240,7 @@ var _reactNative=require(43            ); // 43 = react-native
 
 
 
+var _MaterialIcons=require(531                                      );var _MaterialIcons2=babelHelpers.interopRequireDefault(_MaterialIcons); // 531 = react-native-vector-icons/MaterialIcons
 var _colors=require(515           );var colors=babelHelpers.interopRequireWildcard(_colors); // 515 = ../../colors
 var _send=require(528                    );var _send2=babelHelpers.interopRequireDefault(_send);var _Dimensions$get= // 528 = ../../images/send.png
 
@@ -84278,7 +84272,7 @@ value:this.state.myMessage,
 onChangeText:this._onChangeText}),
 
 this.state.myMessage!==''&&
-_react2.default.createElement(_reactNative.Image,{source:_send2.default,style:styles.send})));
+_react2.default.createElement(_MaterialIcons2.default,{name:'send',size:width*0.08,color:'black'})));
 
 
 
@@ -84296,11 +84290,7 @@ textInput:{
 width:width*0.9,
 height:height*0.07,
 paddingHorizontal:width*0.02,
-backgroundColor:colors.BASIC},
-
-send:{
-height:width*0.08,
-width:width*0.08}});exports.default=
+backgroundColor:colors.BASIC}});exports.default=
 
 
 

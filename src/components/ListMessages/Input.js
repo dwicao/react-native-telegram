@@ -6,6 +6,7 @@ import {
     StyleSheet,
     Image,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
 import imgSend from '../../images/send.png';
 
@@ -37,7 +38,7 @@ class Input extends Component {
                     onChangeText={this._onChangeText}
                 />
                 { this.state.myMessage !== '' && (
-                    <Image source={imgSend} style={styles.send} />
+                    <Icon name="send" size={width * 0.08} color="black" />
                 )}
             </View>
         );
@@ -56,10 +57,6 @@ const styles = StyleSheet.create({
         height: height * 0.07,
         paddingHorizontal: width * 0.02,
         backgroundColor: colors.BASIC,
-    },
-    send: {
-        height: width * 0.08,
-        width: width * 0.08,
     },
 });
 
