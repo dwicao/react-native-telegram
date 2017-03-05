@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '@colors';
-import { myHeight, myWidth } from '@utils';
+import { myHeight, myWidth, CrossPlatformIcon } from '@utils';
 
 class Input extends Component {
     constructor() {
@@ -42,7 +42,7 @@ class Input extends Component {
                 />
                 { this.state.myMessage !== '' && (
                     <TouchableOpacity onPress={this._onPressSend} style={styles.buttonSend}>
-                        <Icon name="send" size={myWidth * 0.08} color={colors.PRIMARY} />
+                        <CrossPlatformIcon name="send" size={myWidth * 0.08} color={colors.PRIMARY} />
                     </TouchableOpacity>
                 )}
             </View>

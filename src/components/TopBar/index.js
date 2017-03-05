@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '@colors';
-import { myHeight, myWidth, firstLetter } from '@utils';
+import { myHeight, myWidth, firstLetter, CrossPlatformIcon } from '@utils';
 
 const TopBar = props => {
 	const {
@@ -23,14 +23,14 @@ const TopBar = props => {
 		<View style={styles.container}>
 			<View style={styles.left}>
 				<TouchableOpacity onPress={onPressLeft}>
-					<Icon name={iconLeftName} size={myWidth * 0.08} color={colors.BASIC} />
+					<CrossPlatformIcon name={iconLeftName} size={myWidth * 0.08} color={colors.BASIC} />
 				</TouchableOpacity>
 				{children}
 			</View>
 			{ enableRightButton &&
 				<View style={styles.right}>
 					<TouchableOpacity onPress={onPressRight}>
-						<Icon name="person-add" size={myWidth * 0.08} color={colors.BASIC} />
+						<CrossPlatformIcon name="person-add" size={myWidth * 0.08} color={colors.BASIC} />
 					</TouchableOpacity>
 				</View>
 			}
@@ -55,11 +55,10 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		backgroundColor: colors.PRIMARY,
-		height: myHeight * 0.08,
+		height: myHeight * 0.07,
 	},
 	left: {
 		alignItems: 'center',
-		flexDirection: 'center',
 		flexDirection: 'row',
 	},
 	title: {

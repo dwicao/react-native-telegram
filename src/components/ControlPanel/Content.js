@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '@colors';
-import { myHeight, myWidth, firstLetter } from '@utils';
+import { myHeight, myWidth, firstLetter, CrossPlatformIcon } from '@utils';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
 
@@ -30,15 +30,15 @@ const ControlPanel = props => {
 			</View>
 			<View style={styles.bottom}>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
+					<CrossPlatformIcon name="exit" size={myWidth * 0.07} color={colors.DARK} outline />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
+					<CrossPlatformIcon name="exit" size={myWidth * 0.07} color={colors.DARK} outline />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={myWidth * 0.07} color={colors.DARK} />
+					<CrossPlatformIcon name="exit" size={myWidth * 0.07} color={colors.DARK} outline />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 			</View>
