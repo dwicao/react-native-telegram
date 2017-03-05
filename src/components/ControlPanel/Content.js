@@ -1,5 +1,4 @@
 import React from 'react';
-import Dimensions from 'Dimensions';
 import { 
 	View,
 	Image,
@@ -9,10 +8,9 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
-import * as utils from '../../utils';
+import { myHeight, myWidth, firstLetter } from '../../utils';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
-const { width, height } = Dimensions.get('window');
 
 const ControlPanel = props => {
 	return (
@@ -20,7 +18,7 @@ const ControlPanel = props => {
 			<View style={styles.top}>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 					<Text style={styles.shortText}>
-						{utils.firstLetter(EXAMPLE_NAME)}
+						{firstLetter(EXAMPLE_NAME)}
 					</Text>
 				</View>
 				<Text numberOfLines={1} style={styles.h1}>
@@ -32,15 +30,15 @@ const ControlPanel = props => {
 			</View>
 			<View style={styles.bottom}>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={width * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={width * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.button}>
-					<Icon name="exit-to-app" size={width * 0.07} color="black" />
+					<Icon name="exit-to-app" size={myWidth * 0.07} color="black" />
 					<Text style={styles.buttonText}>Logout</Text>
 				</TouchableOpacity>
 			</View>
@@ -54,50 +52,50 @@ const styles = StyleSheet.create({
 		backgroundColor: colors.BASIC,
 	},
 	top: {
-		height: height * 0.22,
+		height: myHeight * 0.22,
 		backgroundColor: 'gray',
 	},
 	bottom: {
-		height: height * 0.88,
+		height: myHeight * 0.88,
 		borderColor: colors.BORDER,
 		borderRightWidth: 1,
-		paddingVertical: height * 0.01,
+		paddingVertical: myHeight * 0.01,
 	},
 	shortText: {
 		color: colors.BASIC,
-		fontSize: width * 0.07,
+		fontSize: myWidth * 0.07,
 		fontWeight: 'bold',
 	},
 	h1: {
 		color: colors.BASIC,
-		fontSize: width * 0.04,
+		fontSize: myWidth * 0.04,
 		fontWeight: 'bold',
-		marginHorizontal: width * 0.05,
+		marginHorizontal: myWidth * 0.05,
 	},
 	h2: {
 		color: colors.BASIC,
-		fontSize: width * 0.04,
-		marginHorizontal: width * 0.05,
-		marginBottom: width * 0.05,
+		fontSize: myWidth * 0.04,
+		marginHorizontal: myWidth * 0.05,
+		marginBottom: myWidth * 0.05,
 	},
 	circle: {
-		margin: width * 0.05,
+		margin: myWidth * 0.05,
 		alignItems: 'center',
 		justifyContent: 'center',
-		width: width * 0.15,
-		height: width * 0.15,
-		borderRadius: width * 0.3,
+		width: myWidth * 0.15,
+		height: myWidth * 0.15,
+		borderRadius: myWidth * 0.3,
 	},
 	button: {
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'flex-start',
-		paddingHorizontal: width * 0.03,
-		paddingVertical: width * 0.02,
+		paddingHorizontal: myWidth * 0.03,
+		paddingVertical: myWidth * 0.02,
 	},
 	buttonText: {
-		fontSize: width * 0.045,
-		marginLeft: width * 0.03,
+		fontSize: myWidth * 0.045,
+		marginLeft: myWidth * 0.03,
 	},
 });
 

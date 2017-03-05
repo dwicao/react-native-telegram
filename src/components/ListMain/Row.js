@@ -6,11 +6,8 @@ import {
 	StyleSheet,
 	TouchableOpacity,
 } from 'react-native';
-import Dimensions from 'Dimensions';
 import * as colors from '../../colors';
-import * as utils from '../../utils';
-
-const { width, height } = Dimensions.get('window');
+import { myHeight, myWidth, firstLetter } from '../../utils';
 
 const Row = props => {
 	const onPress = () => Actions.messagesScreen();
@@ -21,7 +18,7 @@ const Row = props => {
 				<View style={styles.left}>
 					<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 						<Text style={styles.shortText}>
-							{utils.firstLetter(props.name)}
+							{firstLetter(props.name)}
 						</Text>
 					</View>
 					<View style={styles.text}>
@@ -47,14 +44,14 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	button: {
-		paddingHorizontal: width * 0.03,
+		paddingHorizontal: myWidth * 0.03,
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		height: height * 0.11,
+		height: myHeight * 0.11,
 	},
 	border : {
-		marginLeft: width * 0.2,
+		marginLeft: myWidth * 0.2,
 		borderBottomWidth: 1,
 		borderColor: colors.BORDER,
 	},
@@ -68,27 +65,27 @@ const styles = StyleSheet.create({
 	circle: {
 		alignItems: 'center',
 		justifyContent: 'center',
-		width: width * 0.15,
-		height: width * 0.15,
-		borderRadius: width * 0.3,
+		width: myWidth * 0.15,
+		height: myWidth * 0.15,
+		borderRadius: myWidth * 0.3,
 	},
 	shortText: {
 		color: colors.BASIC,
 		backgroundColor: 'transparent',
-		fontSize: width * 0.07,
+		fontSize: myWidth * 0.07,
 		fontWeight: 'bold',
 	},
 	text: {
 		flex: 1,
-		paddingHorizontal: width * 0.025,
+		paddingHorizontal: myWidth * 0.025,
 	},
 	h1: {
-		fontSize: width * 0.045,
+		fontSize: myWidth * 0.045,
 		fontWeight: 'bold',
-		marginBottom: width * 0.02,
+		marginBottom: myWidth * 0.02,
 	},
 	h2: {
-		fontSize: width * 0.04,
+		fontSize: myWidth * 0.04,
 	},
 	time: {
 	},

@@ -8,9 +8,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
-import Dimensions from 'Dimensions';
-
-const { width, height } = Dimensions.get('window');
+import { myHeight, myWidth, firstLetter } from '../../utils';
 
 const TopBar = props => {
 	const {
@@ -25,14 +23,14 @@ const TopBar = props => {
 		<View style={styles.container}>
 			<View style={styles.left}>
 				<TouchableOpacity onPress={onPressLeft}>
-					<Icon name={iconLeftName} size={width * 0.08} color={colors.BASIC} />
+					<Icon name={iconLeftName} size={myWidth * 0.08} color={colors.BASIC} />
 				</TouchableOpacity>
 				{children}
 			</View>
 			{ enableRightButton &&
 				<View style={styles.right}>
 					<TouchableOpacity onPress={onPressRight}>
-						<Icon name="person-add" size={width * 0.08} color={colors.BASIC} />
+						<Icon name="person-add" size={myWidth * 0.08} color={colors.BASIC} />
 					</TouchableOpacity>
 				</View>
 			}
@@ -52,12 +50,12 @@ TopBar.propTypes = {
 
 const styles = StyleSheet.create({
 	container: {
-		paddingHorizontal: width * 0.03,
+		paddingHorizontal: myWidth * 0.03,
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		backgroundColor: colors.PRIMARY,
-		height: height * 0.08,
+		height: myHeight * 0.08,
 	},
 	left: {
 		alignItems: 'center',
@@ -65,8 +63,8 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	title: {
-		fontSize: width * 0.06,
-		paddingLeft: width * 0.09,
+		fontSize: myWidth * 0.06,
+		paddingLeft: myWidth * 0.09,
 		color: colors.BASIC,
 	},
 });

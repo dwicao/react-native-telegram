@@ -1,5 +1,4 @@
 import React from 'react';
-import Dimensions from 'Dimensions';
 import { Actions, ActionConst } from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {
@@ -14,12 +13,10 @@ import Row from './Row';
 import Input from './Input';
 import KeyboardSpacer from '../KeyboardSpacer';
 import * as colors from '../../colors';
-import * as utils from '../../utils';
-import imgArrowBack from '../../images/arrow_back.png';
+import { myHeight, myWidth, firstLetter } from '../../utils';
 import demoData from '../demoData';
 
 const EXAMPLE_NAME = 'Lutfi Dwica';
-const { width, height } = Dimensions.get('window');
 
 const ListMessages = props => {
 	const _onPressLeft = () => Actions.mainScreen({
@@ -47,13 +44,12 @@ const ListMessages = props => {
 	return (
 		<View style={styles.container}>
 			<TopBar 
-				imgLeft={imgArrowBack}
 				onPressLeft={_onPressLeft}
 				iconLeftName="arrow-back"
 			>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 					<Text style={styles.shortText}>
-						{utils.firstLetter(EXAMPLE_NAME)}
+						{firstLetter(EXAMPLE_NAME)}
 					</Text>
 				</View>
 				<Text style={styles.name}>
@@ -72,7 +68,7 @@ const ListMessages = props => {
 };
 
 
-const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
+const BOTTOM_BLANK = (Platform.OS === 'ios') ? myHeight * 0.035 : 0;
 
 const styles = StyleSheet.create({
 	container: {
@@ -86,19 +82,19 @@ const styles = StyleSheet.create({
 	circle: {
 		alignItems: 'center',
 		justifyContent: 'center',
-		width: width * 0.11,
-		height: width * 0.11,
-		borderRadius: width * 0.3,
-		marginLeft: width * 0.06,
-		marginRight: width * 0.03,
+		width: myWidth * 0.11,
+		height: myWidth * 0.11,
+		borderRadius: myWidth * 0.3,
+		marginLeft: myWidth * 0.06,
+		marginRight: myWidth * 0.03,
 	},
 	shortText: {
 		color: colors.BASIC,
 		fontWeight: 'bold',
-		fontSize: width * 0.05,
+		fontSize: myWidth * 0.05,
 	},
 	name: {
-		fontSize: width * 0.045,
+		fontSize: myWidth * 0.045,
 		fontWeight: 'bold',
 		color: colors.BASIC,
 	}

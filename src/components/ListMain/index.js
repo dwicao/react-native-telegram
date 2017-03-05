@@ -4,11 +4,9 @@ import {
 	StyleSheet,
 	Platform,
 } from 'react-native';
-import Dimensions from 'Dimensions';
 import Row from './Row';
 import demoData from '../demoData';
-
-const { width, height } = Dimensions.get('window');
+import { myHeight, myWidth } from '../../utils';
 
 const ListActive = props => {
 	const formatData = (data) => {
@@ -38,7 +36,7 @@ const ListActive = props => {
 	);
 }
 
-const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
+const BOTTOM_BLANK = (Platform.OS === 'ios') ? myHeight * 0.035 : 0;
 
 const styles = StyleSheet.create({
 	container: {

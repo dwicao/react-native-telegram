@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Dimensions from 'Dimensions';
 import {
     View,
     TextInput,
@@ -8,9 +7,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import * as colors from '../../colors';
-import imgSend from '../../images/send.png';
-
-const { width, height } = Dimensions.get('window');
+import { myHeight, myWidth } from '../../utils';
 
 class Input extends Component {
     constructor() {
@@ -38,7 +35,7 @@ class Input extends Component {
                     onChangeText={this._onChangeText}
                 />
                 { this.state.myMessage !== '' && (
-                    <Icon name="send" size={width * 0.08} color="black" />
+                    <Icon name="send" size={myWidth * 0.08} color="black" />
                 )}
             </View>
         );
@@ -53,9 +50,9 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     textInput: {
-        width: width * 0.9,
-        height: height * 0.07,
-        paddingHorizontal: width * 0.02,
+        width: myWidth * 0.9,
+        height: myHeight * 0.07,
+        paddingHorizontal: myWidth * 0.02,
         backgroundColor: colors.BASIC,
     },
 });

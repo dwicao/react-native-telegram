@@ -1,5 +1,4 @@
 import React from 'react';
-import Dimensions from 'Dimensions';
 import {
 	View,
 	Text,
@@ -7,8 +6,7 @@ import {
 	StyleSheet,
 } from 'react-native';
 import * as colors from '../../colors';
-
-const { width, height } = Dimensions.get('window');
+import { myHeight, myWidth } from '../../utils';
 
 const Row = props => {
 	const {
@@ -35,14 +33,14 @@ const Row = props => {
 	);
 }
 
-const BOTTOM_BLANK = (Platform.OS === 'ios') ? height * 0.035 : 0;
+const BOTTOM_BLANK = (Platform.OS === 'ios') ? myHeight * 0.035 : 0;
 
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		flexDirection: 'row',
-		marginVertical: width * 0.01,
-		marginHorizontal: width * 0.02,
+		marginVertical: myWidth * 0.01,
+		marginHorizontal: myWidth * 0.02,
 	},
 	containerCurrentUser: {
 		justifyContent: 'flex-end',
@@ -51,8 +49,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'flex-start',
 	},
 	chat: {
-		padding: width * 0.02,
-		borderRadius: width * 0.02,
+		padding: myWidth * 0.02,
+		borderRadius: myWidth * 0.02,
 	},
 	chatOtherPeople: {
 		backgroundColor: colors.BASIC,
