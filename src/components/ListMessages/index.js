@@ -58,6 +58,7 @@ const ListMessages = props => {
 			</TopBar>
 			<ListView
 			  style={styles.listview}
+			  contentContainerStyle={styles.listviewContainer}
 			  dataSource={dataSource}
 			  renderRow={(data) => <Row {...data} {...props} />}
 			/>
@@ -78,6 +79,9 @@ const styles = StyleSheet.create({
 	},
 	listview: {
 		flex: 1,
+	},
+	listviewContainer: {
+		paddingBottom: myWidth * 0.02,
 	},
 	circle: {
 		alignItems: 'center',
