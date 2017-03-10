@@ -71532,7 +71532,8 @@ userStatusReducer;
 __d(/* @components/index.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
 var _Main=require(507                       );var _Main2=babelHelpers.interopRequireDefault(_Main); // 507 = @components/Screens/Main
-var _Messages=require(678                           );var _Messages2=babelHelpers.interopRequireDefault(_Messages);var // 678 = @components/Screens/Messages
+var _Messages=require(678                           );var _Messages2=babelHelpers.interopRequireDefault(_Messages); // 678 = @components/Screens/Messages
+var _Splash=require(714                         );var _Splash2=babelHelpers.interopRequireDefault(_Splash);var // 714 = @components/Screens/Splash
 
 App=function(_Component){babelHelpers.inherits(App,_Component);function App(){babelHelpers.classCallCheck(this,App);return babelHelpers.possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).apply(this,arguments));}babelHelpers.createClass(App,[{key:'render',value:function render()
 {
@@ -71543,12 +71544,17 @@ _react2.default.createElement(_reactNativeRouterFlux.Scene,{key:'mainScreen',
 animation:'fade',
 component:_Main2.default,
 panHandlers:null,
-hideNavBar:true,initial:true}),
+hideNavBar:true}),
 _react2.default.createElement(_reactNativeRouterFlux.Scene,{key:'messagesScreen',
 animation:'fade',
 component:_Messages2.default,
 panHandlers:null,
-hideNavBar:true}))));
+hideNavBar:true}),
+_react2.default.createElement(_reactNativeRouterFlux.Scene,{key:'splashScreen',
+animation:'fade',
+component:_Splash2.default,
+panHandlers:null,
+hideNavBar:true,initial:true}))));
 
 
 
@@ -85370,6 +85376,42 @@ return _react2.default.createElement(_reactNative.View,{style:{height:this.state
 
 KeyboardSpacer;
 }, 682, null, "@components/KeyboardSpacer/index.js");
+__d(/* @components/Screens/Splash.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
+var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
+var _reactNative=require(43            );var // 43 = react-native
+
+
+
+
+
+SplashScreen=function(_Component){babelHelpers.inherits(SplashScreen,_Component);function SplashScreen(){babelHelpers.classCallCheck(this,SplashScreen);return babelHelpers.possibleConstructorReturn(this,(SplashScreen.__proto__||Object.getPrototypeOf(SplashScreen)).apply(this,arguments));}babelHelpers.createClass(SplashScreen,[{key:'componentDidMount',value:function componentDidMount()
+{
+setTimeout(function(){
+_reactNativeRouterFlux.Actions.mainScreen({
+type:_reactNativeRouterFlux.ActionConst.PUSH});
+
+},2000);
+}},{key:'render',value:function render()
+
+{
+return(
+_react2.default.createElement(_reactNative.View,{style:styles.container},
+_react2.default.createElement(_reactNative.Text,null,'ini adalah SplashScreen')));
+
+
+}}]);return SplashScreen;}(_react.Component);
+
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flex:1,
+alignItems:'center',
+justifyContent:'center'}});exports.default=
+
+
+
+SplashScreen;
+}, 714, null, "@components/Screens/Splash.js");
 ;require(217);
 ;require(0);
 //# sourceMappingURL=index.ios.map
