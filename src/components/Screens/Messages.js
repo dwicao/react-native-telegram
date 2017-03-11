@@ -5,7 +5,7 @@ import ListMessages from '@components/ListMessages';
 const MessagesScreen = props => {
 	return (
 		<Container>
-			<ListMessages />
+			<ListMessages {...props} />
 		</Container>
 	);
 };

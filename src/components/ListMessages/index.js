@@ -16,30 +16,18 @@ import * as colors from '@colors';
 import { myHeight, myWidth, firstLetter } from '@utils';
 import demoData from '@components/demoData';
 
-const EXAMPLE_NAME = 'Lutfi Dwica';
-
 const ListMessages = props => {
+	const { name, previewMessage, id } = props;
+
 	const _onPressLeft = () => Actions.mainScreen({
 		type: ActionConst.RESET,
 	});
 
-	const formatData = (data) => {
-		let dataBlob = {};
-
-		data.map((person, index) => {
-			dataBlob[index] = person;
-		});
-
-		return dataBlob;
-	}
-
 	const ds = new ListView.DataSource({
-		rowHasChanged: (r1, r2) => r1 !== r2,
+		rowHasChanged: (r1, r2) => r1.id !== r2.id,
 	});
 
-	const dataBlob = formatData(demoData);
-
-	const dataSource = ds.cloneWithRows(dataBlob);
+	const dataSource = ds.cloneWithRows(demoData);
 
 	return (
 		<View style={styles.container}>
@@ -49,11 +37,11 @@ const ListMessages = props => {
 			>
 				<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 					<Text style={styles.shortText}>
-						{firstLetter(EXAMPLE_NAME)}
+						{firstLetter(name)}
 					</Text>
 				</View>
 				<Text style={styles.name}>
-					{EXAMPLE_NAME}
+					{name}
 				</Text>
 			</TopBar>
 			<ListView

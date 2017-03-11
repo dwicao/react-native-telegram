@@ -9,23 +9,11 @@ import demoData from '@components/demoData';
 import { myHeight, myWidth } from '@utils';
 
 const ListActive = props => {
-	const formatData = (data) => {
-		let dataBlob = {};
-
-		data.map((person, index) => {
-			dataBlob[index] = person;
-		});
-
-		return dataBlob;
-	}
-
 	const ds = new ListView.DataSource({
-		rowHasChanged: (r1, r2) => r1 !== r2,
+		rowHasChanged: (r1, r2) => r1.id !== r2.id,
 	});
 
-	const dataBlob = formatData(demoData);
-
-	const dataSource = ds.cloneWithRows(dataBlob);
+	const dataSource = ds.cloneWithRows(demoData);
 
 	return (
 		<ListView

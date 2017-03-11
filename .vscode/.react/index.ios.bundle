@@ -71533,7 +71533,7 @@ __d(/* @components/index.js */function(global, require, module, exports) {Object
 var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
 var _Main=require(507                       );var _Main2=babelHelpers.interopRequireDefault(_Main); // 507 = @components/Screens/Main
 var _Messages=require(678                           );var _Messages2=babelHelpers.interopRequireDefault(_Messages); // 678 = @components/Screens/Messages
-var _Splash=require(714                         );var _Splash2=babelHelpers.interopRequireDefault(_Splash);var // 714 = @components/Screens/Splash
+var _Splash=require(683                         );var _Splash2=babelHelpers.interopRequireDefault(_Splash);var // 683 = @components/Screens/Splash
 
 App=function(_Component){babelHelpers.inherits(App,_Component);function App(){babelHelpers.classCallCheck(this,App);return babelHelpers.possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).apply(this,arguments));}babelHelpers.createClass(App,[{key:'render',value:function render()
 {
@@ -84838,8 +84838,14 @@ var _reactNative=require(43            ); // 43 = react-native
 var _colors=require(670      );var colors=babelHelpers.interopRequireWildcard(_colors); // 670 = @colors
 var _utils=require(671     ); // 671 = @utils
 
-var Row=function Row(props){
-var onPress=function onPress(){return _reactNativeRouterFlux.Actions.messagesScreen();};
+var Row=function Row(props){var
+name=props.name,previewMessage=props.previewMessage,id=props.id;
+
+var onPress=function onPress(){return _reactNativeRouterFlux.Actions.messagesScreen({
+id:id,
+name:name,
+previewMessage:previewMessage});};
+
 
 return(
 _react2.default.createElement(_reactNative.View,{style:styles.container},
@@ -84847,15 +84853,15 @@ _react2.default.createElement(_reactNative.TouchableOpacity,{onPress:onPress,sty
 _react2.default.createElement(_reactNative.View,{style:styles.left},
 _react2.default.createElement(_reactNative.View,{style:[styles.circle,{backgroundColor:colors.random()}]},
 _react2.default.createElement(_reactNative.Text,{style:styles.shortText},
-(0,_utils.firstLetter)(props.name))),
+(0,_utils.firstLetter)(name))),
 
 
 _react2.default.createElement(_reactNative.View,{style:styles.text},
 _react2.default.createElement(_reactNative.Text,{numberOfLines:1,style:styles.h1},
-props.name),
+name),
 
 _react2.default.createElement(_reactNative.Text,{numberOfLines:1,style:styles.h2},
-props.previewMessage))),
+previewMessage))),
 
 
 
@@ -84922,82 +84928,300 @@ time:{}});exports.default=
 
 Row;
 }, 676, null, "@components/ListMain/Row.js");
-__d(/* @components/demoData.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});exports.default=data=[
+__d(/* @components/demoData.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _uuid=require(684   );var _uuid2=babelHelpers.interopRequireDefault(_uuid);exports.default= // 684 = uuid
+
+data=[
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Elisha',
 email:'elisha@example.com',
-previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
+previewMessage:'Syalalala dududu babababababa lulullululu'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Test',
 email:'test@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'mantap',
 email:'mantap@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'},
 
 {
+id:_uuid2.default.v4(),
 name:'Lutfi Dwica',
 email:'lutfi@example.com',
 previewMessage:'Hari ini minggu kan? ntap banget haahahha'}];
 }, 677, null, "@components/demoData.js");
+__d(/* uuid/index.js */function(global, require, module, exports) {var v1=require(685   ); // 685 = ./v1
+var v4=require(688   ); // 688 = ./v4
+
+var uuid=v4;
+uuid.v1=v1;
+uuid.v4=v4;
+
+module.exports=uuid;
+}, 684, null, "uuid/index.js");
+__d(/* uuid/v1.js */function(global, require, module, exports) {
+
+
+var rng=require(686        ); // 686 = ./lib/rng
+var bytesToUuid=require(687                ); // 687 = ./lib/bytesToUuid
+
+
+
+
+
+
+
+var _seedBytes=rng();
+
+
+var _nodeId=[
+_seedBytes[0]|0x01,
+_seedBytes[1],_seedBytes[2],_seedBytes[3],_seedBytes[4],_seedBytes[5]];
+
+
+
+var _clockseq=(_seedBytes[6]<<8|_seedBytes[7])&0x3fff;
+
+
+var _lastMSecs=0,_lastNSecs=0;
+
+
+function v1(options,buf,offset){
+var i=buf&&offset||0;
+var b=buf||[];
+
+options=options||{};
+
+var clockseq=options.clockseq!==undefined?options.clockseq:_clockseq;
+
+
+
+
+
+var msecs=options.msecs!==undefined?options.msecs:new Date().getTime();
+
+
+
+var nsecs=options.nsecs!==undefined?options.nsecs:_lastNSecs+1;
+
+
+var dt=msecs-_lastMSecs+(nsecs-_lastNSecs)/10000;
+
+
+if(dt<0&&options.clockseq===undefined){
+clockseq=clockseq+1&0x3fff;
+}
+
+
+
+if((dt<0||msecs>_lastMSecs)&&options.nsecs===undefined){
+nsecs=0;
+}
+
+
+if(nsecs>=10000){
+throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+}
+
+_lastMSecs=msecs;
+_lastNSecs=nsecs;
+_clockseq=clockseq;
+
+
+msecs+=12219292800000;
+
+
+var tl=((msecs&0xfffffff)*10000+nsecs)%0x100000000;
+b[i++]=tl>>>24&0xff;
+b[i++]=tl>>>16&0xff;
+b[i++]=tl>>>8&0xff;
+b[i++]=tl&0xff;
+
+
+var tmh=msecs/0x100000000*10000&0xfffffff;
+b[i++]=tmh>>>8&0xff;
+b[i++]=tmh&0xff;
+
+
+b[i++]=tmh>>>24&0xf|0x10;
+b[i++]=tmh>>>16&0xff;
+
+
+b[i++]=clockseq>>>8|0x80;
+
+
+b[i++]=clockseq&0xff;
+
+
+var node=options.node||_nodeId;
+for(var n=0;n<6;++n){
+b[i+n]=node[n];
+}
+
+return buf?buf:bytesToUuid(b);
+}
+
+module.exports=v1;
+}, 685, null, "uuid/v1.js");
+__d(/* uuid/lib/rng-browser.js */function(global, require, module, exports) {
+
+
+
+var rng;
+
+var crypto=global.crypto||global.msCrypto;
+if(crypto&&crypto.getRandomValues){
+
+var rnds8=new Uint8Array(16);
+rng=function whatwgRNG(){
+crypto.getRandomValues(rnds8);
+return rnds8;
+};
+}
+
+if(!rng){
+
+
+
+
+var rnds=new Array(16);
+rng=function rng(){
+for(var i=0,r;i<16;i++){
+if((i&0x03)===0)r=Math.random()*0x100000000;
+rnds[i]=r>>>((i&0x03)<<3)&0xff;
+}
+
+return rnds;
+};
+}
+
+module.exports=rng;
+}, 686, null, "uuid/lib/rng-browser.js");
+__d(/* uuid/lib/bytesToUuid.js */function(global, require, module, exports) {
+
+
+
+var byteToHex=[];
+for(var i=0;i<256;++i){
+byteToHex[i]=(i+0x100).toString(16).substr(1);
+}
+
+function bytesToUuid(buf,offset){
+var i=offset||0;
+var bth=byteToHex;
+return bth[buf[i++]]+bth[buf[i++]]+
+bth[buf[i++]]+bth[buf[i++]]+'-'+
+bth[buf[i++]]+bth[buf[i++]]+'-'+
+bth[buf[i++]]+bth[buf[i++]]+'-'+
+bth[buf[i++]]+bth[buf[i++]]+'-'+
+bth[buf[i++]]+bth[buf[i++]]+
+bth[buf[i++]]+bth[buf[i++]]+
+bth[buf[i++]]+bth[buf[i++]];
+}
+
+module.exports=bytesToUuid;
+}, 687, null, "uuid/lib/bytesToUuid.js");
+__d(/* uuid/v4.js */function(global, require, module, exports) {var rng=require(686        ); // 686 = ./lib/rng
+var bytesToUuid=require(687                ); // 687 = ./lib/bytesToUuid
+
+function v4(options,buf,offset){
+var i=buf&&offset||0;
+
+if(typeof options=='string'){
+buf=options=='binary'?new Array(16):null;
+options=null;
+}
+options=options||{};
+
+var rnds=options.random||(options.rng||rng)();
+
+
+rnds[6]=rnds[6]&0x0f|0x40;
+rnds[8]=rnds[8]&0x3f|0x80;
+
+
+if(buf){
+for(var ii=0;ii<16;++ii){
+buf[i+ii]=rnds[ii];
+}
+}
+
+return buf||bytesToUuid(rnds);
+}
+
+module.exports=v4;
+}, 688, null, "uuid/v4.js");
 __d(/* @components/Screens/Messages.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _Container=require(511                    );var _Container2=babelHelpers.interopRequireDefault(_Container); // 511 = @components/Container
 var _ListMessages=require(679                       );var _ListMessages2=babelHelpers.interopRequireDefault(_ListMessages); // 679 = @components/ListMessages
@@ -85030,9 +85254,9 @@ var _colors=require(670      );var colors=babelHelpers.interopRequireWildcard(_c
 var _utils=require(671     ); // 671 = @utils
 var _demoData=require(677                   );var _demoData2=babelHelpers.interopRequireDefault(_demoData); // 677 = @components/demoData
 
-var EXAMPLE_NAME='Lutfi Dwica';
+var ListMessages=function ListMessages(props){var
+name=props.name,previewMessage=props.previewMessage,id=props.id;
 
-var ListMessages=function ListMessages(props){
 var _onPressLeft=function _onPressLeft(){return _reactNativeRouterFlux.Actions.mainScreen({
 type:_reactNativeRouterFlux.ActionConst.RESET});};
 
@@ -85063,11 +85287,11 @@ iconLeftName:'arrow-back'},
 
 _react2.default.createElement(_reactNative.View,{style:[styles.circle,{backgroundColor:colors.random()}]},
 _react2.default.createElement(_reactNative.Text,{style:styles.shortText},
-(0,_utils.firstLetter)(EXAMPLE_NAME))),
+(0,_utils.firstLetter)(name))),
 
 
 _react2.default.createElement(_reactNative.Text,{style:styles.name},
-EXAMPLE_NAME)),
+name)),
 
 
 _react2.default.createElement(_reactNative.ListView,{
@@ -85378,40 +85602,49 @@ KeyboardSpacer;
 }, 682, null, "@components/KeyboardSpacer/index.js");
 __d(/* @components/Screens/Splash.js */function(global, require, module, exports) {Object.defineProperty(exports,"__esModule",{value:true});var _react=require(13     );var _react2=babelHelpers.interopRequireDefault(_react); // 13 = react
 var _reactNativeRouterFlux=require(460                       ); // 460 = react-native-router-flux
-var _reactNative=require(43            );var // 43 = react-native
+var _reactNative=require(43            ); // 43 = react-native
 
 
 
 
+var _colors=require(670      );var colors=babelHelpers.interopRequireWildcard(_colors); // 670 = @colors
+var _utils=require(671     );var // 671 = @utils
 
-SplashScreen=function(_Component){babelHelpers.inherits(SplashScreen,_Component);function SplashScreen(){babelHelpers.classCallCheck(this,SplashScreen);return babelHelpers.possibleConstructorReturn(this,(SplashScreen.__proto__||Object.getPrototypeOf(SplashScreen)).apply(this,arguments));}babelHelpers.createClass(SplashScreen,[{key:'componentDidMount',value:function componentDidMount()
+SplashScreen=function(_PureComponent){babelHelpers.inherits(SplashScreen,_PureComponent);function SplashScreen(){babelHelpers.classCallCheck(this,SplashScreen);return babelHelpers.possibleConstructorReturn(this,(SplashScreen.__proto__||Object.getPrototypeOf(SplashScreen)).apply(this,arguments));}babelHelpers.createClass(SplashScreen,[{key:'componentDidMount',value:function componentDidMount()
 {
 setTimeout(function(){
 _reactNativeRouterFlux.Actions.mainScreen({
-type:_reactNativeRouterFlux.ActionConst.PUSH});
+type:_reactNativeRouterFlux.ActionConst.RESET});
 
-},2000);
+},300);
 }},{key:'render',value:function render()
 
 {
 return(
 _react2.default.createElement(_reactNative.View,{style:styles.container},
-_react2.default.createElement(_reactNative.Text,null,'ini adalah SplashScreen')));
+_react2.default.createElement(_utils.CrossPlatformIcon,{name:'jet',size:_utils.myWidth*0.5,color:colors.PRIMARY}),
+_react2.default.createElement(_reactNative.Text,{style:styles.title},'inTelegram')));
 
 
-}}]);return SplashScreen;}(_react.Component);
+
+
+}}]);return SplashScreen;}(_react.PureComponent);
 
 
 var styles=_reactNative.StyleSheet.create({
 container:{
 flex:1,
 alignItems:'center',
-justifyContent:'center'}});exports.default=
+justifyContent:'center'},
+
+title:{
+backgroundColor:'transparent',
+fontSize:_utils.myWidth*0.1}});exports.default=
 
 
 
 SplashScreen;
-}, 714, null, "@components/Screens/Splash.js");
+}, 683, null, "@components/Screens/Splash.js");
 ;require(217);
 ;require(0);
 //# sourceMappingURL=index.ios.map

@@ -10,7 +10,13 @@ import * as colors from '@colors';
 import { myHeight, myWidth, firstLetter } from '@utils';
 
 const Row = props => {
-	const onPress = () => Actions.messagesScreen();
+	const { name, previewMessage, id } = props;
+	
+	const onPress = () => Actions.messagesScreen({
+		id,
+		name,
+		previewMessage,
+	});
 
 	return (
 		<View style={styles.container}>
@@ -18,15 +24,15 @@ const Row = props => {
 				<View style={styles.left}>
 					<View style={[styles.circle, {backgroundColor: colors.random()}]}>
 						<Text style={styles.shortText}>
-							{firstLetter(props.name)}
+							{firstLetter(name)}
 						</Text>
 					</View>
 					<View style={styles.text}>
 						<Text numberOfLines={1} style={styles.h1}>
-							{props.name}
+							{name}
 						</Text>
 						<Text numberOfLines={1} style={styles.h2}>
-							{props.previewMessage}
+							{previewMessage}
 						</Text>
 					</View>
 				</View>
